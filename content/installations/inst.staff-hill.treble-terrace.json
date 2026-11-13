@@ -1,0 +1,97 @@
+{
+  "installationId": "inst.staff-hill.treble-terrace",
+  "stationCode": "N1",
+  "regionId": "staff-hill",
+  "archetype": "terraceField",
+  "name": "높은음 계단밭",
+  "interactPoint": {
+    "x": 4200,
+    "y": 712
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 4352,
+      "y": 304,
+      "w": 96,
+      "h": 816
+    },
+    {
+      "slot": 2,
+      "x": 4492,
+      "y": 304,
+      "w": 96,
+      "h": 816
+    },
+    {
+      "slot": 3,
+      "x": 4632,
+      "y": 304,
+      "w": 96,
+      "h": 816
+    },
+    {
+      "slot": 4,
+      "x": 4772,
+      "y": 304,
+      "w": 96,
+      "h": 816
+    },
+    {
+      "slot": 5,
+      "x": 4912,
+      "y": 304,
+      "w": 96,
+      "h": 816
+    },
+    {
+      "slot": 6,
+      "x": 5052,
+      "y": 304,
+      "w": 96,
+      "h": 816
+    },
+    {
+      "slot": 7,
+      "x": 5192,
+      "y": 304,
+      "w": 96,
+      "h": 816
+    },
+    {
+      "slot": 8,
+      "x": 5332,
+      "y": 304,
+      "w": 96,
+      "h": 816
+    }
+  ],
+  "slotMap": {
+    "kind": "staffField",
+    "c4Y": 1000,
+    "low": "A3",
+    "high": "C6",
+    "clefs": [
+      "treble"
+    ]
+  },
+  "quests": [
+    {
+      "questId": "staff.lines-and-spaces",
+      "variantIds": [
+        "treble-lines",
+        "treble-spaces"
+      ]
+    },
+    {
+      "questId": "staff.ledger-lines",
+      "variantIds": [
+        "treble-ledger",
+        "treble-far-ledger"
+      ]
+    }
+  ],
+  "panelTwin": "panel.clef",
+  "signatureSoundId": "sig.staff-hill.treble-terrace",
+  "hearRadius": 900
+}

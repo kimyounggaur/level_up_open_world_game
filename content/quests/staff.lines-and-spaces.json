@@ -1,0 +1,417 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "staff.lines-and-spaces",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "줄과 칸",
+  "topicTags": ["pitch", "staff"],
+  "availability": "draft",
+  "variantIds": ["treble-lines", "treble-spaces", "bass-lines", "bass-spaces"],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.staff-hill.treble-terrace",
+      "variantIds": ["treble-lines", "treble-spaces"]
+    },
+    {
+      "kind": "installation",
+      "installationId": "inst.staff-hill.bass-terrace",
+      "variantIds": ["bass-lines", "bass-spaces"]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.clef",
+      "variantIds": ["treble-lines", "treble-spaces", "bass-lines", "bass-spaces"]
+    }
+  ],
+  "sourceRefs": [
+    {
+      "sourceFileId": "1sNSGPoSC2dctrbvAawdL-VC6dIk05tld",
+      "originalFilename": "020-1.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": [
+        "교재 폴더 세 곳에 같은 이름·같은 크기(1,274,935바이트)의 사본이 있다(7-8에서 확인, 처음 기록에는 두 곳이었다). 어느 쪽이 원본인지 확인 필요",
+        "설계서에 오류 후보로 기록된 교재(020-1): 대조 전",
+        "7-8 후보 대조(그림으로 봄, 검수 아님): 이 쪽의 제목은 '낮은 음자리표&높은 음자리표 음역대'이고, 건반의 C1~C6 이름을 큰보표의 음표와 점선으로 이은 그림이다. 오선의 줄과 칸에 해당하는 음 이름을 하나씩 적은 곳은 보이지 않아, 이 과제의 판본(높은음자리표 줄 E4 G4 B4 D5 F5·칸 F4 A4 C5 E5, 낮은음자리표 줄 G2 B2 D3 F3 A3·칸 A2 C3 E3 G3)과 직접 맞는 내용을 찾지 못했다. 검수 대장의 메모는 이 쪽을 '오선의 줄과 칸'이라고 적었다. 줄과 칸의 개수와 차례(첫째~다섯째 줄, 첫째~넷째 간)를 적은 쪽은 교재 001이다. 사람이 맞는 쪽을 확인"
+      ]
+    }
+  ],
+  "variants": {
+    "treble-lines": {
+      "label": "높은음자리표의 줄",
+      "challengeDescriptor": {
+        "range": "E4-F5",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "높은음자리표 보표"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "E", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 4, "midi": 64}},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "G", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 4, "midi": 67}},
+          {"eventId": "n3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 2, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "B", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "B", "alter": 0, "octave": 4, "midi": 71}},
+          {"eventId": "n4", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 3, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "D", "accidental": null, "octave": 5}, "resolvedPitch": {"letter": "D", "alter": 0, "octave": 5, "midi": 74}},
+          {"eventId": "n5", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 4, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "F", "accidental": null, "octave": 5}, "resolvedPitch": {"letter": "F", "alter": 0, "octave": 5, "midi": 77}}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "pitchSpelling",
+        "targets": [
+          {
+            "slotId": "treble-e4",
+            "label": "E4",
+            "expected": {
+              "letter": "E",
+              "alter": 0,
+              "octave": 4
+            },
+            "clef": "treble",
+            "eventId": "n1"
+          },
+          {
+            "slotId": "treble-g4",
+            "label": "G4",
+            "expected": {
+              "letter": "G",
+              "alter": 0,
+              "octave": 4
+            },
+            "clef": "treble",
+            "eventId": "n2"
+          },
+          {
+            "slotId": "treble-b4",
+            "label": "B4",
+            "expected": {
+              "letter": "B",
+              "alter": 0,
+              "octave": 4
+            },
+            "clef": "treble",
+            "eventId": "n3"
+          },
+          {
+            "slotId": "treble-d5",
+            "label": "D5",
+            "expected": {
+              "letter": "D",
+              "alter": 0,
+              "octave": 5
+            },
+            "clef": "treble",
+            "eventId": "n4"
+          },
+          {
+            "slotId": "treble-f5",
+            "label": "F5",
+            "expected": {
+              "letter": "F",
+              "alter": 0,
+              "octave": 5
+            },
+            "clef": "treble",
+            "eventId": "n5"
+          }
+        ]
+      }
+    },
+    "treble-spaces": {
+      "label": "높은음자리표의 칸",
+      "challengeDescriptor": {
+        "range": "F4-E5",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "높은음자리표 보표"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "F", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "F", "alter": 0, "octave": 4, "midi": 65}},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "A", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "A", "alter": 0, "octave": 4, "midi": 69}},
+          {"eventId": "n3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 2, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 5}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 5, "midi": 72}},
+          {"eventId": "n4", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 3, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "E", "accidental": null, "octave": 5}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 5, "midi": 76}}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "pitchSpelling",
+        "targets": [
+          {
+            "slotId": "treble-f4",
+            "label": "F4",
+            "expected": {
+              "letter": "F",
+              "alter": 0,
+              "octave": 4
+            },
+            "clef": "treble",
+            "eventId": "n1"
+          },
+          {
+            "slotId": "treble-a4",
+            "label": "A4",
+            "expected": {
+              "letter": "A",
+              "alter": 0,
+              "octave": 4
+            },
+            "clef": "treble",
+            "eventId": "n2"
+          },
+          {
+            "slotId": "treble-c5",
+            "label": "C5",
+            "expected": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 5
+            },
+            "clef": "treble",
+            "eventId": "n3"
+          },
+          {
+            "slotId": "treble-e5",
+            "label": "E5",
+            "expected": {
+              "letter": "E",
+              "alter": 0,
+              "octave": 5
+            },
+            "clef": "treble",
+            "eventId": "n4"
+          }
+        ]
+      }
+    },
+    "bass-lines": {
+      "label": "낮은음자리표의 줄",
+      "challengeDescriptor": {
+        "range": "G2-A3",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "bass",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "낮은음자리표 보표"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "G", "accidental": null, "octave": 2}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 2, "midi": 43}},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "B", "accidental": null, "octave": 2}, "resolvedPitch": {"letter": "B", "alter": 0, "octave": 2, "midi": 47}},
+          {"eventId": "n3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 2, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "D", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "D", "alter": 0, "octave": 3, "midi": 50}},
+          {"eventId": "n4", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 3, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "F", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "F", "alter": 0, "octave": 3, "midi": 53}},
+          {"eventId": "n5", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 4, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "A", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "A", "alter": 0, "octave": 3, "midi": 57}}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "pitchSpelling",
+        "targets": [
+          {
+            "slotId": "bass-g2",
+            "label": "G2",
+            "expected": {
+              "letter": "G",
+              "alter": 0,
+              "octave": 2
+            },
+            "clef": "bass",
+            "eventId": "n1"
+          },
+          {
+            "slotId": "bass-b2",
+            "label": "B2",
+            "expected": {
+              "letter": "B",
+              "alter": 0,
+              "octave": 2
+            },
+            "clef": "bass",
+            "eventId": "n2"
+          },
+          {
+            "slotId": "bass-d3",
+            "label": "D3",
+            "expected": {
+              "letter": "D",
+              "alter": 0,
+              "octave": 3
+            },
+            "clef": "bass",
+            "eventId": "n3"
+          },
+          {
+            "slotId": "bass-f3",
+            "label": "F3",
+            "expected": {
+              "letter": "F",
+              "alter": 0,
+              "octave": 3
+            },
+            "clef": "bass",
+            "eventId": "n4"
+          },
+          {
+            "slotId": "bass-a3",
+            "label": "A3",
+            "expected": {
+              "letter": "A",
+              "alter": 0,
+              "octave": 3
+            },
+            "clef": "bass",
+            "eventId": "n5"
+          }
+        ]
+      }
+    },
+    "bass-spaces": {
+      "label": "낮은음자리표의 칸",
+      "challengeDescriptor": {
+        "range": "A2-G3",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "bass",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "낮은음자리표 보표"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "A", "accidental": null, "octave": 2}, "resolvedPitch": {"letter": "A", "alter": 0, "octave": 2, "midi": 45}},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 3, "midi": 48}},
+          {"eventId": "n3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 2, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "E", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 3, "midi": 52}},
+          {"eventId": "n4", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 3, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "G", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 3, "midi": 55}}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "pitchSpelling",
+        "targets": [
+          {
+            "slotId": "bass-a2",
+            "label": "A2",
+            "expected": {
+              "letter": "A",
+              "alter": 0,
+              "octave": 2
+            },
+            "clef": "bass",
+            "eventId": "n1"
+          },
+          {
+            "slotId": "bass-c3",
+            "label": "C3",
+            "expected": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 3
+            },
+            "clef": "bass",
+            "eventId": "n2"
+          },
+          {
+            "slotId": "bass-e3",
+            "label": "E3",
+            "expected": {
+              "letter": "E",
+              "alter": 0,
+              "octave": 3
+            },
+            "clef": "bass",
+            "eventId": "n3"
+          },
+          {
+            "slotId": "bass-g3",
+            "label": "G3",
+            "expected": {
+              "letter": "G",
+              "alter": 0,
+              "octave": 3
+            },
+            "clef": "bass",
+            "eventId": "n4"
+          }
+        ]
+      }
+    }
+  },
+  "assistanceLinks": [],
+  "feedbackRules": []
+}

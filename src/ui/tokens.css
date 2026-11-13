@@ -1,0 +1,97 @@
+/* 색과 글꼴 토큰 (설계서 9.2, 부록 B.2). 보조 글자색과 틀린 자리 글자색은 대비 4.5:1을 맞추도록 고친 값이다. */
+:root {
+  /* 기본 팔레트 12색 (muted만 시안의 #667670에서 변경) */
+  --paper: #f7f4ec;
+  --ink: #243c3a;
+  --muted: #5b6b65;
+  --line: #d5dcd3;
+  --white: #fffefa;
+  --teal: #17675d;
+  --teal-light: #e1efe6;
+  --coral: #b8644a;
+  --coral-light: #f6e4da;
+  --ground: #dde5d3;
+  --gold: #b18b49;
+  --purple: #755675;
+
+  /* 보강 토큰 */
+  --coral-text: #884a36; /* 틀린 자리의 작은 글자. 산호색은 테두리와 표식에만 쓴다 */
+  --band: #eaede3; /* 안내 띠 바탕(시안 B01의 하단 안내 띠) */
+  --band-origin: #e4ede2; /* '원래 도전' 띠 바탕(시안 B02). 보조 글자 대비 4.69:1 */
+
+  /* 지역 강조색: 바닥과 사물에만 쓰고 글자색으로는 쓰지 않는다 */
+  --region-village: #17675d;
+  --region-staff-hill: #7f9a7a;
+  --region-beat-river: #5e97a6;
+  --region-bell-grove: #b18b49;
+  --region-scale-trail: #c2aa70;
+  --region-key-marsh: #8e86a8;
+
+  /* 글꼴: 한글 Noto Sans KR, 악보는 Bravura(VexFlow 내장), 본문 속 음악 기호는 Noto Music */
+  --font-body: 'Noto Sans KR', 'Noto Sans CJK KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+  --font-music: 'Noto Music', 'Bravura Text', 'Segoe UI Symbol', serif;
+
+  --radius: 12px;
+  --focus-ring: 3px solid var(--teal);
+
+  /* 글자 크기 설정(7.8): 화면의 모든 글자 크기는 이 배율을 따른다. 크게 = 1.25배 */
+  --text-scale: 1;
+}
+
+html[data-text-size='large'] {
+  --text-scale: 1.25;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  /* 화면을 끝까지 밀거나 당겨도 브라우저가 새로 고치거나 튕기지 않는다(휴대폰 Chrome의 당겨서 새로 고침, 8-3). 안쪽 스크롤 칸은 그대로 밀린다 */
+  overscroll-behavior: none;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-text-size-adjust: 100%;
+}
+
+:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: 2px;
+}
+
+#game-root {
+  position: fixed;
+  inset: 0;
+  touch-action: none;
+}
+
+#ui-root {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* 화면(패널, 목록, 겹침 화면)은 눌림을 받는다. 탐험 화면의 겹침(.hud)은 스스로 통과시키고 단추만 받는다 */
+#ui-root > .panel-shell,
+#ui-root > .list-shell,
+#ui-root > .overlay-shell,
+#ui-root > .intro-shell {
+  pointer-events: auto;
+}
+
+/* 움직임 줄이기: 브라우저의 설정이거나 이 게임의 설정(7.8)이 켜져 있으면 전환과 애니메이션이 사실상 없다 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+html[data-reduced-motion='true'] *,
+html[data-reduced-motion='true'] *::before,
+html[data-reduced-motion='true'] *::after {
+  animation-duration: 0.001ms !important;
+  transition-duration: 0.001ms !important;
+}

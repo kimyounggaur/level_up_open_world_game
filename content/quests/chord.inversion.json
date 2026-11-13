@@ -1,0 +1,425 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "chord.inversion",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "베이스를 바꾸어 전위 만들기",
+  "topicTags": ["chord", "inversion", "bass"],
+  "availability": "draft",
+  "variantIds": ["c-first", "c-second", "f-first", "f-second", "g-first", "g-second"],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.bell-grove.bell-tower",
+      "variantIds": ["c-first", "c-second", "f-first", "f-second", "g-first", "g-second"]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.chord",
+      "variantIds": ["c-first", "c-second", "f-first", "f-second", "g-first", "g-second"]
+    }
+  ],
+  "sourceRefs": [
+    {
+      "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa",
+      "originalFilename": "029-1.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": ["교재 폴더 두 곳에 같은 이름의 사본이 있다(1BY_QkJ2Eiq7-qOKpMjjOT24OHV-xspnv). 어느 쪽이 원본인지 확인 필요", "F장3화음과 G장3화음의 전위 판본이 교재에 있는지 확인 필요"]
+    }
+  ],
+  "variants": {
+    "c-first": {
+      "label": "C장3화음 제1전위",
+      "challengeDescriptor": {
+        "range": "C2-B5",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          },
+          {
+            "staffId": "s2",
+            "clef": "bass",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "높은음자리표 보표"
+          },
+          {
+            "voiceId": "v2",
+            "staffId": "s2",
+            "label": "낮은음자리표 보표"
+          }
+        ],
+        "events": [
+          {"eventId": "n-h1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "n-l1", "type": "note", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "E", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 3, "midi": 52}},
+          {"eventId": "n-l2", "type": "note", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "G", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 3, "midi": 55}}
+        ],
+        "chords": [
+          {
+            "chordEventId": "c-h",
+            "eventIds": ["n-h1"]
+          },
+          {
+            "chordEventId": "c-l",
+            "eventIds": ["n-l1", "n-l2"]
+          }
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "inversion",
+        "tones": [
+          {"letter": "C", "alter": 0},
+          {"letter": "E", "alter": 0},
+          {"letter": "G", "alter": 0}
+        ],
+        "targetInversion": "first"
+      }
+    },
+    "c-second": {
+      "label": "C장3화음 제2전위",
+      "challengeDescriptor": {
+        "range": "C2-B5",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          },
+          {
+            "staffId": "s2",
+            "clef": "bass",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "높은음자리표 보표"
+          },
+          {
+            "voiceId": "v2",
+            "staffId": "s2",
+            "label": "낮은음자리표 보표"
+          }
+        ],
+        "events": [
+          {"eventId": "r-h", "type": "rest", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840},
+          {"eventId": "n-l1", "type": "note", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "G", "accidental": null, "octave": 2}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 2, "midi": 43}},
+          {"eventId": "n-l2", "type": "note", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 3, "midi": 48}},
+          {"eventId": "n-l3", "type": "note", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "E", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 3, "midi": 52}}
+        ],
+        "chords": [
+          {
+            "chordEventId": "c-l",
+            "eventIds": ["n-l1", "n-l2", "n-l3"]
+          }
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "inversion",
+        "tones": [
+          {"letter": "C", "alter": 0},
+          {"letter": "E", "alter": 0},
+          {"letter": "G", "alter": 0}
+        ],
+        "targetInversion": "second"
+      }
+    },
+    "f-first": {
+      "label": "F장3화음 제1전위",
+      "challengeDescriptor": {
+        "range": "C2-B5",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          },
+          {
+            "staffId": "s2",
+            "clef": "bass",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "높은음자리표 보표"
+          },
+          {
+            "voiceId": "v2",
+            "staffId": "s2",
+            "label": "낮은음자리표 보표"
+          }
+        ],
+        "events": [
+          {"eventId": "n-h1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "n-h2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "F", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "F", "alter": 0, "octave": 4, "midi": 65}},
+          {"eventId": "n-l1", "type": "note", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "A", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "A", "alter": 0, "octave": 3, "midi": 57}}
+        ],
+        "chords": [
+          {
+            "chordEventId": "c-h",
+            "eventIds": ["n-h1", "n-h2"]
+          },
+          {
+            "chordEventId": "c-l",
+            "eventIds": ["n-l1"]
+          }
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "inversion",
+        "tones": [
+          {"letter": "F", "alter": 0},
+          {"letter": "A", "alter": 0},
+          {"letter": "C", "alter": 0}
+        ],
+        "targetInversion": "first"
+      }
+    },
+    "f-second": {
+      "label": "F장3화음 제2전위",
+      "challengeDescriptor": {
+        "range": "C2-B5",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          },
+          {
+            "staffId": "s2",
+            "clef": "bass",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "높은음자리표 보표"
+          },
+          {
+            "voiceId": "v2",
+            "staffId": "s2",
+            "label": "낮은음자리표 보표"
+          }
+        ],
+        "events": [
+          {"eventId": "r-h", "type": "rest", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840},
+          {"eventId": "n-l1", "type": "note", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 3, "midi": 48}},
+          {"eventId": "n-l2", "type": "note", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "F", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "F", "alter": 0, "octave": 3, "midi": 53}},
+          {"eventId": "n-l3", "type": "note", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "A", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "A", "alter": 0, "octave": 3, "midi": 57}}
+        ],
+        "chords": [
+          {
+            "chordEventId": "c-l",
+            "eventIds": ["n-l1", "n-l2", "n-l3"]
+          }
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "inversion",
+        "tones": [
+          {"letter": "F", "alter": 0},
+          {"letter": "A", "alter": 0},
+          {"letter": "C", "alter": 0}
+        ],
+        "targetInversion": "second"
+      }
+    },
+    "g-first": {
+      "label": "G장3화음 제1전위",
+      "challengeDescriptor": {
+        "range": "C2-B5",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          },
+          {
+            "staffId": "s2",
+            "clef": "bass",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "높은음자리표 보표"
+          },
+          {
+            "voiceId": "v2",
+            "staffId": "s2",
+            "label": "낮은음자리표 보표"
+          }
+        ],
+        "events": [
+          {"eventId": "n-h1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "D", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "D", "alter": 0, "octave": 4, "midi": 62}},
+          {"eventId": "n-h2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "G", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 4, "midi": 67}},
+          {"eventId": "n-l1", "type": "note", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "B", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "B", "alter": 0, "octave": 3, "midi": 59}}
+        ],
+        "chords": [
+          {
+            "chordEventId": "c-h",
+            "eventIds": ["n-h1", "n-h2"]
+          },
+          {
+            "chordEventId": "c-l",
+            "eventIds": ["n-l1"]
+          }
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "inversion",
+        "tones": [
+          {"letter": "G", "alter": 0},
+          {"letter": "B", "alter": 0},
+          {"letter": "D", "alter": 0}
+        ],
+        "targetInversion": "first"
+      }
+    },
+    "g-second": {
+      "label": "G장3화음 제2전위",
+      "challengeDescriptor": {
+        "range": "C2-B5",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          },
+          {
+            "staffId": "s2",
+            "clef": "bass",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "높은음자리표 보표"
+          },
+          {
+            "voiceId": "v2",
+            "staffId": "s2",
+            "label": "낮은음자리표 보표"
+          }
+        ],
+        "events": [
+          {"eventId": "r-h", "type": "rest", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840},
+          {"eventId": "n-l1", "type": "note", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "D", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "D", "alter": 0, "octave": 3, "midi": 50}},
+          {"eventId": "n-l2", "type": "note", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "G", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 3, "midi": 55}},
+          {"eventId": "n-l3", "type": "note", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "B", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "B", "alter": 0, "octave": 3, "midi": 59}}
+        ],
+        "chords": [
+          {
+            "chordEventId": "c-l",
+            "eventIds": ["n-l1", "n-l2", "n-l3"]
+          }
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "inversion",
+        "tones": [
+          {"letter": "G", "alter": 0},
+          {"letter": "B", "alter": 0},
+          {"letter": "D", "alter": 0}
+        ],
+        "targetInversion": "second"
+      }
+    }
+  },
+  "assistanceLinks": [
+    {"type": "listenBar", "label": "목표 화음 듣기"}
+  ],
+  "feedbackRules": []
+}

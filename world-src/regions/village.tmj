@@ -1,0 +1,381 @@
+{
+ "compressionlevel": -1,
+ "height": 192,
+ "infinite": false,
+ "layers": [
+  {
+   "draworder": "topdown",
+   "id": 1,
+   "name": "사물",
+   "objects": [
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 1,
+     "name": "tree-village-1",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 26.88
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 48
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 96
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-village-tree-r96"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5409,
+     "y": 3858
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 2,
+     "name": "tree-village-2",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 22.68
+      },
+      {
+       "name": "footDy",
+       "type": "float",
+       "value": 40.5
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 81
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-village-tree-r81"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5460,
+     "y": 2292
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 3,
+     "name": "tree-village-3",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 26.04
+      },
+      {
+       "name": "footDy",
+       "type": "float",
+       "value": 46.5
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 93
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-village-tree-r93"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 4335,
+     "y": 2373
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 4,
+     "name": "tree-village-4",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 18.48
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 33
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 66
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-village-tree-r66"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 2781,
+     "y": 2787
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 5,
+     "name": "tree-village-5",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-village-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 2784,
+     "y": 3498
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 6,
+     "name": "tree-village-6",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 21
+      },
+      {
+       "name": "footDy",
+       "type": "float",
+       "value": 37.5
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 75
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-village-tree-r75"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 3645,
+     "y": 3714
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 7,
+     "name": "tree-village-7",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 19.32
+      },
+      {
+       "name": "footDy",
+       "type": "float",
+       "value": 34.5
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 69
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-village-tree-r69"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 3651,
+     "y": 2655
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 8,
+     "name": "tree-village-8",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 21
+      },
+      {
+       "name": "footDy",
+       "type": "float",
+       "value": 37.5
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 75
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-village-tree-r75"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 4446,
+     "y": 3960
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 9,
+     "name": "tree-village-9",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 21
+      },
+      {
+       "name": "footDy",
+       "type": "float",
+       "value": 37.5
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 75
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-village-tree-r75"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5304,
+     "y": 2901
+    }
+   ],
+   "opacity": 1,
+   "type": "objectgroup",
+   "visible": true,
+   "x": 0,
+   "y": 0
+  }
+ ],
+ "nextlayerid": 2,
+ "nextobjectid": 10,
+ "orientation": "orthogonal",
+ "renderorder": "right-down",
+ "tiledversion": "1.11.2",
+ "tileheight": 32,
+ "tilesets": [],
+ "tilewidth": 32,
+ "type": "map",
+ "version": "1.10",
+ "width": 256
+}

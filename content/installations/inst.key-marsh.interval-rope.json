@@ -1,0 +1,127 @@
+{
+  "installationId": "inst.key-marsh.interval-rope",
+  "stationCode": "K2",
+  "regionId": "key-marsh",
+  "archetype": "keyBridge",
+  "name": "음정 밧줄",
+  "interactPoint": {
+    "x": 1200,
+    "y": 5500
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 912,
+      "y": 5700,
+      "w": 72,
+      "h": 240
+    },
+    {
+      "slot": 2,
+      "x": 962,
+      "y": 5700,
+      "w": 44,
+      "h": 150
+    },
+    {
+      "slot": 3,
+      "x": 984,
+      "y": 5700,
+      "w": 72,
+      "h": 240
+    },
+    {
+      "slot": 4,
+      "x": 1034,
+      "y": 5700,
+      "w": 44,
+      "h": 150
+    },
+    {
+      "slot": 5,
+      "x": 1056,
+      "y": 5700,
+      "w": 72,
+      "h": 240
+    },
+    {
+      "slot": 6,
+      "x": 1128,
+      "y": 5700,
+      "w": 72,
+      "h": 240
+    },
+    {
+      "slot": 7,
+      "x": 1178,
+      "y": 5700,
+      "w": 44,
+      "h": 150
+    },
+    {
+      "slot": 8,
+      "x": 1200,
+      "y": 5700,
+      "w": 72,
+      "h": 240
+    },
+    {
+      "slot": 9,
+      "x": 1250,
+      "y": 5700,
+      "w": 44,
+      "h": 150
+    },
+    {
+      "slot": 10,
+      "x": 1272,
+      "y": 5700,
+      "w": 72,
+      "h": 240
+    },
+    {
+      "slot": 11,
+      "x": 1322,
+      "y": 5700,
+      "w": 44,
+      "h": 150
+    },
+    {
+      "slot": 12,
+      "x": 1344,
+      "y": 5700,
+      "w": 72,
+      "h": 240
+    },
+    {
+      "slot": 13,
+      "x": 1416,
+      "y": 5700,
+      "w": 72,
+      "h": 240
+    }
+  ],
+  "slotMap": {
+    "kind": "keyBridge",
+    "lowMidi": 60,
+    "whiteCount": 8
+  },
+  "quests": [
+    {
+      "questId": "pitch.same-sound-different-names",
+      "variantIds": [
+        "interval-names"
+      ]
+    },
+    {
+      "questId": "key.build-intervals",
+      "variantIds": [
+        "basic",
+        "challenge"
+      ]
+    }
+  ],
+  "panelTwin": "panel.clef",
+  "signatureSoundId": "sig.key-marsh.interval-rope",
+  "hearRadius": 900
+}

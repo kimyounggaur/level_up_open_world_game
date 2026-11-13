@@ -1,0 +1,96 @@
+{
+  "installationId": "inst.staff-hill.bass-terrace",
+  "stationCode": "N2",
+  "regionId": "staff-hill",
+  "archetype": "terraceField",
+  "name": "낮은음 계단밭",
+  "interactPoint": {
+    "x": 4200,
+    "y": 1288
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 4352,
+      "y": 880,
+      "w": 96,
+      "h": 816
+    },
+    {
+      "slot": 2,
+      "x": 4492,
+      "y": 880,
+      "w": 96,
+      "h": 816
+    },
+    {
+      "slot": 3,
+      "x": 4632,
+      "y": 880,
+      "w": 96,
+      "h": 816
+    },
+    {
+      "slot": 4,
+      "x": 4772,
+      "y": 880,
+      "w": 96,
+      "h": 816
+    },
+    {
+      "slot": 5,
+      "x": 4912,
+      "y": 880,
+      "w": 96,
+      "h": 816
+    },
+    {
+      "slot": 6,
+      "x": 5052,
+      "y": 880,
+      "w": 96,
+      "h": 816
+    },
+    {
+      "slot": 7,
+      "x": 5192,
+      "y": 880,
+      "w": 96,
+      "h": 816
+    },
+    {
+      "slot": 8,
+      "x": 5332,
+      "y": 880,
+      "w": 96,
+      "h": 816
+    }
+  ],
+  "slotMap": {
+    "kind": "staffField",
+    "c4Y": 1000,
+    "low": "C2",
+    "high": "E4",
+    "clefs": [
+      "bass"
+    ]
+  },
+  "quests": [
+    {
+      "questId": "staff.lines-and-spaces",
+      "variantIds": [
+        "bass-lines",
+        "bass-spaces"
+      ]
+    },
+    {
+      "questId": "staff.ledger-lines",
+      "variantIds": [
+        "bass-ledger"
+      ]
+    }
+  ],
+  "panelTwin": "panel.clef",
+  "signatureSoundId": "sig.staff-hill.bass-terrace",
+  "hearRadius": 900
+}

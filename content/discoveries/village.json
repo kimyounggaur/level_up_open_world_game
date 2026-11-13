@@ -1,0 +1,142 @@
+{
+  "regionId": "village",
+  "items": [
+    {
+      "discoveryId": "disc.village.piece-1",
+      "kind": "soundPiece",
+      "name": "첫걸음",
+      "x": 2860,
+      "y": 3240,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 60, "onsetTicks": 0, "durationTicks": 960 },
+        { "midi": 62, "onsetTicks": 960, "durationTicks": 960 },
+        { "midi": 64, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.village.piece-2",
+      "kind": "soundPiece",
+      "name": "바람결",
+      "x": 5400,
+      "y": 3260,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 64, "onsetTicks": 0, "durationTicks": 1920 },
+        { "midi": 62, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 60, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.village.piece-3",
+      "kind": "soundPiece",
+      "name": "돌다리",
+      "x": 3300,
+      "y": 2120,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 67, "onsetTicks": 0, "durationTicks": 960 },
+        { "midi": 64, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.village.piece-4",
+      "kind": "soundPiece",
+      "name": "물동이",
+      "x": 5500,
+      "y": 2450,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 60, "onsetTicks": 0, "durationTicks": 480 },
+        { "midi": 62, "onsetTicks": 480, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 960, "durationTicks": 480 },
+        { "midi": 62, "onsetTicks": 1440, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 1920, "durationTicks": 1920 }
+      ]
+    },
+    {
+      "discoveryId": "disc.village.piece-5",
+      "kind": "soundPiece",
+      "name": "저녁 종",
+      "x": 3650,
+      "y": 4050,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 69, "onsetTicks": 0, "durationTicks": 1920 },
+        { "midi": 67, "onsetTicks": 1920, "durationTicks": 1920 }
+      ]
+    },
+    {
+      "discoveryId": "disc.village.piece-6",
+      "kind": "soundPiece",
+      "name": "달빛",
+      "x": 5000,
+      "y": 4060,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 69, "onsetTicks": 0, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 960, "durationTicks": 960 },
+        { "midi": 64, "onsetTicks": 1920, "durationTicks": 1920 }
+      ]
+    },
+    {
+      "discoveryId": "disc.village.note-1",
+      "kind": "conceptNote",
+      "name": "같은 음, 다른 자리",
+      "x": 2810,
+      "y": 2475,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "pitch.same-note-two-clefs",
+      "text": "같은 높이의 음도 음자리표가 다르면 오선의 다른 자리에 적어요. 가온 C(C4)는 높은음자리표에서는 오선 아래 덧줄에, 낮은음자리표에서는 오선 위 덧줄에 놓여요.",
+      "textbookRefs": [
+        { "sourceFileId": "1v0d6_1eore_8-csHtDOJPDnqBizdXViu", "originalFilename": "001.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    },
+    {
+      "discoveryId": "disc.village.note-2",
+      "kind": "conceptNote",
+      "name": "쉼도 박이에요",
+      "x": 4956,
+      "y": 2150,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "rhythm.rest-in-a-bar",
+      "text": "쉼표는 소리를 내지 않고 쉬는 표예요. 쉬는 동안에도 박은 계속 흘러요. 4분쉼표는 4분음표와 같은 길이만큼 쉬어요.",
+      "textbookRefs": [
+        { "sourceFileId": "1A-TWdrDg63B2hlfn7G3-AEpj82Zszo9C", "originalFilename": "005.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    },
+    {
+      "discoveryId": "disc.village.note-3",
+      "kind": "conceptNote",
+      "name": "세 음을 쌓은 화음",
+      "x": 3140,
+      "y": 3990,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "chord.major-triad",
+      "text": "장3화음은 맨 아래 음(근음) 위에 반음 4개 위의 음과 반음 7개 위의 음을 쌓은 세 음이에요. C장3화음은 C, E, G예요.",
+      "textbookRefs": [
+        { "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa", "originalFilename": "029-1.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    }
+  ]
+}

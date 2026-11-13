@@ -1,0 +1,685 @@
+{
+ "compressionlevel": -1,
+ "height": 192,
+ "infinite": false,
+ "layers": [
+  {
+   "draworder": "topdown",
+   "id": 1,
+   "name": "사물",
+   "objects": [
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 2,
+     "name": "tree-key-marsh-2",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 15.12
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 27
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 54
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-tree-r54"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 963,
+     "y": 5205
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 3,
+     "name": "tree-key-marsh-3",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 649,
+     "y": 5126
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 6,
+     "name": "tree-key-marsh-6",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 1716,
+     "y": 4667
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 7,
+     "name": "tree-key-marsh-7",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 2757,
+     "y": 4548
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 9,
+     "name": "tree-key-marsh-9",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 418,
+     "y": 5706
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 12,
+     "name": "tree-key-marsh-12",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 3763,
+     "y": 5681
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 13,
+     "name": "tree-key-marsh-13",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 15.12
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 27
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 54
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-tree-r54"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 1741,
+     "y": 5725
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 14,
+     "name": "tree-key-marsh-14",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 481,
+     "y": 4559
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 16,
+     "name": "tree-key-marsh-16",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 3077,
+     "y": 5272
+    },
+    {
+     "class": "sign",
+     "height": 0,
+     "id": 17,
+     "name": "sign-K1",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "hitDx",
+       "type": "int",
+       "value": -48
+      },
+      {
+       "name": "hitDy",
+       "type": "int",
+       "value": -104
+      },
+      {
+       "name": "hitH",
+       "type": "int",
+       "value": 112
+      },
+      {
+       "name": "hitW",
+       "type": "int",
+       "value": 96
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-signpost"
+      },
+      {
+       "name": "station",
+       "type": "string",
+       "value": "K1"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 2372,
+     "y": 5092
+    },
+    {
+     "class": "sign",
+     "height": 0,
+     "id": 18,
+     "name": "sign-K2",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "hitDx",
+       "type": "int",
+       "value": -48
+      },
+      {
+       "name": "hitDy",
+       "type": "int",
+       "value": -104
+      },
+      {
+       "name": "hitH",
+       "type": "int",
+       "value": 112
+      },
+      {
+       "name": "hitW",
+       "type": "int",
+       "value": 96
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-signpost"
+      },
+      {
+       "name": "station",
+       "type": "string",
+       "value": "K2"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 1272,
+     "y": 5492
+    },
+    {
+     "class": "sign",
+     "height": 0,
+     "id": 19,
+     "name": "sign-K3",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "hitDx",
+       "type": "int",
+       "value": -48
+      },
+      {
+       "name": "hitDy",
+       "type": "int",
+       "value": -104
+      },
+      {
+       "name": "hitH",
+       "type": "int",
+       "value": 112
+      },
+      {
+       "name": "hitW",
+       "type": "int",
+       "value": 96
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-signpost"
+      },
+      {
+       "name": "station",
+       "type": "string",
+       "value": "K3"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 3272,
+     "y": 5592
+    },
+    {
+     "class": "sign",
+     "height": 0,
+     "id": 20,
+     "name": "sign-K4",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "hitDx",
+       "type": "int",
+       "value": -48
+      },
+      {
+       "name": "hitDy",
+       "type": "int",
+       "value": -104
+      },
+      {
+       "name": "hitH",
+       "type": "int",
+       "value": 112
+      },
+      {
+       "name": "hitW",
+       "type": "int",
+       "value": 96
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-signpost"
+      },
+      {
+       "name": "station",
+       "type": "string",
+       "value": "K4"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 800,
+     "y": 4596
+    },
+    {
+     "class": "prop",
+     "height": 0,
+     "id": 21,
+     "name": "prop-key-marsh-tuning-tower",
+     "point": true,
+     "properties": [
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-tuning-tower"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 2300,
+     "y": 5890
+    },
+    {
+     "class": "block",
+     "height": 32,
+     "id": 22,
+     "name": "block-key-marsh-tuning-tower",
+     "rotation": 0,
+     "visible": true,
+     "width": 128,
+     "x": 2240,
+     "y": 5856
+    },
+    {
+     "class": "prop",
+     "height": 0,
+     "id": 23,
+     "name": "waysign-key-marsh-1",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-signpost"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 3802,
+     "y": 4610
+    },
+    {
+     "class": "prop",
+     "height": 0,
+     "id": 24,
+     "name": "waysign-key-marsh-2",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-key-marsh-signpost"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 3995,
+     "y": 4943
+    }
+   ],
+   "opacity": 1,
+   "type": "objectgroup",
+   "visible": true,
+   "x": 0,
+   "y": 0
+  }
+ ],
+ "nextlayerid": 2,
+ "nextobjectid": 25,
+ "orientation": "orthogonal",
+ "renderorder": "right-down",
+ "tiledversion": "1.11.2",
+ "tileheight": 32,
+ "tilesets": [],
+ "tilewidth": 32,
+ "type": "map",
+ "version": "1.10",
+ "width": 256
+}

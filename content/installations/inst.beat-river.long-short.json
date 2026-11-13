@@ -1,0 +1,94 @@
+{
+  "installationId": "inst.beat-river.long-short",
+  "stationCode": "E2",
+  "regionId": "beat-river",
+  "archetype": "stepStones",
+  "name": "긴 돌 짧은 돌",
+  "interactPoint": {
+    "x": 7000,
+    "y": 3600
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 6760,
+      "y": 3552,
+      "w": 60,
+      "h": 96
+    },
+    {
+      "slot": 2,
+      "x": 6820,
+      "y": 3552,
+      "w": 60,
+      "h": 96
+    },
+    {
+      "slot": 3,
+      "x": 6880,
+      "y": 3552,
+      "w": 60,
+      "h": 96
+    },
+    {
+      "slot": 4,
+      "x": 6940,
+      "y": 3552,
+      "w": 60,
+      "h": 96
+    },
+    {
+      "slot": 5,
+      "x": 7000,
+      "y": 3552,
+      "w": 60,
+      "h": 96
+    },
+    {
+      "slot": 6,
+      "x": 7060,
+      "y": 3552,
+      "w": 60,
+      "h": 96
+    },
+    {
+      "slot": 7,
+      "x": 7120,
+      "y": 3552,
+      "w": 60,
+      "h": 96
+    },
+    {
+      "slot": 8,
+      "x": 7180,
+      "y": 3552,
+      "w": 60,
+      "h": 96
+    }
+  ],
+  "slotMap": {
+    "kind": "timelineStones",
+    "voiceId": "v1",
+    "axis": "x",
+    "ticksPerPx": 8,
+    "cellTicks": 480
+  },
+  "quests": [
+    {
+      "questId": "rhythm.note-values",
+      "variantIds": [
+        "half-quarter-eighths"
+      ]
+    },
+    {
+      "questId": "rhythm.dotted",
+      "variantIds": [
+        "dotted-half",
+        "dotted-quarter-mix"
+      ]
+    }
+  ],
+  "panelTwin": "panel.rhythm",
+  "signatureSoundId": "sig.beat-river.long-short",
+  "hearRadius": 900
+}

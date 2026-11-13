@@ -1,0 +1,120 @@
+{
+  "installationId": "inst.key-marsh.chromatic-path",
+  "stationCode": "K4",
+  "regionId": "key-marsh",
+  "archetype": "steppingPath",
+  "name": "반음 계단",
+  "interactPoint": {
+    "x": 800,
+    "y": 4700
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 900,
+      "y": 4560,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 2,
+      "x": 999,
+      "y": 4560,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 3,
+      "x": 1098,
+      "y": 4560,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 4,
+      "x": 1197,
+      "y": 4560,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 5,
+      "x": 1296,
+      "y": 4560,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 6,
+      "x": 1395,
+      "y": 4560,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 7,
+      "x": 1494,
+      "y": 4560,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 8,
+      "x": 1494,
+      "y": 4743,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 9,
+      "x": 1395,
+      "y": 4743,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 10,
+      "x": 1296,
+      "y": 4743,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 11,
+      "x": 1197,
+      "y": 4743,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 12,
+      "x": 1098,
+      "y": 4743,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 13,
+      "x": 999,
+      "y": 4743,
+      "w": 81,
+      "h": 153
+    }
+  ],
+  "slotMap": {
+    "kind": "orderedPitches",
+    "voiceId": "v1"
+  },
+  "quests": [
+    {
+      "questId": "scale.chromatic",
+      "variantIds": [
+        "ascending",
+        "descending"
+      ]
+    }
+  ],
+  "panelTwin": "panel.scale",
+  "signatureSoundId": "sig.key-marsh.chromatic-path",
+  "hearRadius": 900
+}

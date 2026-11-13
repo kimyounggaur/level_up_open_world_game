@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "lockedOn": "2026-11-13",
+  "quests": {
+    "chord.diminished-augmented": {
+      "contentVersion": "0.1.0",
+      "hash": "0c52cdce331f2b23"
+    },
+    "chord.inversion": {
+      "contentVersion": "0.1.0",
+      "hash": "2e7af9c93aa6e4a2"
+    },
+    "chord.major-and-minor": {
+      "contentVersion": "0.1.0",
+      "hash": "ac094ffaf97936d6"
+    },
+    "chord.major-triad": {
+      "contentVersion": "0.1.0",
+      "hash": "c2415e88ac093cda"
+    },
+    "chord.primary-triads": {
+      "contentVersion": "0.1.0",
+      "hash": "45fa94c1924ba2d9"
+    },
+    "chord.progression-walk": {
+      "contentVersion": "0.1.0",
+      "hash": "b534981285a42baa"
+    },
+    "key.accidentals-in-a-bar": {
+      "contentVersion": "0.1.0",
+      "hash": "f85bbc6bc60de1f9"
+    },
+    "key.black-key-names": {
+      "contentVersion": "0.1.0",
+      "hash": "f33a958374585cd9"
+    },
+    "key.build-intervals": {
+      "contentVersion": "0.1.0",
+      "hash": "c3a0444d172d8519"
+    },
+    "key.whole-and-half-steps": {
+      "contentVersion": "0.1.0",
+      "hash": "97554d2f1874c58a"
+    },
+    "pitch.same-note-two-clefs": {
+      "contentVersion": "0.1.0",
+      "hash": "2f291623e732bdf8"
+    },
+    "pitch.same-sound-different-names": {
+      "contentVersion": "0.1.0",
+      "hash": "d9c012dbc6d5ae36"
+    },
+    "rhythm.dotted": {
+      "contentVersion": "0.1.0",
+      "hash": "4789e5174ffa6ef9"
+    },
+    "rhythm.note-values": {
+      "contentVersion": "0.1.0",
+      "hash": "ef6a6e68f04a960f"
+    },
+    "rhythm.rest-in-a-bar": {
+      "contentVersion": "0.1.0",
+      "hash": "96bd7340808161a1"
+    },
+    "rhythm.rest-lengths": {
+      "contentVersion": "0.1.0",
+      "hash": "ff22d25fcf89b3b4"
+    },
+    "rhythm.short-notes-and-triplets": {
+      "contentVersion": "0.1.0",
+      "hash": "833d06d93101b0e2"
+    },
+    "rhythm.six-eight": {
+      "contentVersion": "0.1.0",
+      "hash": "d597c0ba84393f18"
+    },
+    "rhythm.sixteenths": {
+      "contentVersion": "0.1.0",
+      "hash": "6c2428b306926752"
+    },
+    "rhythm.three-four": {
+      "contentVersion": "0.1.0",
+      "hash": "18e63b59854d9707"
+    },
+    "rhythm.triplets": {
+      "contentVersion": "0.1.0",
+      "hash": "5d429a146445fdf0"
+    },
+    "scale.chromatic": {
+      "contentVersion": "0.1.0",
+      "hash": "48b5fa567a6c19ba"
+    },
+    "scale.harmonic-minor": {
+      "contentVersion": "0.1.0",
+      "hash": "22626a738523c728"
+    },
+    "scale.major": {
+      "contentVersion": "0.1.0",
+      "hash": "a25ba523088bb043"
+    },
+    "scale.natural-minor": {
+      "contentVersion": "0.1.0",
+      "hash": "e25d87a6e4f99cf8"
+    },
+    "scale.pentatonic": {
+      "contentVersion": "0.1.0",
+      "hash": "68fb12db43c7644c"
+    },
+    "song.short-piece": {
+      "contentVersion": "0.1.0",
+      "hash": "3a3a7fd073e2e6e8"
+    },
+    "staff.ledger-lines": {
+      "contentVersion": "0.1.0",
+      "hash": "43925f0800fccf9e"
+    },
+    "staff.lines-and-spaces": {
+      "contentVersion": "0.1.0",
+      "hash": "8c44e819d3018247"
+    },
+    "staff.middle-c-neighbors": {
+      "contentVersion": "0.1.0",
+      "hash": "7ec968ac00eacf44"
+    },
+    "staff.range-ladder": {
+      "contentVersion": "0.1.0",
+      "hash": "8779e2788c7b3171"
+    }
+  }
+}

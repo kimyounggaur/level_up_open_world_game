@@ -1,0 +1,86 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "rhythm.three-four",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "세 박 징검다리",
+  "topicTags": [
+    "rhythm",
+    "meter-3-4"
+  ],
+  "availability": "draft",
+  "variantIds": [
+    "three-quarters"
+  ],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.beat-river.first-ford",
+      "variantIds": [
+        "three-quarters"
+      ]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.rhythm",
+      "variantIds": [
+        "three-quarters"
+      ]
+    }
+  ],
+  "sourceRefs": [],
+  "variants": {
+    "three-quarters": {
+      "label": "3/4박자: 4분음표, 4분쉼표, 4분음표",
+      "challengeDescriptor": {
+        "range": "C4-E4",
+        "voices": 1,
+        "smallestValue": "quarter",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "3/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 960, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "r1", "type": "rest", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 960, "durationTicks": 960},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1920, "durationTicks": 960, "writtenPitch": {"letter": "E", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 4, "midi": 64}}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "rhythmPlacement",
+        "voiceId": "v1",
+        "requirePitch": true
+      }
+    }
+  },
+  "assistanceLinks": [
+    {
+      "type": "listenBar",
+      "label": "한 마디 듣기"
+    },
+    {
+      "type": "showBeatGrid",
+      "label": "박 격자 보기"
+    }
+  ],
+  "feedbackRules": []
+}

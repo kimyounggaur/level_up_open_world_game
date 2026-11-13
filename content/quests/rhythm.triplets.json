@@ -1,0 +1,127 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "rhythm.triplets",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "셋으로 나눈 물살",
+  "topicTags": [
+    "rhythm",
+    "tuplet",
+    "meter-4-4"
+  ],
+  "availability": "draft",
+  "variantIds": [
+    "triplet-eighths-and-quarters"
+  ],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.beat-river.ripple-channel",
+      "variantIds": [
+        "triplet-eighths-and-quarters"
+      ]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.rhythm",
+      "variantIds": [
+        "triplet-eighths-and-quarters"
+      ]
+    }
+  ],
+  "sourceRefs": [
+    {
+      "sourceFileId": "17aycXrOLkxdvJBhSCP3KfgVgxveed6LP",
+      "originalFilename": "032-1.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": [
+        "설계서 5.4가 관련 교재로 적은 장이다. 4분음표 셋잇단(4분음표 두 개 길이를 셋으로 나눈 것)이 교재에 나오는지 대조 필요. 교재 폴더 두 곳에 같은 이름의 사본이 있어 어느 쪽이 원본인지 확인 필요",
+        "6-11 후보 대조(글자 판독, 검수 아님): 이 쪽은 '잇단음표 설명'이고 '3연음'이라는 말로 '4분음표 1개의 길이 = 8분음표 3개'와 '2분음표 1개의 길이 = 4분음표 3개'를 보인다. 이 과제의 두 판본(8분 셋잇단, 4분 셋잇단)과 맞아 보이나 교재의 말은 '3연음'이고 게임은 '셋잇단음표'를 쓰므로 말을 맞출지 사람이 정한다"
+      ]
+    }
+  ],
+  "variants": {
+    "triplet-eighths-and-quarters": {
+      "label": "4분음표, 8분 셋잇단, 4분 셋잇단",
+      "challengeDescriptor": {
+        "range": "C4-A4",
+        "voices": 1,
+        "smallestValue": "eighth",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 960, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "t1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 960, "durationTicks": 320, "writtenPitch": {"letter": "D", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "D", "alter": 0, "octave": 4, "midi": 62}, "groupId": "g1"},
+          {"eventId": "t2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1280, "durationTicks": 320, "writtenPitch": {"letter": "E", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 4, "midi": 64}, "groupId": "g1"},
+          {"eventId": "t3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1600, "durationTicks": 320, "writtenPitch": {"letter": "F", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "F", "alter": 0, "octave": 4, "midi": 65}, "groupId": "g1"},
+          {"eventId": "u1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1920, "durationTicks": 640, "writtenPitch": {"letter": "G", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 4, "midi": 67}, "groupId": "g2"},
+          {"eventId": "u2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 2560, "durationTicks": 640, "writtenPitch": {"letter": "A", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "A", "alter": 0, "octave": 4, "midi": 69}, "groupId": "g2"},
+          {"eventId": "u3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 3200, "durationTicks": 640, "writtenPitch": {"letter": "G", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 4, "midi": 67}, "groupId": "g2"}
+        ],
+        "tuplets": [
+          {
+            "groupId": "g1",
+            "actualNotes": 3,
+            "normalNotes": 2,
+            "writtenBaseDuration": "eighth",
+            "eventIds": [
+              "t1",
+              "t2",
+              "t3"
+            ]
+          },
+          {
+            "groupId": "g2",
+            "actualNotes": 3,
+            "normalNotes": 2,
+            "writtenBaseDuration": "quarter",
+            "eventIds": [
+              "u1",
+              "u2",
+              "u3"
+            ]
+          }
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "rhythmPlacement",
+        "voiceId": "v1",
+        "requirePitch": true
+      }
+    }
+  },
+  "assistanceLinks": [
+    {
+      "type": "listenBar",
+      "label": "한 마디 듣기"
+    },
+    {
+      "type": "showBeatGrid",
+      "label": "박 격자 보기"
+    }
+  ],
+  "feedbackRules": []
+}

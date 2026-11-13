@@ -1,0 +1,164 @@
+{
+  "regionId": "key-marsh",
+  "items": [
+    {
+      "discoveryId": "disc.key-marsh.piece-1",
+      "kind": "soundPiece",
+      "name": "안개 속 물방울",
+      "x": 1575,
+      "y": 4400,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 67, "onsetTicks": 0, "durationTicks": 480 },
+        { "midi": 60, "onsetTicks": 960, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 1920, "durationTicks": 480 },
+        { "midi": 62, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.key-marsh.piece-2",
+      "kind": "soundPiece",
+      "name": "낮게 깔린 안개",
+      "x": 2400,
+      "y": 4625,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 60, "onsetTicks": 0, "durationTicks": 1920 },
+        { "midi": 64, "onsetTicks": 1920, "durationTicks": 1920 }
+      ]
+    },
+    {
+      "discoveryId": "disc.key-marsh.piece-3",
+      "kind": "soundPiece",
+      "name": "연잎 위의 비",
+      "x": 1900,
+      "y": 4900,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 62, "onsetTicks": 0, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 960, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 1920, "durationTicks": 480 },
+        { "midi": 60, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.key-marsh.piece-4",
+      "kind": "soundPiece",
+      "name": "늪의 새벽",
+      "x": 1600,
+      "y": 5400,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 62, "onsetTicks": 0, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 960, "durationTicks": 960 },
+        { "midi": 69, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.key-marsh.piece-5",
+      "kind": "soundPiece",
+      "name": "개구리 노래",
+      "x": 700,
+      "y": 4250,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 60, "onsetTicks": 0, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 480, "durationTicks": 480 },
+        { "midi": 60, "onsetTicks": 960, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 1440, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 1920, "durationTicks": 1920 }
+      ]
+    },
+    {
+      "discoveryId": "disc.key-marsh.piece-6",
+      "kind": "soundPiece",
+      "name": "기준음",
+      "x": 2725,
+      "y": 5975,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 69, "onsetTicks": 0, "durationTicks": 1920 },
+        { "midi": 69, "onsetTicks": 1920, "durationTicks": 1920 }
+      ]
+    },
+    {
+      "discoveryId": "disc.key-marsh.note-1",
+      "kind": "conceptNote",
+      "name": "검은 건반의 이름",
+      "x": 2950,
+      "y": 5225,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "key.black-key-names",
+      "text": "검은 건반은 이웃한 흰 건반보다 반음 높으면 ♯, 반음 낮으면 ♭을 붙여 불러요. C 바로 오른쪽 검은 건반은 C♯이에요.",
+      "textbookRefs": [
+        { "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa", "originalFilename": "023.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    },
+    {
+      "discoveryId": "disc.key-marsh.note-2",
+      "kind": "conceptNote",
+      "name": "이름이 둘인 건반",
+      "x": 1125,
+      "y": 5100,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "pitch.same-sound-different-names",
+      "text": "한 건반이 두 이름을 가질 수 있어요. C♯과 D♭은 같은 검은 건반이에요. 높이는 같고, 쓰는 자리에 따라 이름만 달라요.",
+      "textbookRefs": [
+        { "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa", "originalFilename": "023.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    },
+    {
+      "discoveryId": "disc.key-marsh.note-3",
+      "kind": "conceptNote",
+      "name": "검은 건반 묶음",
+      "x": 3325,
+      "y": 4550,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "key.black-key-names",
+      "text": "검은 건반은 두 개, 세 개씩 묶여 있어요. 두 개 묶음 바로 왼쪽의 흰 건반이 C이고, 세 개 묶음 바로 왼쪽의 흰 건반이 F예요.",
+      "textbookRefs": [
+        { "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa", "originalFilename": "023.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    }
+  ],
+  "playInstruments": [
+    {
+      "playId": "play.key-marsh.lily-chorus",
+      "name": "연잎 합창",
+      "x": 3720,
+      "y": 5180,
+      "timbre": "pluck",
+      "echo": false,
+      "ground": "lilies",
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "pads": [
+        { "dx": 0, "dy": -120, "midi": 60 },
+        { "dx": 114, "dy": -37, "midi": 62 },
+        { "dx": 71, "dy": 97, "midi": 64 },
+        { "dx": -71, "dy": 97, "midi": 67 },
+        { "dx": -114, "dy": -37, "midi": 69 }
+      ]
+    }
+  ]
+}

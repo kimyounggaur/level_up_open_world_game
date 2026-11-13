@@ -1,0 +1,163 @@
+{
+  "regionId": "bell-grove",
+  "items": [
+    {
+      "discoveryId": "disc.bell-grove.piece-1",
+      "kind": "soundPiece",
+      "name": "첫 종",
+      "x": 2250,
+      "y": 3250,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 67, "onsetTicks": 0, "durationTicks": 1920 },
+        { "midi": 60, "onsetTicks": 1920, "durationTicks": 1920 }
+      ]
+    },
+    {
+      "discoveryId": "disc.bell-grove.piece-2",
+      "kind": "soundPiece",
+      "name": "이슬 맺힌 종",
+      "x": 1550,
+      "y": 1550,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 69, "onsetTicks": 0, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 960, "durationTicks": 480 },
+        { "midi": 69, "onsetTicks": 1920, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.bell-grove.piece-3",
+      "kind": "soundPiece",
+      "name": "나무 사이 바람",
+      "x": 2350,
+      "y": 1150,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 62, "onsetTicks": 0, "durationTicks": 960 },
+        { "midi": 64, "onsetTicks": 960, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 69, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.bell-grove.piece-4",
+      "kind": "soundPiece",
+      "name": "숲속 합창",
+      "x": 1300,
+      "y": 500,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 67, "onsetTicks": 0, "durationTicks": 960 },
+        { "midi": 69, "onsetTicks": 960, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 64, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.bell-grove.piece-5",
+      "kind": "soundPiece",
+      "name": "새벽 종소리",
+      "x": 450,
+      "y": 2000,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 69, "onsetTicks": 0, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 960, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 1440, "durationTicks": 480 },
+        { "midi": 60, "onsetTicks": 1920, "durationTicks": 1920 }
+      ]
+    },
+    {
+      "discoveryId": "disc.bell-grove.piece-6",
+      "kind": "soundPiece",
+      "name": "이끼 낀 종",
+      "x": 450,
+      "y": 3750,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 60, "onsetTicks": 0, "durationTicks": 1920 },
+        { "midi": 62, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 60, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.bell-grove.note-1",
+      "kind": "conceptNote",
+      "name": "밝은 종, 어두운 종",
+      "x": 1250,
+      "y": 3900,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "chord.major-and-minor",
+      "text": "C E G는 밝은 장3화음, C E♭ G는 어두운 단3화음이에요. 둘은 가운데 음 하나만 반음 달라요. 가운데 음이 반음 내려가면 단3화음이 돼요.",
+      "textbookRefs": [
+        { "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa", "originalFilename": "029-1.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    },
+    {
+      "discoveryId": "disc.bell-grove.note-2",
+      "kind": "conceptNote",
+      "name": "맨 아래 음이 바뀌면",
+      "x": 1175,
+      "y": 2750,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "chord.inversion",
+      "text": "화음의 구성음은 그대로여도 맨 아래 음이 달라지면 전위예요. C E G에서 E가 맨 아래면 제1전위, G가 맨 아래면 제2전위예요.",
+      "textbookRefs": [
+        { "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa", "originalFilename": "029-1.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    },
+    {
+      "discoveryId": "disc.bell-grove.note-3",
+      "kind": "conceptNote",
+      "name": "같은 모양, 다른 음 위에",
+      "x": 1700,
+      "y": 2250,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "chord.major-triad",
+      "text": "장3화음의 모양은 어느 음 위에서나 같아요. F 위에는 F A C, G 위에는 G B D를 쌓아요. 맨 아래 음에서 반음 4개, 7개 위의 음을 더해요.",
+      "textbookRefs": [
+        { "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa", "originalFilename": "029-1.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    }
+  ],
+  "playInstruments": [
+    {
+      "playId": "play.bell-grove.echo-wall",
+      "name": "메아리 벽",
+      "x": 600,
+      "y": 600,
+      "timbre": "kalimba",
+      "echo": true,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "pads": [
+        { "dx": -208, "dy": 110, "midi": 60 },
+        { "dx": -104, "dy": 110, "midi": 62 },
+        { "dx": 0, "dy": 110, "midi": 64 },
+        { "dx": 104, "dy": 110, "midi": 67 },
+        { "dx": 208, "dy": 110, "midi": 69 }
+      ]
+    }
+  ]
+}

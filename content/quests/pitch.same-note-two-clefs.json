@@ -1,0 +1,126 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "pitch.same-note-two-clefs",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "같은 음의 자리 찾기",
+  "topicTags": ["pitch", "clef", "ledger-line"],
+  "availability": "draft",
+  "variantIds": ["middle-c"],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.staff-hill.middle-ledge",
+      "variantIds": ["middle-c"]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.clef",
+      "variantIds": ["middle-c"]
+    }
+  ],
+  "sourceRefs": [
+    {
+      "sourceFileId": "1v0d6_1eore_8-csHtDOJPDnqBizdXViu",
+      "originalFilename": "001.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": ["교재 폴더 두 곳에 같은 이름의 사본이 있다. 어느 쪽이 원본인지 확인 필요", "설계서에 오류 후보로 기록된 교재(001): 대조 전"]
+    },
+    {
+      "sourceFileId": "1sNSGPoSC2dctrbvAawdL-VC6dIk05tld",
+      "originalFilename": "020-1.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": ["교재 폴더 두 곳에 같은 이름의 사본이 있다. 어느 쪽이 원본인지 확인 필요", "설계서에 오류 후보로 기록된 교재(020-1): 대조 전"]
+    }
+  ],
+  "variants": {
+    "middle-c": {
+      "label": "가온 C",
+      "challengeDescriptor": {
+        "range": "C4",
+        "voices": 2,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          },
+          {
+            "staffId": "s2",
+            "clef": "bass",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "높은음자리표 보표"
+          },
+          {
+            "voiceId": "v2",
+            "staffId": "s2",
+            "label": "낮은음자리표 보표"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "n2", "type": "note", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "pitchSpelling",
+        "targets": [
+          {
+            "slotId": "treble",
+            "label": "높은음자리표 보표",
+            "expected": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 4
+            },
+            "clef": "treble",
+            "eventId": "n1"
+          },
+          {
+            "slotId": "bass",
+            "label": "낮은음자리표 보표",
+            "expected": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 4
+            },
+            "clef": "bass",
+            "eventId": "n2"
+          }
+        ]
+      }
+    }
+  },
+  "assistanceLinks": [
+    {
+      "type": "listenBoth",
+      "label": "두 음 듣기"
+    },
+    {
+      "type": "showLedgerLines",
+      "label": "덧줄 보기"
+    }
+  ],
+  "feedbackRules": []
+}

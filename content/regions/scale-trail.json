@@ -1,0 +1,59 @@
+{
+  "regionId": "scale-trail",
+  "name": "음계 길",
+  "boundsTiles": {
+    "x0": 128,
+    "x1": 255,
+    "y0": 129,
+    "y1": 191
+  },
+  "accentColor": "#C2AA70",
+  "ensemblePart": "runner",
+  "layerThresholds": [
+    1,
+    2,
+    3
+  ],
+  "ambientBedId": "bed.scale-trail",
+  "landmark": {
+    "name": "정자",
+    "x": 7200,
+    "y": 5600
+  },
+  "stations": [
+    {
+      "stationId": "S1",
+      "name": "장음계 길",
+      "kind": "installation",
+      "archetype": "T1",
+      "x": 5400,
+      "y": 4800,
+      "questIds": [
+        "scale.major"
+      ]
+    },
+    {
+      "stationId": "S2",
+      "name": "단음계 길",
+      "kind": "installation",
+      "archetype": "T1",
+      "x": 6100,
+      "y": 5300,
+      "questIds": [
+        "scale.natural-minor",
+        "scale.harmonic-minor"
+      ]
+    },
+    {
+      "stationId": "S3",
+      "name": "다섯 음 길",
+      "kind": "installation",
+      "archetype": "T1",
+      "x": 6800,
+      "y": 5000,
+      "questIds": [
+        "scale.pentatonic"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "rhythm.rest-in-a-bar",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "쉼이 있는 한 마디",
+  "topicTags": ["rhythm", "rest", "meter-4-4"],
+  "availability": "draft",
+  "variantIds": ["quarter-rest"],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.beat-river.first-ford",
+      "variantIds": ["quarter-rest"]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.rhythm",
+      "variantIds": ["quarter-rest"]
+    }
+  ],
+  "sourceRefs": [
+    {
+      "sourceFileId": "1A-TWdrDg63B2hlfn7G3-AEpj82Zszo9C",
+      "originalFilename": "005.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": ["교재 폴더 두 곳에 같은 이름의 사본이 있다. 어느 쪽이 원본인지 확인 필요"]
+    }
+  ],
+  "variants": {
+    "quarter-rest": {
+      "label": "4분쉼표가 있는 4/4",
+      "challengeDescriptor": {
+        "range": "C4-E4",
+        "voices": 1,
+        "smallestValue": "quarter",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 960, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "r1", "type": "rest", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 960, "durationTicks": 960},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1920, "durationTicks": 960, "writtenPitch": {"letter": "D", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "D", "alter": 0, "octave": 4, "midi": 62}},
+          {"eventId": "n3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 2880, "durationTicks": 960, "writtenPitch": {"letter": "E", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 4, "midi": 64}}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "rhythmPlacement",
+        "voiceId": "v1",
+        "requirePitch": true
+      }
+    }
+  },
+  "assistanceLinks": [
+    {
+      "type": "listenBar",
+      "label": "한 마디 듣기"
+    },
+    {
+      "type": "showBeatGrid",
+      "label": "박 격자 보기"
+    }
+  ],
+  "feedbackRules": []
+}

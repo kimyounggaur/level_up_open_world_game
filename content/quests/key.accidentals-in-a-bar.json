@@ -1,0 +1,193 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "key.accidentals-in-a-bar",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "한 마디 안의 임시표",
+  "topicTags": [
+    "accidental",
+    "keySignature"
+  ],
+  "availability": "draft",
+  "variantIds": [
+    "g-major-f"
+  ],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.key-marsh.natural-bridge",
+      "variantIds": [
+        "g-major-f"
+      ]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.scale",
+      "variantIds": [
+        "g-major-f"
+      ]
+    }
+  ],
+  "sourceRefs": [
+    {
+      "sourceFileId": "1cmS2SJMvyi-U7rrAEB476ibhx0ZpLtSI",
+      "originalFilename": "021-2.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": [
+        "설계서 5.7은 이 과제의 관련 교재를 '확인 필요'로 적었다. 7-8에서 후보로 찾은 쪽이다(그림으로 봄, 검수 아님): 교재 021-2는 '임시표 사용 예시' 쪽이고 '같은 마디 안에서의 적용'(임시표는 같은 마디 안에서 뒤에 나오는 같은 위치의 같은 음에 계속 적용), '옥타브가 다르면 적용되지 않음', '내추럴로 원래 음으로'를 오선 예와 함께 보인다. 이 과제의 설명 '임시표는 그 마디가 끝날 때까지 이어진다'와 같은 내용이다. 다만 이 쪽의 오선 예에는 조표가 없어, 임시표가 끝난 다음 마디에서 조표가 다시 적용되는 이 과제의 G장조 예(F♯ F♮ F, 다음 마디 F♯)는 이 쪽에 없다. 분석 보고서는 이 쪽을 확정 불일치로 적었다(제자리표 예시가 앞의 변화음과 다른 오선 위치에 있고, 옥타브 불적용의 두 번째 예도 옥타브 간격이 아니다). 사람이 이 과제의 판본과 맞는지 확인",
+        "교재 폴더 세 곳에 같은 이름·같은 크기(1,016,629바이트)의 사본이 있다(7-8에서 확인). 어느 쪽이 원본인지 확인 필요"
+      ]
+    }
+  ],
+  "variants": {
+    "g-major-f": {
+      "label": "G장조의 F",
+      "challengeDescriptor": {
+        "range": "C4-C5",
+        "voices": 1,
+        "smallestValue": "quarter",
+        "accidentals": "inBar",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 1
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {
+            "eventId": "n1",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 0,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "F",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "F",
+              "alter": 1,
+              "octave": 4,
+              "midi": 66
+            }
+          },
+          {
+            "eventId": "n2",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 960,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "F",
+              "accidental": "natural",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "F",
+              "alter": 0,
+              "octave": 4,
+              "midi": 65
+            }
+          },
+          {
+            "eventId": "n3",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 1920,
+            "durationTicks": 1920,
+            "writtenPitch": {
+              "letter": "F",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "F",
+              "alter": 0,
+              "octave": 4,
+              "midi": 65
+            }
+          },
+          {
+            "eventId": "n4",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 1,
+            "onsetTicks": 0,
+            "durationTicks": 3840,
+            "writtenPitch": {
+              "letter": "F",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "F",
+              "alter": 1,
+              "octave": 4,
+              "midi": 66
+            }
+          }
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "orderedScale",
+        "voiceId": "v1",
+        "count": 4,
+        "direction": "sequence",
+        "requireSpelling": false,
+        "requireOctave": true,
+        "keyName": "G장조",
+        "slotLabel": "깃발"
+      }
+    }
+  },
+  "assistanceLinks": [
+    {
+      "type": "listenBar",
+      "label": "소리 듣기"
+    },
+    {
+      "type": "keyboardOverlay",
+      "label": "한 옥타브 건반 비교"
+    }
+  ],
+  "feedbackRules": [
+    {
+      "code": "MISSING_PLACEMENT",
+      "template": "{position}번 깃발을 아직 꽂지 않았어요."
+    },
+    {
+      "code": "PITCH_MISMATCH",
+      "template": "{position}번 깃발: 울릴 음은 {expectedName:이에요}. 지금 꽂은 널은 {actualName:이에요}. 임시표는 그 마디가 끝날 때까지 이어지고, 다음 마디에서는 조표가 다시 적용돼요."
+    },
+    {
+      "code": "WRONG_ORDER",
+      "template": "{position}번째와 {otherPosition}번째 깃발의 순서가 바뀌었어요."
+    }
+  ]
+}

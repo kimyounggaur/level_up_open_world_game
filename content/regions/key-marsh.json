@@ -1,0 +1,72 @@
+{
+  "regionId": "key-marsh",
+  "name": "건반 늪",
+  "boundsTiles": {
+    "x0": 0,
+    "x1": 127,
+    "y0": 129,
+    "y1": 191
+  },
+  "accentColor": "#8E86A8",
+  "ensemblePart": "ornament",
+  "layerThresholds": [
+    1,
+    2,
+    3
+  ],
+  "ambientBedId": "bed.key-marsh",
+  "landmark": {
+    "name": "기준음 탑",
+    "x": 2300,
+    "y": 5750
+  },
+  "stations": [
+    {
+      "stationId": "K1",
+      "name": "건반 다리",
+      "kind": "installation",
+      "archetype": "T6",
+      "x": 2300,
+      "y": 5100,
+      "questIds": [
+        "pitch.same-sound-different-names",
+        "key.black-key-names",
+        "key.whole-and-half-steps"
+      ]
+    },
+    {
+      "stationId": "K2",
+      "name": "음정 밧줄",
+      "kind": "installation",
+      "archetype": "T6",
+      "x": 1200,
+      "y": 5500,
+      "questIds": [
+        "pitch.same-sound-different-names",
+        "key.build-intervals"
+      ]
+    },
+    {
+      "stationId": "K3",
+      "name": "제자리표 다리",
+      "kind": "installation",
+      "archetype": "T6",
+      "x": 3200,
+      "y": 5600,
+      "questIds": [
+        "key.accidentals-in-a-bar"
+      ]
+    },
+    {
+      "stationId": "K4",
+      "name": "반음 계단",
+      "kind": "installation",
+      "archetype": "T1",
+      "x": 800,
+      "y": 4700,
+      "questIds": [
+        "scale.chromatic"
+      ]
+    }
+  ]
+}

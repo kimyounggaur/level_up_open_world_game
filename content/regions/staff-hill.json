@@ -1,0 +1,62 @@
+{
+  "regionId": "staff-hill",
+  "name": "오선 언덕",
+  "boundsTiles": {
+    "x0": 81,
+    "x1": 174,
+    "y0": 0,
+    "y1": 62
+  },
+  "accentColor": "#7F9A7A",
+  "ensemblePart": "melody",
+  "layerThresholds": [
+    1,
+    2,
+    3
+  ],
+  "ambientBedId": "bed.staff-hill",
+  "landmark": {
+    "name": "음자리표 풍향계",
+    "x": 4056,
+    "y": 220
+  },
+  "stations": [
+    {
+      "stationId": "N1",
+      "name": "높은음 계단밭",
+      "kind": "installation",
+      "archetype": "T5",
+      "x": 4200,
+      "y": 712,
+      "questIds": [
+        "staff.lines-and-spaces",
+        "staff.ledger-lines"
+      ]
+    },
+    {
+      "stationId": "N2",
+      "name": "낮은음 계단밭",
+      "kind": "installation",
+      "archetype": "T5",
+      "x": 4200,
+      "y": 1288,
+      "questIds": [
+        "staff.lines-and-spaces",
+        "staff.ledger-lines"
+      ]
+    },
+    {
+      "stationId": "N3",
+      "name": "가운데 턱",
+      "kind": "installation",
+      "archetype": "T5",
+      "x": 4200,
+      "y": 1000,
+      "questIds": [
+        "pitch.same-note-two-clefs",
+        "staff.middle-c-neighbors",
+        "staff.range-ladder"
+      ]
+    }
+  ]
+}

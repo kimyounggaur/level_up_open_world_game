@@ -1,0 +1,70 @@
+{
+  "installationId": "inst.scale-trail.pentatonic-path",
+  "stationCode": "S3",
+  "regionId": "scale-trail",
+  "archetype": "steppingPath",
+  "name": "다섯 음 길",
+  "interactPoint": {
+    "x": 6800,
+    "y": 5000
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 6074,
+      "y": 4974,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 2,
+      "x": 6173,
+      "y": 4974,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 3,
+      "x": 6272,
+      "y": 4974,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 4,
+      "x": 6371,
+      "y": 4974,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 5,
+      "x": 6470,
+      "y": 4974,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 6,
+      "x": 6569,
+      "y": 4974,
+      "w": 81,
+      "h": 153
+    }
+  ],
+  "slotMap": {
+    "kind": "orderedPitches",
+    "voiceId": "v1"
+  },
+  "quests": [
+    {
+      "questId": "scale.pentatonic",
+      "variantIds": [
+        "c-pentatonic"
+      ]
+    }
+  ],
+  "panelTwin": "panel.scale",
+  "signatureSoundId": "sig.scale-trail.pentatonic-path",
+  "hearRadius": 900
+}

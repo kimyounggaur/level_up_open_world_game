@@ -1,0 +1,71 @@
+{
+  "regionId": "bell-grove",
+  "name": "종나무 숲",
+  "boundsTiles": {
+    "x0": 0,
+    "x1": 80,
+    "y0": 0,
+    "y1": 128
+  },
+  "accentColor": "#B18B49",
+  "ensemblePart": "bass",
+  "layerThresholds": [
+    1,
+    2,
+    3
+  ],
+  "ambientBedId": "bed.bell-grove",
+  "landmark": {
+    "name": "종탑",
+    "x": 1100,
+    "y": 2500
+  },
+  "stations": [
+    {
+      "stationId": "W1",
+      "name": "세 종 나무",
+      "kind": "installation",
+      "archetype": "T4",
+      "x": 1900,
+      "y": 2700,
+      "questIds": [
+        "chord.major-triad"
+      ]
+    },
+    {
+      "stationId": "W2",
+      "name": "밝은 종 어두운 종",
+      "kind": "installation",
+      "archetype": "T4",
+      "x": 1500,
+      "y": 3500,
+      "questIds": [
+        "chord.major-and-minor",
+        "chord.diminished-augmented"
+      ]
+    },
+    {
+      "stationId": "W3",
+      "name": "종탑",
+      "kind": "installation",
+      "archetype": "T4",
+      "x": 1100,
+      "y": 2500,
+      "questIds": [
+        "chord.inversion"
+      ]
+    },
+    {
+      "stationId": "W4",
+      "name": "세 기둥 빈터",
+      "kind": "installation",
+      "archetype": "T4",
+      "x": 900,
+      "y": 1600,
+      "questIds": [
+        "chord.primary-triads",
+        "chord.progression-walk"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "regionId": "scale-trail",
+  "items": [
+    {
+      "discoveryId": "disc.scale-trail.piece-1",
+      "kind": "soundPiece",
+      "name": "다섯 음 걸음",
+      "x": 5675,
+      "y": 4250,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 60, "onsetTicks": 0, "durationTicks": 480 },
+        { "midi": 62, "onsetTicks": 480, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 960, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 1440, "durationTicks": 480 },
+        { "midi": 69, "onsetTicks": 1920, "durationTicks": 1920 }
+      ]
+    },
+    {
+      "discoveryId": "disc.scale-trail.piece-2",
+      "kind": "soundPiece",
+      "name": "돌아오는 길",
+      "x": 4225,
+      "y": 4875,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 69, "onsetTicks": 0, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 480, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 960, "durationTicks": 480 },
+        { "midi": 62, "onsetTicks": 1440, "durationTicks": 480 },
+        { "midi": 60, "onsetTicks": 1920, "durationTicks": 1920 }
+      ]
+    },
+    {
+      "discoveryId": "disc.scale-trail.piece-3",
+      "kind": "soundPiece",
+      "name": "들꽃 사이",
+      "x": 5000,
+      "y": 4725,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 64, "onsetTicks": 0, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 960, "durationTicks": 960 },
+        { "midi": 64, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 62, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.scale-trail.piece-4",
+      "kind": "soundPiece",
+      "name": "굽이길",
+      "x": 4650,
+      "y": 5550,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 60, "onsetTicks": 0, "durationTicks": 960 },
+        { "midi": 64, "onsetTicks": 960, "durationTicks": 960 },
+        { "midi": 62, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.scale-trail.piece-5",
+      "kind": "soundPiece",
+      "name": "정자의 저녁",
+      "x": 7025,
+      "y": 5550,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 67, "onsetTicks": 0, "durationTicks": 1920 },
+        { "midi": 69, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.scale-trail.piece-6",
+      "kind": "soundPiece",
+      "name": "나그네 발소리",
+      "x": 7925,
+      "y": 5900,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 60, "onsetTicks": 0, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 960, "durationTicks": 480 },
+        { "midi": 60, "onsetTicks": 1920, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 2880, "durationTicks": 480 }
+      ]
+    },
+    {
+      "discoveryId": "disc.scale-trail.note-1",
+      "kind": "conceptNote",
+      "name": "장음계의 모양",
+      "x": 5500,
+      "y": 5300,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "scale.major",
+      "text": "장음계는 온음 온음 반음 온음 온음 온음 반음으로 이어져요. C장음계는 C D E F G A B C이고, 반음은 E–F와 B–C 사이예요.",
+      "textbookRefs": [
+        { "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa", "originalFilename": "052.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    },
+    {
+      "discoveryId": "disc.scale-trail.note-2",
+      "kind": "conceptNote",
+      "name": "단음계의 시작",
+      "x": 6200,
+      "y": 5500,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "scale.natural-minor",
+      "text": "자연단음계는 온음 반음 온음 온음 반음 온음 온음으로 이어져요. A에서 시작하는 A단음계는 C장음계와 같은 일곱 음을 써요.",
+      "textbookRefs": [
+        { "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa", "originalFilename": "052.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    },
+    {
+      "discoveryId": "disc.scale-trail.note-3",
+      "kind": "conceptNote",
+      "name": "으뜸음이 바뀌면",
+      "x": 7175,
+      "y": 4800,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "scale.major",
+      "text": "으뜸음이 달라도 장음계의 모양은 같아요. G에서 시작하면 반음이 7번째와 8번째 사이에 오도록 일곱째 음을 F♯으로 올려요.",
+      "textbookRefs": [
+        { "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa", "originalFilename": "052.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    }
+  ],
+  "playInstruments": [
+    {
+      "playId": "play.scale-trail.pinwheels",
+      "name": "바람개비 줄",
+      "x": 6550,
+      "y": 4540,
+      "timbre": "wood",
+      "echo": false,
+      "ground": "rope",
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "pads": [
+        { "dx": -220, "dy": 0, "midi": 60 },
+        { "dx": -110, "dy": 0, "midi": 62 },
+        { "dx": 0, "dy": 0, "midi": 64 },
+        { "dx": 110, "dy": 0, "midi": 67 },
+        { "dx": 220, "dy": 0, "midi": 69 }
+      ]
+    }
+  ]
+}

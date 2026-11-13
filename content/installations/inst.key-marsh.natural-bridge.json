@@ -1,0 +1,120 @@
+{
+  "installationId": "inst.key-marsh.natural-bridge",
+  "stationCode": "K3",
+  "regionId": "key-marsh",
+  "archetype": "keyBridge",
+  "name": "제자리표 다리",
+  "interactPoint": {
+    "x": 3200,
+    "y": 5600
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 2912,
+      "y": 5800,
+      "w": 72,
+      "h": 240
+    },
+    {
+      "slot": 2,
+      "x": 2962,
+      "y": 5800,
+      "w": 44,
+      "h": 150
+    },
+    {
+      "slot": 3,
+      "x": 2984,
+      "y": 5800,
+      "w": 72,
+      "h": 240
+    },
+    {
+      "slot": 4,
+      "x": 3034,
+      "y": 5800,
+      "w": 44,
+      "h": 150
+    },
+    {
+      "slot": 5,
+      "x": 3056,
+      "y": 5800,
+      "w": 72,
+      "h": 240
+    },
+    {
+      "slot": 6,
+      "x": 3128,
+      "y": 5800,
+      "w": 72,
+      "h": 240
+    },
+    {
+      "slot": 7,
+      "x": 3178,
+      "y": 5800,
+      "w": 44,
+      "h": 150
+    },
+    {
+      "slot": 8,
+      "x": 3200,
+      "y": 5800,
+      "w": 72,
+      "h": 240
+    },
+    {
+      "slot": 9,
+      "x": 3250,
+      "y": 5800,
+      "w": 44,
+      "h": 150
+    },
+    {
+      "slot": 10,
+      "x": 3272,
+      "y": 5800,
+      "w": 72,
+      "h": 240
+    },
+    {
+      "slot": 11,
+      "x": 3322,
+      "y": 5800,
+      "w": 44,
+      "h": 150
+    },
+    {
+      "slot": 12,
+      "x": 3344,
+      "y": 5800,
+      "w": 72,
+      "h": 240
+    },
+    {
+      "slot": 13,
+      "x": 3416,
+      "y": 5800,
+      "w": 72,
+      "h": 240
+    }
+  ],
+  "slotMap": {
+    "kind": "keyBridge",
+    "lowMidi": 60,
+    "whiteCount": 8
+  },
+  "quests": [
+    {
+      "questId": "key.accidentals-in-a-bar",
+      "variantIds": [
+        "g-major-f"
+      ]
+    }
+  ],
+  "panelTwin": "panel.scale",
+  "signatureSoundId": "sig.key-marsh.natural-bridge",
+  "hearRadius": 900
+}

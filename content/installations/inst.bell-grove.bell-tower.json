@@ -1,0 +1,125 @@
+{
+  "installationId": "inst.bell-grove.bell-tower",
+  "stationCode": "W3",
+  "regionId": "bell-grove",
+  "archetype": "bellTree",
+  "name": "종탑",
+  "interactPoint": {
+    "x": 1100,
+    "y": 2500
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 980,
+      "y": 2092,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 2,
+      "x": 1060,
+      "y": 2092,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 3,
+      "x": 1140,
+      "y": 2092,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 4,
+      "x": 980,
+      "y": 2164,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 5,
+      "x": 1060,
+      "y": 2164,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 6,
+      "x": 1140,
+      "y": 2164,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 7,
+      "x": 980,
+      "y": 2236,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 8,
+      "x": 1060,
+      "y": 2236,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 9,
+      "x": 1140,
+      "y": 2236,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 10,
+      "x": 980,
+      "y": 2308,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 11,
+      "x": 1060,
+      "y": 2308,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 12,
+      "x": 1140,
+      "y": 2308,
+      "w": 80,
+      "h": 72
+    }
+  ],
+  "slotMap": {
+    "kind": "bellTree",
+    "form": "tower",
+    "trees": 1,
+    "columns": 3,
+    "octaves": [
+      5,
+      4,
+      3,
+      2
+    ]
+  },
+  "quests": [
+    {
+      "questId": "chord.inversion",
+      "variantIds": [
+        "c-first",
+        "c-second",
+        "f-first",
+        "f-second",
+        "g-first",
+        "g-second"
+      ]
+    }
+  ],
+  "panelTwin": "panel.chord",
+  "signatureSoundId": "sig.bell-grove.bell-tower",
+  "hearRadius": 1000
+}

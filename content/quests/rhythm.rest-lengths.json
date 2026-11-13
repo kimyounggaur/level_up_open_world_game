@@ -1,0 +1,144 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "rhythm.rest-lengths",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "쉼표의 길이",
+  "topicTags": [
+    "rhythm",
+    "rest",
+    "meter-4-4"
+  ],
+  "availability": "draft",
+  "variantIds": [
+    "quarter-and-half-rests",
+    "eighth-rest-mix"
+  ],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.beat-river.first-ford",
+      "variantIds": [
+        "quarter-and-half-rests",
+        "eighth-rest-mix"
+      ]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.rhythm",
+      "variantIds": [
+        "quarter-and-half-rests",
+        "eighth-rest-mix"
+      ]
+    }
+  ],
+  "sourceRefs": [
+    {
+      "sourceFileId": "1A-TWdrDg63B2hlfn7G3-AEpj82Zszo9C",
+      "originalFilename": "005.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": [
+        "설계서 5.4가 관련 교재로 적은 장이다. 2분쉼표와 8분쉼표를 다루는지 대조 필요",
+        "6-11 후보 대조(글자 판독, 검수 아님): 이 쪽은 온쉼표(4박)부터 16분쉼표(1/4박)까지 쉼표의 길이를 '4/4박자에서 ~박'으로 적고 2분쉼표(2박)와 8분쉼표(1/2박)를 담고 있다. 판본의 쉼표 모양과 설명이 맞는지는 사람이 확인"
+      ]
+    }
+  ],
+  "variants": {
+    "quarter-and-half-rests": {
+      "label": "4분음표, 4분쉼표, 2분쉼표",
+      "challengeDescriptor": {
+        "range": "C4-E4",
+        "voices": 1,
+        "smallestValue": "quarter",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 960, "writtenPitch": {"letter": "E", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 4, "midi": 64}},
+          {"eventId": "r1", "type": "rest", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 960, "durationTicks": 960},
+          {"eventId": "r2", "type": "rest", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1920, "durationTicks": 1920}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "rhythmPlacement",
+        "voiceId": "v1",
+        "requirePitch": true
+      }
+    },
+    "eighth-rest-mix": {
+      "label": "높은 도전: 8분음표, 8분쉼표, 4분음표, 2분쉼표",
+      "challengeDescriptor": {
+        "range": "C4-E4",
+        "voices": 1,
+        "smallestValue": "eighth",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 480, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "r1", "type": "rest", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 480, "durationTicks": 480},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 960, "durationTicks": 960, "writtenPitch": {"letter": "D", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "D", "alter": 0, "octave": 4, "midi": 62}},
+          {"eventId": "r2", "type": "rest", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1920, "durationTicks": 1920}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "rhythmPlacement",
+        "voiceId": "v1",
+        "requirePitch": true
+      }
+    }
+  },
+  "assistanceLinks": [
+    {
+      "type": "listenBar",
+      "label": "한 마디 듣기"
+    },
+    {
+      "type": "showBeatGrid",
+      "label": "박 격자 보기"
+    }
+  ],
+  "feedbackRules": []
+}

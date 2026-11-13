@@ -1,0 +1,258 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "staff.ledger-lines",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "덧줄 위의 음",
+  "topicTags": ["pitch", "staff", "ledger-line"],
+  "availability": "draft",
+  "variantIds": ["treble-ledger", "treble-far-ledger", "bass-ledger"],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.staff-hill.treble-terrace",
+      "variantIds": ["treble-ledger", "treble-far-ledger"]
+    },
+    {
+      "kind": "installation",
+      "installationId": "inst.staff-hill.bass-terrace",
+      "variantIds": ["bass-ledger"]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.clef",
+      "variantIds": ["treble-ledger", "treble-far-ledger", "bass-ledger"]
+    }
+  ],
+  "sourceRefs": [
+    {
+      "sourceFileId": "1v0d6_1eore_8-csHtDOJPDnqBizdXViu",
+      "originalFilename": "001.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": [
+        "교재 폴더 세 곳에 같은 이름·같은 크기(1,267,767바이트)의 사본이 있다(7-8에서 확인, 처음 기록에는 두 곳이었다). 어느 쪽이 원본인지 확인 필요",
+        "설계서에 오류 후보로 기록된 교재(001): 대조 전",
+        "7-8 후보 대조(그림으로 봄, 검수 아님): 이 쪽의 제목은 '오선보의 덧줄과 덧간'이고 덧줄(오선 위나 아래에 추가로 그리는 짧은 줄)과 덧간(덧줄 사이 또는 오선과 가장 가까운 덧줄 사이의 공간)을 설명한다. 악보 예시는 높은음자리표 하나에 음 다섯 개(오선 안, 위쪽 덧줄·덧간, 아래쪽 덧줄·덧간)이고 낮은음자리표 예는 없어, 이 과제의 낮은음자리표 덧줄 판본(E2 C2 C4 E4)에 대응하는 그림은 이 쪽에 없다. 이 과제는 덧줄 위의 음만 묻고 덧간의 음은 묻지 않는다. 분석 보고서(2026-10-18)는 이 쪽의 예시를 판독·해석 재검수로 적었다(위쪽 덧줄 음의 중간 덧줄 생략, 아래쪽 덧간 음의 머리가 덧줄에 걸려 라벨과 어긋남). 보고서가 연 사본은 다른 폴더의 사본이다. 사람이 확인"
+      ]
+    }
+  ],
+  "variants": {
+    "treble-ledger": {
+      "label": "높은음자리표의 첫 덧줄",
+      "challengeDescriptor": {
+        "range": "C4-A5",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "높은음자리표 보표"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "A", "accidental": null, "octave": 5}, "resolvedPitch": {"letter": "A", "alter": 0, "octave": 5, "midi": 81}}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "pitchSpelling",
+        "targets": [
+          {
+            "slotId": "treble-c4",
+            "label": "C4",
+            "expected": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 4
+            },
+            "clef": "treble",
+            "eventId": "n1"
+          },
+          {
+            "slotId": "treble-a5",
+            "label": "A5",
+            "expected": {
+              "letter": "A",
+              "alter": 0,
+              "octave": 5
+            },
+            "clef": "treble",
+            "eventId": "n2"
+          }
+        ]
+      }
+    },
+    "treble-far-ledger": {
+      "label": "높은음자리표의 둘째 덧줄(높은 도전)",
+      "challengeDescriptor": {
+        "range": "A3-C6",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "높은음자리표 보표"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "A", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "A", "alter": 0, "octave": 3, "midi": 57}},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 6}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 6, "midi": 84}}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "pitchSpelling",
+        "targets": [
+          {
+            "slotId": "treble-a3",
+            "label": "A3",
+            "expected": {
+              "letter": "A",
+              "alter": 0,
+              "octave": 3
+            },
+            "clef": "treble",
+            "eventId": "n1"
+          },
+          {
+            "slotId": "treble-c6",
+            "label": "C6",
+            "expected": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 6
+            },
+            "clef": "treble",
+            "eventId": "n2"
+          }
+        ]
+      }
+    },
+    "bass-ledger": {
+      "label": "낮은음자리표의 덧줄",
+      "challengeDescriptor": {
+        "range": "C2-E4",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "bass",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "낮은음자리표 보표"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "E", "accidental": null, "octave": 2}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 2, "midi": 40}},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 2}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 2, "midi": 36}},
+          {"eventId": "n3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 2, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "n4", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 3, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "E", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 4, "midi": 64}}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "pitchSpelling",
+        "targets": [
+          {
+            "slotId": "bass-e2",
+            "label": "E2",
+            "expected": {
+              "letter": "E",
+              "alter": 0,
+              "octave": 2
+            },
+            "clef": "bass",
+            "eventId": "n1"
+          },
+          {
+            "slotId": "bass-c2",
+            "label": "C2",
+            "expected": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 2
+            },
+            "clef": "bass",
+            "eventId": "n2"
+          },
+          {
+            "slotId": "bass-c4",
+            "label": "C4",
+            "expected": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 4
+            },
+            "clef": "bass",
+            "eventId": "n3"
+          },
+          {
+            "slotId": "bass-e4",
+            "label": "E4",
+            "expected": {
+              "letter": "E",
+              "alter": 0,
+              "octave": 4
+            },
+            "clef": "bass",
+            "eventId": "n4"
+          }
+        ]
+      }
+    }
+  },
+  "assistanceLinks": [],
+  "feedbackRules": []
+}

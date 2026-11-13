@@ -1,0 +1,100 @@
+{
+  "installationId": "inst.beat-river.first-ford",
+  "stationCode": "E1",
+  "regionId": "beat-river",
+  "archetype": "stepStones",
+  "name": "첫 징검다리",
+  "interactPoint": {
+    "x": 7000,
+    "y": 2800
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 6760,
+      "y": 2752,
+      "w": 60,
+      "h": 96
+    },
+    {
+      "slot": 2,
+      "x": 6820,
+      "y": 2752,
+      "w": 60,
+      "h": 96
+    },
+    {
+      "slot": 3,
+      "x": 6880,
+      "y": 2752,
+      "w": 60,
+      "h": 96
+    },
+    {
+      "slot": 4,
+      "x": 6940,
+      "y": 2752,
+      "w": 60,
+      "h": 96
+    },
+    {
+      "slot": 5,
+      "x": 7000,
+      "y": 2752,
+      "w": 60,
+      "h": 96
+    },
+    {
+      "slot": 6,
+      "x": 7060,
+      "y": 2752,
+      "w": 60,
+      "h": 96
+    },
+    {
+      "slot": 7,
+      "x": 7120,
+      "y": 2752,
+      "w": 60,
+      "h": 96
+    },
+    {
+      "slot": 8,
+      "x": 7180,
+      "y": 2752,
+      "w": 60,
+      "h": 96
+    }
+  ],
+  "slotMap": {
+    "kind": "timelineStones",
+    "voiceId": "v1",
+    "axis": "x",
+    "ticksPerPx": 8,
+    "cellTicks": 480
+  },
+  "quests": [
+    {
+      "questId": "rhythm.rest-in-a-bar",
+      "variantIds": [
+        "quarter-rest"
+      ]
+    },
+    {
+      "questId": "rhythm.three-four",
+      "variantIds": [
+        "three-quarters"
+      ]
+    },
+    {
+      "questId": "rhythm.rest-lengths",
+      "variantIds": [
+        "quarter-and-half-rests",
+        "eighth-rest-mix"
+      ]
+    }
+  ],
+  "panelTwin": "panel.rhythm",
+  "signatureSoundId": "sig.beat-river.first-ford",
+  "hearRadius": 900
+}

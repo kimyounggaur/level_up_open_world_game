@@ -1,0 +1,52 @@
+{
+  "name": "levelup-music-world",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "레벨업 음악이론 오픈월드 — 걸어 다니며 음악이론을 배치로 익히는 2D 탑다운 게임",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run validate && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check:deps": "node tools/check-deps.mjs",
+    "test:flow": "vitest run --config vitest.flow.config.ts",
+    "validate": "vite-node tools/validate-content.ts",
+    "build:world": "vite-node tools/build-world.ts",
+    "check:world": "vite-node tools/build-world.ts -- --check",
+    "ensemble": "vite-node tools/ensemble-report.ts",
+    "check:ensemble": "vite-node tools/ensemble-report.ts -- --check",
+    "roadsight": "vite-node tools/road-sight-report.ts",
+    "check:roadsight": "vite-node tools/road-sight-report.ts -- --check",
+    "ledger": "vite-node tools/ledger.ts",
+    "copy": "vite-node tools/copy-report.ts",
+    "check:copy": "vite-node tools/copy-report.ts -- --check",
+    "build:notices": "vite-node tools/ledger.ts -- --write",
+    "check:notices": "vite-node tools/ledger.ts -- --check",
+    "typecheck": "tsc --noEmit",
+    "verify": "npm run check:deps && npm run validate && npm run typecheck && npm test",
+    "check:release": "vite-node tools/release-check.ts",
+    "lock:content": "vite-node tools/content-lock.ts -- --write",
+    "check:lock": "vite-node tools/content-lock.ts",
+    "build:release": "node tools/build-release.mjs",
+    "build:atlas": "vite-node tools/build-atlas.ts",
+    "seed:world-source": "vite-node tools/seed-world-source.ts"
+  },
+  "dependencies": {
+    "phaser": "4.2.1",
+    "preact": "10.29.8",
+    "tone": "15.1.22",
+    "vexflow": "5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "fake-indexeddb": "^6.2.8",
+    "jsdom": "^26.1.0",
+    "playwright-core": "^1.50.0",
+    "sharp": "^0.35.5",
+    "typescript": "~5.9.0",
+    "vite": "^7.1.0",
+    "vitest": "^3.2.0"
+  }
+}

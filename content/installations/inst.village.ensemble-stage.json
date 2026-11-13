@@ -1,0 +1,96 @@
+{
+  "installationId": "inst.village.ensemble-stage",
+  "stationCode": "H5",
+  "regionId": "village",
+  "archetype": "ensembleStage",
+  "name": "합주 무대",
+  "interactPoint": {
+    "x": 4056,
+    "y": 3081
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 3899,
+      "y": 2919,
+      "w": 76,
+      "h": 64
+    },
+    {
+      "slot": 2,
+      "x": 3979,
+      "y": 2919,
+      "w": 76,
+      "h": 64
+    },
+    {
+      "slot": 3,
+      "x": 4059,
+      "y": 2919,
+      "w": 76,
+      "h": 64
+    },
+    {
+      "slot": 4,
+      "x": 4139,
+      "y": 2919,
+      "w": 76,
+      "h": 64
+    },
+    {
+      "slot": 5,
+      "x": 3899,
+      "y": 2987,
+      "w": 76,
+      "h": 64
+    },
+    {
+      "slot": 6,
+      "x": 3979,
+      "y": 2987,
+      "w": 76,
+      "h": 64
+    },
+    {
+      "slot": 7,
+      "x": 4059,
+      "y": 2987,
+      "w": 76,
+      "h": 64
+    },
+    {
+      "slot": 8,
+      "x": 4139,
+      "y": 2987,
+      "w": 76,
+      "h": 64
+    }
+  ],
+  "slotMap": {
+    "kind": "stageCells",
+    "rows": [
+      {
+        "voiceId": "v1",
+        "label": "위 성부"
+      },
+      {
+        "voiceId": "v2",
+        "label": "아래 성부"
+      }
+    ],
+    "measures": 4
+  },
+  "quests": [
+    {
+      "questId": "song.short-piece",
+      "variantIds": [
+        "one-voice",
+        "two-voices",
+        "challenge"
+      ]
+    }
+  ],
+  "panelTwin": "panel.song",
+  "signatureSoundId": "sig.village.ensemble-stage",
+  "hearRadius": 900
+}

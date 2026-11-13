@@ -1,0 +1,199 @@
+<svg stroke-width="1" stroke-dasharray="none" fill="black" stroke="black" shadowColor="black" font-family="Bravura,Academico" font-size="10pt" font-weight="normal" font-style="normal" width="586" height="198" viewBox="0 0 586 198" role="img" class="notation-svg" aria-label="Q03 정답 악보">
+<title>Q03 정답 악보</title>
+<g class="vf-stave" id="vf-1">
+<path fill="none" d="M10 44.5L570 44.5">
+</path>
+<path fill="none" d="M10 54.5L570 54.5">
+</path>
+<path fill="none" d="M10 64.5L570 64.5">
+</path>
+<path fill="none" d="M10 74.5L570 74.5">
+</path>
+<path fill="none" d="M10 84.5L570 84.5">
+</path>
+</g>
+<g class="vf-stavebarline" id="vf-2">
+<rect x="10" y="44" width="1" height="41" stroke="none">
+</rect>
+</g>
+<g class="vf-stavebarline" id="vf-3">
+<rect x="570" y="44" width="1" height="41" stroke="none">
+</rect>
+</g>
+<g class="vf-clef" id="vf-4">
+<text stroke="none" font-size="30pt" x="15" y="74"></text>
+</g>
+<g class="vf-timesignature" id="vf-5">
+<text stroke="none" font-size="30pt" x="38" y="54"></text>
+<text stroke="none" font-size="30pt" x="38" y="74"></text>
+</g>
+<g class="vf-stavenote" id="vf-6" data-event-ids="a1">
+<path stroke-width="2" fill="none" stroke="#444" d="M55 94L69 94">
+</path>
+<g class="vf-notehead" id="vf-7">
+<text stroke="none" font-size="30pt" x="58" y="94"></text>
+</g>
+<rect x="58" y="61.5" width="8" height="34.5" opacity="0" pointer-events="auto">
+</rect>
+</g>
+<g class="vf-stavenote" id="vf-8" data-event-ids="a2">
+<path stroke-width="2" fill="none" stroke="#444" d="M89.346 94L103.346 94">
+</path>
+<g class="vf-notehead" id="vf-9">
+<text stroke="none" font-size="30pt" x="92.346" y="94"></text>
+</g>
+<rect x="92.346" y="61.5" width="8" height="34.5" opacity="0" pointer-events="auto">
+</rect>
+</g>
+<g class="vf-stavenote" id="vf-10" data-event-ids="a3">
+<path stroke-width="2" fill="none" stroke="#444" d="M123.691 94L137.691 94">
+</path>
+<g class="vf-notehead" id="vf-11">
+<text stroke="none" font-size="30pt" x="126.691" y="94"></text>
+</g>
+<rect x="126.691" y="61.5" width="8" height="34.5" opacity="0" pointer-events="auto">
+</rect>
+</g>
+<g class="vf-stavenote" id="vf-12" data-event-ids="a4">
+<path stroke-width="2" fill="none" stroke="#444" d="M158.037 94L172.037 94">
+</path>
+<g class="vf-notehead" id="vf-13">
+<text stroke="none" font-size="30pt" x="161.037" y="94"></text>
+</g>
+<rect x="161.037" y="61.5" width="8" height="34.5" opacity="0" pointer-events="auto">
+</rect>
+</g>
+<g class="vf-stavenote" id="vf-14" data-event-ids="a5">
+<path stroke-width="2" fill="none" stroke="#444" d="M192.383 94L206.383 94">
+</path>
+<g class="vf-notehead" id="vf-15">
+<text stroke="none" font-size="30pt" x="195.383" y="94"></text>
+</g>
+<rect x="195.383" y="61.5" width="8" height="34.5" opacity="0" pointer-events="auto">
+</rect>
+</g>
+<g class="vf-stavenote" id="vf-16" data-event-ids="a6">
+<path stroke-width="2" fill="none" stroke="#444" d="M226.728 94L240.728 94">
+</path>
+<g class="vf-notehead" id="vf-17">
+<text stroke="none" font-size="30pt" x="229.728" y="94"></text>
+</g>
+<rect x="229.728" y="61.5" width="8" height="34.5" opacity="0" pointer-events="auto">
+</rect>
+</g>
+<g class="vf-stavenote" id="vf-18" data-event-ids="a7">
+<path stroke-width="2" fill="none" stroke="#444" d="M261.074 94L275.074 94">
+</path>
+<g class="vf-notehead" id="vf-19">
+<text stroke="none" font-size="30pt" x="264.074" y="94"></text>
+</g>
+<rect x="264.074" y="61.5" width="8" height="34.5" opacity="0" pointer-events="auto">
+</rect>
+</g>
+<g class="vf-stavenote" id="vf-20" data-event-ids="a8">
+<path stroke-width="2" fill="none" stroke="#444" d="M295.419 94L309.419 94">
+</path>
+<g class="vf-notehead" id="vf-21">
+<text stroke="none" font-size="30pt" x="298.419" y="94"></text>
+</g>
+<rect x="298.419" y="61.5" width="8" height="34.5" opacity="0" pointer-events="auto">
+</rect>
+</g>
+<g class="vf-stavenote" id="vf-22" data-event-ids="t1">
+<g class="vf-notehead" id="vf-23">
+<text stroke="none" font-size="30pt" x="332.765" y="89"></text>
+</g>
+<rect x="332.765" y="64" width="8" height="27" opacity="0" pointer-events="auto">
+</rect>
+</g>
+<g class="vf-stavenote" id="vf-24" data-event-ids="t2">
+<g class="vf-notehead" id="vf-25">
+<text stroke="none" font-size="30pt" x="371.487" y="84"></text>
+</g>
+<rect x="371.487" y="59" width="8" height="27" opacity="0" pointer-events="auto">
+</rect>
+</g>
+<g class="vf-stavenote" id="vf-26" data-event-ids="t3">
+<g class="vf-notehead" id="vf-27">
+<text stroke="none" font-size="30pt" x="410.208" y="79"></text>
+</g>
+<rect x="410.208" y="54" width="8" height="27" opacity="0" pointer-events="auto">
+</rect>
+</g>
+<g class="vf-stavenote" id="vf-28" data-event-ids="r1">
+<g class="vf-notehead" id="vf-29">
+<text stroke="none" font-size="30pt" x="448.93" y="64"></text>
+</g>
+<rect x="448.93" y="54" width="8" height="12" opacity="0" pointer-events="auto">
+</rect>
+</g>
+<g class="vf-beam" id="vf-30">
+<g class="vf-stem" id="vf-31">
+<path stroke-width="1.5" fill="none" d="M65.25 94L65.25 52.25">
+</path>
+</g>
+<g class="vf-stem" id="vf-32">
+<path stroke-width="1.5" fill="none" d="M99.596 94L99.596 52.25">
+</path>
+</g>
+<g class="vf-stem" id="vf-33">
+<path stroke-width="1.5" fill="none" d="M133.941 94L133.941 52.25">
+</path>
+</g>
+<g class="vf-stem" id="vf-34">
+<path stroke-width="1.5" fill="none" d="M168.287 94L168.287 52.25">
+</path>
+</g>
+<g class="vf-stem" id="vf-35">
+<path stroke-width="1.5" fill="none" d="M202.633 94L202.633 52.25">
+</path>
+</g>
+<g class="vf-stem" id="vf-36">
+<path stroke-width="1.5" fill="none" d="M236.978 94L236.978 52.25">
+</path>
+</g>
+<g class="vf-stem" id="vf-37">
+<path stroke-width="1.5" fill="none" d="M271.324 94L271.324 52.25">
+</path>
+</g>
+<g class="vf-stem" id="vf-38">
+<path stroke-width="1.5" fill="none" d="M305.669 94L305.669 52.25">
+</path>
+</g>
+<path stroke="none" d="M64.5 51.5L64.5 56.5L305.919 56.5L305.919 51.5Z">
+</path>
+<path stroke="none" d="M64.5 59L64.5 64L305.919 64L305.919 59Z">
+</path>
+<path stroke="none" d="M64.5 66.5L64.5 71.5L305.919 71.5L305.919 66.5Z">
+</path>
+</g>
+<g class="vf-beam" id="vf-39">
+<g class="vf-stem" id="vf-40">
+<path stroke-width="1.5" fill="none" d="M340.015 89L340.015 54.43">
+</path>
+</g>
+<g class="vf-stem" id="vf-41">
+<path stroke-width="1.5" fill="none" d="M378.737 84L378.737 49.59">
+</path>
+</g>
+<g class="vf-stem" id="vf-42">
+<path stroke-width="1.5" fill="none" d="M417.458 79L417.458 44.75">
+</path>
+</g>
+<path stroke="none" d="M339.265 53.774L339.265 58.774L417.708 49.094L417.708 44.094Z">
+</path>
+</g>
+<g class="vf-tuplet" id="vf-43">
+<rect x="327.765" y="29" width="38.722" height="1" stroke="none">
+</rect>
+<rect x="384.487" y="29" width="38.722" height="1" stroke="none">
+</rect>
+<rect x="327.765" y="29" width="1" height="10" stroke="none">
+</rect>
+<rect x="423.208" y="29" width="1" height="10" stroke="none">
+</rect>
+<text stroke="none" font-size="30pt" x="371.487" y="33"></text>
+<rect y="-10" width="95.443" height="12" opacity="0" pointer-events="auto">
+</rect>
+</g>
+</svg>

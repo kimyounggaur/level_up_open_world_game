@@ -1,0 +1,80 @@
+{
+  "installationId": "inst.beat-river.waterwheel",
+  "stationCode": "E4",
+  "regionId": "beat-river",
+  "archetype": "waterwheel",
+  "name": "물레방아",
+  "interactPoint": {
+    "x": 6450,
+    "y": 2300
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 5760,
+      "y": 2096,
+      "w": 96,
+      "h": 80
+    },
+    {
+      "slot": 2,
+      "x": 5760,
+      "y": 2176,
+      "w": 96,
+      "h": 80
+    },
+    {
+      "slot": 3,
+      "x": 5760,
+      "y": 2256,
+      "w": 96,
+      "h": 80
+    },
+    {
+      "slot": 4,
+      "x": 5760,
+      "y": 2336,
+      "w": 96,
+      "h": 80
+    },
+    {
+      "slot": 5,
+      "x": 5760,
+      "y": 2416,
+      "w": 96,
+      "h": 80
+    },
+    {
+      "slot": 6,
+      "x": 5760,
+      "y": 2496,
+      "w": 96,
+      "h": 80
+    }
+  ],
+  "slotMap": {
+    "kind": "timelineStones",
+    "voiceId": "v1",
+    "axis": "y",
+    "ticksPerPx": 6,
+    "cellTicks": 480,
+    "wheel": {
+      "cx": 6144,
+      "cy": 2336,
+      "r": 240
+    },
+    "maxStoneCells": 3
+  },
+  "quests": [
+    {
+      "questId": "rhythm.six-eight",
+      "variantIds": [
+        "dotted-quarter-and-eighths",
+        "quarters-and-eighths"
+      ]
+    }
+  ],
+  "panelTwin": "panel.rhythm",
+  "signatureSoundId": "sig.beat-river.waterwheel",
+  "hearRadius": 900
+}

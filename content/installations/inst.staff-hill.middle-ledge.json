@@ -1,0 +1,103 @@
+{
+  "installationId": "inst.staff-hill.middle-ledge",
+  "stationCode": "N3",
+  "regionId": "staff-hill",
+  "archetype": "terraceField",
+  "name": "가운데 턱",
+  "interactPoint": {
+    "x": 4200,
+    "y": 1000
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 4352,
+      "y": 304,
+      "w": 96,
+      "h": 1392
+    },
+    {
+      "slot": 2,
+      "x": 4492,
+      "y": 304,
+      "w": 96,
+      "h": 1392
+    },
+    {
+      "slot": 3,
+      "x": 4632,
+      "y": 304,
+      "w": 96,
+      "h": 1392
+    },
+    {
+      "slot": 4,
+      "x": 4772,
+      "y": 304,
+      "w": 96,
+      "h": 1392
+    },
+    {
+      "slot": 5,
+      "x": 4912,
+      "y": 304,
+      "w": 96,
+      "h": 1392
+    },
+    {
+      "slot": 6,
+      "x": 5052,
+      "y": 304,
+      "w": 96,
+      "h": 1392
+    },
+    {
+      "slot": 7,
+      "x": 5192,
+      "y": 304,
+      "w": 96,
+      "h": 1392
+    },
+    {
+      "slot": 8,
+      "x": 5332,
+      "y": 304,
+      "w": 96,
+      "h": 1392
+    }
+  ],
+  "slotMap": {
+    "kind": "staffField",
+    "c4Y": 1000,
+    "low": "C2",
+    "high": "C6",
+    "clefs": [
+      "treble",
+      "bass"
+    ]
+  },
+  "quests": [
+    {
+      "questId": "pitch.same-note-two-clefs",
+      "variantIds": [
+        "middle-c"
+      ]
+    },
+    {
+      "questId": "staff.middle-c-neighbors",
+      "variantIds": [
+        "neighbors"
+      ]
+    },
+    {
+      "questId": "staff.range-ladder",
+      "variantIds": [
+        "c3-c5",
+        "c2-c6"
+      ]
+    }
+  ],
+  "panelTwin": "panel.clef",
+  "signatureSoundId": "sig.staff-hill.middle-ledge",
+  "hearRadius": 900
+}

@@ -1,0 +1,85 @@
+{
+  "installationId": "inst.village.scale-stones",
+  "stationCode": "H4",
+  "regionId": "village",
+  "archetype": "steppingPath",
+  "name": "음계 디딤돌",
+  "interactPoint": {
+    "x": 4530,
+    "y": 3655
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 4575,
+      "y": 3579,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 2,
+      "x": 4674,
+      "y": 3579,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 3,
+      "x": 4773,
+      "y": 3579,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 4,
+      "x": 4872,
+      "y": 3579,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 5,
+      "x": 4971,
+      "y": 3579,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 6,
+      "x": 5070,
+      "y": 3579,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 7,
+      "x": 5169,
+      "y": 3579,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 8,
+      "x": 5268,
+      "y": 3579,
+      "w": 81,
+      "h": 153
+    }
+  ],
+  "slotMap": {
+    "kind": "orderedPitches",
+    "voiceId": "v1"
+  },
+  "quests": [
+    {
+      "questId": "scale.major",
+      "variantIds": [
+        "c-major",
+        "f-major"
+      ]
+    }
+  ],
+  "panelTwin": "panel.scale",
+  "signatureSoundId": "sig.village.scale-stones",
+  "hearRadius": 900
+}

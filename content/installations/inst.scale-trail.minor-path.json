@@ -1,0 +1,92 @@
+{
+  "installationId": "inst.scale-trail.minor-path",
+  "stationCode": "S2",
+  "regionId": "scale-trail",
+  "archetype": "steppingPath",
+  "name": "단음계 길",
+  "interactPoint": {
+    "x": 6100,
+    "y": 5300
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 6250,
+      "y": 5224,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 2,
+      "x": 6349,
+      "y": 5224,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 3,
+      "x": 6448,
+      "y": 5224,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 4,
+      "x": 6547,
+      "y": 5224,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 5,
+      "x": 6646,
+      "y": 5224,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 6,
+      "x": 6745,
+      "y": 5224,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 7,
+      "x": 6844,
+      "y": 5224,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 8,
+      "x": 6943,
+      "y": 5224,
+      "w": 81,
+      "h": 153
+    }
+  ],
+  "slotMap": {
+    "kind": "orderedPitches",
+    "voiceId": "v1"
+  },
+  "quests": [
+    {
+      "questId": "scale.natural-minor",
+      "variantIds": [
+        "a-minor",
+        "d-minor",
+        "e-minor"
+      ]
+    },
+    {
+      "questId": "scale.harmonic-minor",
+      "variantIds": [
+        "a-harmonic-minor"
+      ]
+    }
+  ],
+  "panelTwin": "panel.scale",
+  "signatureSoundId": "sig.scale-trail.minor-path",
+  "hearRadius": 900
+}

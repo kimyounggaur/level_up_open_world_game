@@ -1,0 +1,83 @@
+<svg stroke-width="1" stroke-dasharray="none" fill="black" stroke="black" shadowColor="black" font-family="Bravura,Academico" font-size="10pt" font-weight="normal" font-style="normal" width="250" height="388" viewBox="0 0 250 388" role="img" class="notation-svg" aria-label="Q01 정답 악보">
+<title>Q01 정답 악보</title>
+<g class="vf-stave" id="vf-1">
+<path fill="none" d="M10 44.5L234 44.5">
+</path>
+<path fill="none" d="M10 54.5L234 54.5">
+</path>
+<path fill="none" d="M10 64.5L234 64.5">
+</path>
+<path fill="none" d="M10 74.5L234 74.5">
+</path>
+<path fill="none" d="M10 84.5L234 84.5">
+</path>
+</g>
+<g class="vf-stavebarline" id="vf-2">
+<rect x="10" y="44" width="1" height="41" stroke="none">
+</rect>
+</g>
+<g class="vf-stavebarline" id="vf-3">
+<rect x="234" y="44" width="1" height="41" stroke="none">
+</rect>
+</g>
+<g class="vf-clef" id="vf-4">
+<text stroke="none" font-size="30pt" x="15" y="74"></text>
+</g>
+<g class="vf-timesignature" id="vf-5">
+<text stroke="none" font-size="30pt" x="38" y="54"></text>
+<text stroke="none" font-size="30pt" x="38" y="74"></text>
+</g>
+<g class="vf-stavenote" id="vf-6" data-event-ids="n1">
+<path stroke-width="2" fill="none" stroke="#444" d="M55 94L69 94">
+</path>
+<g class="vf-notehead" id="vf-7">
+<text stroke="none" font-size="30pt" x="58" y="94"></text>
+</g>
+<rect x="58" y="84" width="8" height="12" opacity="0" pointer-events="auto">
+</rect>
+</g>
+<g class="vf-stave" id="vf-8">
+<path fill="none" d="M10 234.5L234 234.5">
+</path>
+<path fill="none" d="M10 244.5L234 244.5">
+</path>
+<path fill="none" d="M10 254.5L234 254.5">
+</path>
+<path fill="none" d="M10 264.5L234 264.5">
+</path>
+<path fill="none" d="M10 274.5L234 274.5">
+</path>
+</g>
+<g class="vf-stavebarline" id="vf-9">
+<rect x="10" y="234" width="1" height="41" stroke="none">
+</rect>
+</g>
+<g class="vf-stavebarline" id="vf-10">
+<rect x="234" y="234" width="1" height="41" stroke="none">
+</rect>
+</g>
+<g class="vf-clef" id="vf-11">
+<text stroke="none" font-size="30pt" x="15" y="244"></text>
+</g>
+<g class="vf-timesignature" id="vf-12">
+<text stroke="none" font-size="30pt" x="38" y="244"></text>
+<text stroke="none" font-size="30pt" x="38" y="264"></text>
+</g>
+<g class="vf-stavenote" id="vf-13" data-event-ids="n2">
+<path stroke-width="2" fill="none" stroke="#444" d="M55 224L69 224">
+</path>
+<g class="vf-notehead" id="vf-14">
+<text stroke="none" font-size="30pt" x="58" y="224"></text>
+</g>
+<rect x="58" y="214" width="8" height="12" opacity="0" pointer-events="auto">
+</rect>
+</g>
+<path stroke="none" d="M8 44C-14.8 90.2,21.2 128.315,-4 159.5C21.2 190.685,-14.8 228.8,8 275C-16 228.8,12.8 190.685,-4 159.5C12.8 128.315,-16 90.2,8 44">
+</path>
+<path fill="none" d="M8 44C-14.8 90.2,21.2 128.315,-4 159.5C21.2 190.685,-14.8 228.8,8 275C-16 228.8,12.8 190.685,-4 159.5C12.8 128.315,-16 90.2,8 44">
+</path>
+<rect x="10" y="44" width="1" height="231" stroke="none">
+</rect>
+<rect x="234" y="44" width="1" height="231" stroke="none">
+</rect>
+</svg>

@@ -1,0 +1,88 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "rhythm.note-values",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "긴 돌 짧은 돌",
+  "topicTags": [
+    "rhythm",
+    "note-values",
+    "meter-4-4"
+  ],
+  "availability": "draft",
+  "variantIds": [
+    "half-quarter-eighths"
+  ],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.beat-river.long-short",
+      "variantIds": [
+        "half-quarter-eighths"
+      ]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.rhythm",
+      "variantIds": [
+        "half-quarter-eighths"
+      ]
+    }
+  ],
+  "sourceRefs": [],
+  "variants": {
+    "half-quarter-eighths": {
+      "label": "2분음표, 4분음표, 8분음표 둘",
+      "challengeDescriptor": {
+        "range": "G4-B4",
+        "voices": 1,
+        "smallestValue": "eighth",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 1920, "writtenPitch": {"letter": "G", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 4, "midi": 67}},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1920, "durationTicks": 960, "writtenPitch": {"letter": "A", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "A", "alter": 0, "octave": 4, "midi": 69}},
+          {"eventId": "n3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 2880, "durationTicks": 480, "writtenPitch": {"letter": "B", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "B", "alter": 0, "octave": 4, "midi": 71}},
+          {"eventId": "n4", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 3360, "durationTicks": 480, "writtenPitch": {"letter": "A", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "A", "alter": 0, "octave": 4, "midi": 69}}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "rhythmPlacement",
+        "voiceId": "v1",
+        "requirePitch": true
+      }
+    }
+  },
+  "assistanceLinks": [
+    {
+      "type": "listenBar",
+      "label": "한 마디 듣기"
+    },
+    {
+      "type": "showBeatGrid",
+      "label": "박 격자 보기"
+    }
+  ],
+  "feedbackRules": []
+}

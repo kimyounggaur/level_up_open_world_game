@@ -1,0 +1,429 @@
+/* 악보 지도(7.7, 시안 B01): 왼쪽이 지도, 오른쪽이 과제 카드. 좁은 화면(세로)에서는 지도 아래에 카드가 이어진다.
+   색은 tokens.css의 값만 쓰고, 누르는 대상은 48px 이상, 글자는 14px 이상이다(7.6). 글자 크기는 설정(--text-scale)을 따른다. */
+
+.overlay-wide .overlay-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 16px;
+  padding: 12px 24px 4px;
+}
+.overlay-wide .overlay-head h1 {
+  font-size: calc(26px * var(--text-scale, 1));
+}
+
+.map-layout {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 400px);
+  gap: 16px;
+  padding: 8px 24px 12px;
+}
+.map-stage {
+  min-height: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.map-surface {
+  position: relative;
+  flex: 1;
+  min-height: 280px;
+  overflow: hidden;
+  background: var(--ground);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  touch-action: none;
+  user-select: none;
+}
+.map-region {
+  position: absolute;
+  opacity: 0.35;
+  pointer-events: none;
+}
+.map-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: none;
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+.map-region-label {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 2px 10px;
+  background: rgba(255, 254, 250, 0.82);
+  color: var(--ink);
+  border-radius: 999px;
+  font-size: calc(14px * var(--text-scale, 1));
+  font-weight: 700;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.map-marker {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.map-dot {
+  width: 22px;
+  height: 22px;
+  border: 3px solid var(--white);
+  border-radius: 50%;
+  background: var(--dot, var(--teal));
+  box-shadow: 0 0 0 1.5px var(--ink);
+}
+.map-marker:hover .map-dot {
+  box-shadow: 0 0 0 3px var(--ink);
+}
+.map-marker.is-selected {
+  z-index: 4;
+}
+.map-marker.is-selected .map-dot {
+  width: 28px;
+  height: 28px;
+  box-shadow: 0 0 0 3px var(--teal), 0 0 0 6px var(--white);
+}
+.map-marker:focus-visible {
+  outline: none;
+  z-index: 6;
+}
+.map-marker:focus-visible .map-dot {
+  outline: var(--focus-ring);
+  outline-offset: 5px;
+}
+.map-marker-name {
+  position: absolute;
+  top: calc(50% + 14px);
+  left: 50%;
+  display: none;
+  transform: translateX(-50%);
+  padding: 2px 8px;
+  background: var(--white);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 2px 3px 0 rgba(36, 60, 58, 0.12);
+  font-size: calc(14px * var(--text-scale, 1));
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.map-marker.has-label .map-marker-name {
+  display: block;
+}
+/* 고른 곳은 점이 커지고 내 위치 표시가 겹쳐 올 수 있어서 이름을 조금 더 아래에 둔다 */
+.map-marker.is-selected .map-marker-name {
+  top: calc(50% + 24px);
+}
+/* 내 위치 표식이나 '내 위치' 글자를 가리지 않게 이름표 자리를 옮긴다(view.ts의 placeNameLabels) */
+.map-marker.is-selected.name-above .map-marker-name {
+  top: auto;
+  bottom: calc(50% + 24px);
+}
+.map-marker.is-selected.name-below-left .map-marker-name {
+  left: auto;
+  right: calc(50% - 14px);
+  transform: none;
+}
+.map-marker.is-selected.name-below-right .map-marker-name {
+  left: calc(50% - 14px);
+  transform: none;
+}
+.map-marker.is-selected.name-above-left .map-marker-name {
+  top: auto;
+  bottom: calc(50% + 24px);
+  left: auto;
+  right: calc(50% - 14px);
+  transform: none;
+}
+.map-marker.is-selected.name-above-right .map-marker-name {
+  top: auto;
+  bottom: calc(50% + 24px);
+  left: calc(50% - 14px);
+  transform: none;
+}
+.map-marker.is-selected.name-left .map-marker-name {
+  top: 50%;
+  left: auto;
+  right: calc(50% + 20px);
+  transform: translateY(-50%);
+}
+.map-marker.is-selected.name-right .map-marker-name {
+  top: 50%;
+  left: calc(50% + 20px);
+  transform: translateY(-50%);
+}
+
+/* 발견 위치 표시(3.6 규칙 5): 정거장 표식 아래에 깔리고 눌리지 않는다 */
+.map-find {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 22px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.map-find svg {
+  display: block;
+}
+.map-legend-finds {
+  flex-wrap: wrap;
+}
+.map-legend-pair {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-right: 6px;
+}
+.map-me {
+  position: absolute;
+  z-index: 5;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.map-me svg {
+  display: block;
+}
+.map-me-label.is-below {
+  bottom: auto;
+  top: 100%;
+}
+.map-me-label {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 6px;
+  background: rgba(255, 254, 250, 0.9);
+  color: #5d445d;
+  border-radius: 6px;
+  font-size: calc(14px * var(--text-scale, 1));
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.map-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+.map-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.map-control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 0 12px;
+  background: rgba(255, 254, 250, 0.96);
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 3px 4px 0 rgba(36, 60, 58, 0.12);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: calc(14px * var(--text-scale, 1));
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.map-control:hover {
+  border-color: var(--teal);
+}
+.map-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: var(--ink);
+  font-size: calc(14px * var(--text-scale, 1));
+}
+.map-legend-me,
+.map-legend-sel {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+.map-legend-me {
+  background: var(--purple);
+}
+.map-legend-sel {
+  margin-left: 8px;
+  border: 3px solid var(--teal);
+  background: var(--white);
+}
+
+/* 오른쪽: 고른 장소의 카드와 정거장 목록 */
+.map-side {
+  min-height: 0;
+  min-width: 0;
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  overflow: auto;
+}
+.map-card {
+  display: grid;
+  gap: 10px;
+  padding: 16px 18px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+.map-card-region {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: calc(14px * var(--text-scale, 1));
+  font-weight: 600;
+}
+.map-card-dot {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--ink);
+}
+.map-go {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.map-go .btn {
+  flex: 1 1 140px;
+}
+.map-quests-title {
+  margin-top: 6px;
+}
+.map-quests {
+  display: grid;
+  gap: 10px;
+}
+.map-quest {
+  display: grid;
+  gap: 6px;
+  padding: 12px 14px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.map-quest.is-preparing {
+  border-style: dashed;
+}
+.map-quest-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 10px;
+}
+.map-quest-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.map-stations {
+  display: grid;
+  gap: 8px;
+  padding: 14px 18px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+.map-station-group {
+  display: grid;
+  gap: 4px;
+}
+.map-station-group h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0 0;
+  font-size: calc(16px * var(--text-scale, 1));
+}
+.map-station-group ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.map-station-btn {
+  min-height: 48px;
+  padding: 0 14px;
+  background: var(--white);
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: calc(16px * var(--text-scale, 1));
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.map-station-btn:hover {
+  border-color: var(--teal);
+}
+.map-station-btn.is-selected {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: var(--white);
+}
+
+.map-band {
+  margin: 0 24px 16px;
+  padding: 10px 14px;
+  background: var(--band);
+  border-radius: var(--radius);
+  color: var(--ink);
+}
+
+/* 좁은 화면(휴대폰 세로): 지도 위, 카드 아래로 쌓고 화면 전체가 스크롤된다 */
+@media (max-width: 860px), (orientation: portrait) {
+  .overlay-wide .overlay-main {
+    overflow: auto;
+  }
+  .overlay-wide .overlay-head {
+    padding: 10px 16px 4px;
+  }
+  .map-layout {
+    flex: none;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 8px 16px 12px;
+  }
+  .map-surface {
+    flex: none;
+    height: 52vh;
+    min-height: 320px;
+  }
+  .map-side {
+    overflow: visible;
+  }
+  .map-band {
+    margin: 0 16px 16px;
+  }
+}

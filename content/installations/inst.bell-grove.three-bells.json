@@ -1,0 +1,150 @@
+{
+  "installationId": "inst.bell-grove.three-bells",
+  "stationCode": "W1",
+  "regionId": "bell-grove",
+  "archetype": "bellTree",
+  "name": "세 종 나무",
+  "interactPoint": {
+    "x": 1900,
+    "y": 2700
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 1740,
+      "y": 2292,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 2,
+      "x": 1820,
+      "y": 2292,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 3,
+      "x": 1900,
+      "y": 2292,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 4,
+      "x": 1980,
+      "y": 2292,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 5,
+      "x": 1740,
+      "y": 2364,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 6,
+      "x": 1820,
+      "y": 2364,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 7,
+      "x": 1900,
+      "y": 2364,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 8,
+      "x": 1980,
+      "y": 2364,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 9,
+      "x": 1740,
+      "y": 2436,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 10,
+      "x": 1820,
+      "y": 2436,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 11,
+      "x": 1900,
+      "y": 2436,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 12,
+      "x": 1980,
+      "y": 2436,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 13,
+      "x": 1740,
+      "y": 2508,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 14,
+      "x": 1820,
+      "y": 2508,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 15,
+      "x": 1900,
+      "y": 2508,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 16,
+      "x": 1980,
+      "y": 2508,
+      "w": 80,
+      "h": 72
+    }
+  ],
+  "slotMap": {
+    "kind": "bellTree",
+    "form": "tree",
+    "trees": 1,
+    "columns": 4,
+    "octaves": [
+      5,
+      4,
+      3,
+      2
+    ]
+  },
+  "quests": [
+    {
+      "questId": "chord.major-triad",
+      "variantIds": [
+        "c-major",
+        "f-major",
+        "g-major"
+      ]
+    }
+  ],
+  "panelTwin": "panel.chord",
+  "signatureSoundId": "sig.bell-grove.three-bells",
+  "hearRadius": 800
+}

@@ -1,0 +1,86 @@
+{
+  "installationId": "inst.scale-trail.major-path",
+  "stationCode": "S1",
+  "regionId": "scale-trail",
+  "archetype": "steppingPath",
+  "name": "장음계 길",
+  "interactPoint": {
+    "x": 5400,
+    "y": 4800
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 5550,
+      "y": 4724,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 2,
+      "x": 5649,
+      "y": 4724,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 3,
+      "x": 5748,
+      "y": 4724,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 4,
+      "x": 5847,
+      "y": 4724,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 5,
+      "x": 5946,
+      "y": 4724,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 6,
+      "x": 6045,
+      "y": 4724,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 7,
+      "x": 6144,
+      "y": 4724,
+      "w": 81,
+      "h": 153
+    },
+    {
+      "slot": 8,
+      "x": 6243,
+      "y": 4724,
+      "w": 81,
+      "h": 153
+    }
+  ],
+  "slotMap": {
+    "kind": "orderedPitches",
+    "voiceId": "v1"
+  },
+  "quests": [
+    {
+      "questId": "scale.major",
+      "variantIds": [
+        "g-major",
+        "d-major",
+        "bflat-major"
+      ]
+    }
+  ],
+  "panelTwin": "panel.scale",
+  "signatureSoundId": "sig.scale-trail.major-path",
+  "hearRadius": 900
+}

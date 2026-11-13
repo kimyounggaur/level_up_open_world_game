@@ -1,0 +1,108 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "scale.pentatonic",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "다섯 음 음계",
+  "topicTags": ["scale", "pentatonic"],
+  "availability": "draft",
+  "variantIds": ["c-pentatonic"],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.scale-trail.pentatonic-path",
+      "variantIds": ["c-pentatonic"]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.scale",
+      "variantIds": ["c-pentatonic"]
+    }
+  ],
+  "sourceRefs": [],
+  "variants": {
+    "c-pentatonic": {
+      "label": "C장조",
+      "challengeDescriptor": {
+        "range": "C4-C5",
+        "voices": 1,
+        "smallestValue": "quarter",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 960, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 960, "durationTicks": 960, "writtenPitch": {"letter": "D", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "D", "alter": 0, "octave": 4, "midi": 62}},
+          {"eventId": "n3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1920, "durationTicks": 960, "writtenPitch": {"letter": "E", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 4, "midi": 64}},
+          {"eventId": "n4", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 2880, "durationTicks": 960, "writtenPitch": {"letter": "G", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 4, "midi": 67}},
+          {"eventId": "n5", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 960, "writtenPitch": {"letter": "A", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "A", "alter": 0, "octave": 4, "midi": 69}},
+          {"eventId": "n6", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 960, "durationTicks": 960, "writtenPitch": {"letter": "C", "accidental": null, "octave": 5}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 5, "midi": 72}},
+          {"eventId": "r1", "type": "rest", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 1920, "durationTicks": 960},
+          {"eventId": "r2", "type": "rest", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 2880, "durationTicks": 960}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "orderedScale",
+        "voiceId": "v1",
+        "count": 6,
+        "direction": "ascending",
+        "requireSpelling": true,
+        "requireOctave": true,
+        "midiSteps": [2, 2, 3, 2, 3],
+        "keyName": "C장조"
+      }
+    }
+  },
+  "assistanceLinks": [
+    {
+      "type": "listenPair",
+      "label": "인접 두 음 듣기"
+    },
+    {
+      "type": "showHalfSteps",
+      "label": "반음 위치 표시"
+    },
+    {
+      "type": "keyboardOverlay",
+      "label": "한 옥타브 건반 비교"
+    }
+  ],
+  "feedbackRules": [
+    {
+      "code": "WRONG_SPELLING_SAME_PITCH",
+      "template": "{positionOrdinal} 자리는 {expectedLetter} 이름을 써요. {keyName}에서는 {expectedName:이에요}. 소리 높이는 같아요."
+    },
+    {
+      "code": "WRONG_ORDER",
+      "template": "{position}번째와 {otherPosition}번째 자리의 순서가 바뀌었어요."
+    },
+    {
+      "code": "OCTAVE_MISMATCH",
+      "template": "{where}의 옥타브가 달라요. 지금은 {actualName}, 목표는 {expectedName:이에요}. 다섯 음 음계도 시작음에서 한 옥타브 위의 같은 음까지 이어져요."
+    },
+    {
+      "code": "MISSING",
+      "template": "{position}번째 자리가 비어 있어요."
+    }
+  ]
+}

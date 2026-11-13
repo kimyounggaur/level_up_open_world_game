@@ -1,0 +1,365 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "key.build-intervals",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "음정 쌓기",
+  "topicTags": [
+    "pitch",
+    "interval",
+    "accidental"
+  ],
+  "availability": "draft",
+  "variantIds": [
+    "basic",
+    "challenge"
+  ],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.key-marsh.interval-rope",
+      "variantIds": [
+        "basic",
+        "challenge"
+      ]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.clef",
+      "variantIds": [
+        "basic",
+        "challenge"
+      ]
+    }
+  ],
+  "sourceRefs": [
+    {
+      "sourceFileId": "1YB2LTdrNuzcblrLofbwaLjf038OoAgKW",
+      "originalFilename": "075.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": [
+        "설계서 5.7은 이 과제의 관련 교재를 '확인 필요'로 적었다. 7-8에서 후보로 찾은 쪽이다(글자 판독으로 읽음, 그림은 보지 않음, 검수 아님): 교재 075는 '장음정' 쪽이고, 장2도(반음 2개), 장3도(반음 4개), 장6도(반음 9개), 장7도(반음 11개)를 도에서 올라가는 예(도-레, 도-미, 도-라, 도-시)로 적고 '장음정에서 반음이 줄어들면 단음정'이라고 적었다. 이 과제의 장3도(D4 위 F♯4, E4 위 G♯4)는 반음 4개라 크기가 같다. 다만 이 쪽의 예는 모두 도(C)에서 시작해, 이 과제처럼 변화음(F♯, G♯)이 나오는 예는 이 쪽에 없다. 사람이 이 과제의 판본과 맞는지 확인",
+        "교재 폴더 세 곳에 같은 이름·같은 크기(1,280,736바이트)의 사본이 있다(7-8에서 확인). 어느 쪽이 원본인지 확인 필요"
+      ]
+    },
+    {
+      "sourceFileId": "144uZ1K7Ajux1u2wiKXMObaGQmJeujhY4",
+      "originalFilename": "076.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": [
+        "설계서 5.7은 이 과제의 관련 교재를 '확인 필요'로 적었다. 7-8에서 후보로 찾은 쪽이다(글자 판독으로 읽음, 그림은 보지 않음, 검수 아님): 교재 076은 '완전 음정' 쪽이고, 완전1도·4도·5도·8도를 적고 도→파는 반음 5개, 도→솔은 반음 7개라고 적었다. 이 과제의 완전5도(E4 위 B4, 반음 7개)와 높은 도전의 완전4도(F4 위 B♭4, 반음 5개)는 반음 수가 같다. 다만 이 쪽의 예는 도(C) 위의 음정뿐이라 B♭4처럼 변화음이 나오는 예는 이 쪽에 없다. 사람이 이 과제의 판본과 맞는지 확인",
+        "교재 폴더 세 곳에 같은 이름·같은 크기(1,330,861바이트)의 사본이 있다(7-8에서 확인). 어느 쪽이 원본인지 확인 필요"
+      ]
+    }
+  ],
+  "variants": {
+    "basic": {
+      "label": "기본",
+      "challengeDescriptor": {
+        "range": "C4-C5",
+        "voices": 1,
+        "smallestValue": "quarter",
+        "accidentals": "inBar",
+        "input": "both"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {
+            "eventId": "n1",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 0,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "D",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "D",
+              "alter": 0,
+              "octave": 4,
+              "midi": 62
+            }
+          },
+          {
+            "eventId": "n2",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 960,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "F",
+              "accidental": "sharp",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "F",
+              "alter": 1,
+              "octave": 4,
+              "midi": 66
+            }
+          },
+          {
+            "eventId": "n3",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 1920,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "E",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "E",
+              "alter": 0,
+              "octave": 4,
+              "midi": 64
+            }
+          },
+          {
+            "eventId": "n4",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 2880,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "B",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "B",
+              "alter": 0,
+              "octave": 4,
+              "midi": 71
+            }
+          }
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "interval",
+        "questions": [
+          {
+            "qid": "b1",
+            "label": "D4 위 장3도",
+            "kind": "build",
+            "from": {
+              "letter": "D",
+              "alter": 0,
+              "octave": 4
+            },
+            "diatonicNumber": 3,
+            "quality": "major"
+          },
+          {
+            "qid": "b2",
+            "label": "E4 위 완전5도",
+            "kind": "build",
+            "from": {
+              "letter": "E",
+              "alter": 0,
+              "octave": 4
+            },
+            "diatonicNumber": 5,
+            "quality": "perfect"
+          }
+        ]
+      }
+    },
+    "challenge": {
+      "label": "높은 도전",
+      "challengeDescriptor": {
+        "range": "C4-C5",
+        "voices": 1,
+        "smallestValue": "quarter",
+        "accidentals": "inBar",
+        "input": "both"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {
+            "eventId": "n1",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 0,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "F",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "F",
+              "alter": 0,
+              "octave": 4,
+              "midi": 65
+            }
+          },
+          {
+            "eventId": "n2",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 960,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "B",
+              "accidental": "flat",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "B",
+              "alter": -1,
+              "octave": 4,
+              "midi": 70
+            }
+          },
+          {
+            "eventId": "n3",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 1920,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "E",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "E",
+              "alter": 0,
+              "octave": 4,
+              "midi": 64
+            }
+          },
+          {
+            "eventId": "n4",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 2880,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "G",
+              "accidental": "sharp",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "G",
+              "alter": 1,
+              "octave": 4,
+              "midi": 68
+            }
+          }
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "interval",
+        "questions": [
+          {
+            "qid": "b1",
+            "label": "F4 위 완전4도",
+            "kind": "build",
+            "from": {
+              "letter": "F",
+              "alter": 0,
+              "octave": 4
+            },
+            "diatonicNumber": 4,
+            "quality": "perfect"
+          },
+          {
+            "qid": "b2",
+            "label": "E4 위 장3도",
+            "kind": "build",
+            "from": {
+              "letter": "E",
+              "alter": 0,
+              "octave": 4
+            },
+            "diatonicNumber": 3,
+            "quality": "major"
+          }
+        ]
+      }
+    }
+  },
+  "assistanceLinks": [
+    {
+      "type": "listenPair",
+      "label": "인접 두 음 듣기"
+    },
+    {
+      "type": "showHalfSteps",
+      "label": "반음 위치 표시"
+    },
+    {
+      "type": "keyboardOverlay",
+      "label": "한 옥타브 건반 비교"
+    }
+  ],
+  "feedbackRules": [
+    {
+      "code": "MISSING_PLACEMENT",
+      "template": "{where}: 아직 답이 없어요."
+    }
+  ]
+}

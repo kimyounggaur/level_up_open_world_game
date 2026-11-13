@@ -1,0 +1,70 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "chord.primary-triads",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "다장조의 세 기둥",
+  "topicTags": ["chord", "triad", "primary-triads", "key-of-c"],
+  "availability": "draft",
+  "variantIds": ["c-major-pillars"],
+  "placements": [
+    {"kind": "installation", "installationId": "inst.bell-grove.three-pillars", "variantIds": ["c-major-pillars"]},
+    {"kind": "panel", "panelId": "panel.chord", "variantIds": ["c-major-pillars"]}
+  ],
+  "sourceRefs": [],
+  "variants": {
+    "c-major-pillars": {
+      "label": "C장조의 세 기둥 (으뜸화음 C E G, 버금딸림화음 F A C, 딸림화음 G B D)",
+      "challengeDescriptor": {
+        "range": "C4-B5",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {"staffId": "s1", "clef": "treble", "keySignature": 0}
+        ],
+        "voices": [
+          {"voiceId": "v1", "staffId": "s1"}
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "E", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 4, "midi": 64}},
+          {"eventId": "n3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "G", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 4, "midi": 67}},
+          {"eventId": "n4", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "F", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "F", "alter": 0, "octave": 4, "midi": 65}},
+          {"eventId": "n5", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "A", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "A", "alter": 0, "octave": 4, "midi": 69}},
+          {"eventId": "n6", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 5}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 5, "midi": 72}},
+          {"eventId": "n7", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 2, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "G", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 4, "midi": 67}},
+          {"eventId": "n8", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 2, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "B", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "B", "alter": 0, "octave": 4, "midi": 71}},
+          {"eventId": "n9", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 2, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "D", "accidental": null, "octave": 5}, "resolvedPitch": {"letter": "D", "alter": 0, "octave": 5, "midi": 74}}
+        ],
+        "chords": [
+          {"chordEventId": "c1", "eventIds": ["n1", "n2", "n3"]},
+          {"chordEventId": "c2", "eventIds": ["n4", "n5", "n6"]},
+          {"chordEventId": "c3", "eventIds": ["n7", "n8", "n9"]}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "chordSequence",
+        "trees": 3,
+        "events": [
+          {"label": "으뜸화음 나무", "tree": 0, "requiredPitchClasses": [0, 4, 7], "requiredSpellings": [{"letter": "C", "alter": 0}, {"letter": "E", "alter": 0}, {"letter": "G", "alter": 0}], "noteCount": 3},
+          {"label": "버금딸림화음 나무", "tree": 1, "requiredPitchClasses": [5, 9, 0], "requiredSpellings": [{"letter": "F", "alter": 0}, {"letter": "A", "alter": 0}, {"letter": "C", "alter": 0}], "noteCount": 3},
+          {"label": "딸림화음 나무", "tree": 2, "requiredPitchClasses": [7, 11, 2], "requiredSpellings": [{"letter": "G", "alter": 0}, {"letter": "B", "alter": 0}, {"letter": "D", "alter": 0}], "noteCount": 3}
+        ]
+      }
+    }
+  },
+  "assistanceLinks": [
+    {"type": "listenBar", "label": "세 화음 차례로 듣기"}
+  ],
+  "feedbackRules": []
+}

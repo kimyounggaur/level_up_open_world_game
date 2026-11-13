@@ -1,0 +1,86 @@
+{
+  "regionId": "beat-river",
+  "name": "박자 강가",
+  "boundsTiles": {
+    "x0": 175,
+    "x1": 255,
+    "y0": 0,
+    "y1": 128
+  },
+  "accentColor": "#5E97A6",
+  "ensemblePart": "percussion",
+  "layerThresholds": [
+    1,
+    2,
+    3
+  ],
+  "ambientBedId": "bed.beat-river",
+  "landmark": {
+    "name": "물레방아",
+    "x": 6450,
+    "y": 2300
+  },
+  "stations": [
+    {
+      "stationId": "E1",
+      "name": "첫 징검다리",
+      "kind": "installation",
+      "archetype": "T2",
+      "x": 7000,
+      "y": 2800,
+      "questIds": [
+        "rhythm.rest-in-a-bar",
+        "rhythm.three-four",
+        "rhythm.rest-lengths"
+      ],
+      "stand": {
+        "x": 6700,
+        "y": 2800
+      }
+    },
+    {
+      "stationId": "E2",
+      "name": "긴 돌 짧은 돌",
+      "kind": "installation",
+      "archetype": "T2",
+      "x": 7000,
+      "y": 3600,
+      "questIds": [
+        "rhythm.note-values",
+        "rhythm.dotted"
+      ],
+      "stand": {
+        "x": 6700,
+        "y": 3600
+      }
+    },
+    {
+      "stationId": "E3",
+      "name": "잔물결 수로",
+      "kind": "installation",
+      "archetype": "T2",
+      "x": 6620,
+      "y": 1660,
+      "questIds": [
+        "rhythm.short-notes-and-triplets",
+        "rhythm.sixteenths",
+        "rhythm.triplets"
+      ],
+      "stand": {
+        "x": 6560,
+        "y": 1660
+      }
+    },
+    {
+      "stationId": "E4",
+      "name": "물레방아",
+      "kind": "installation",
+      "archetype": "T3",
+      "x": 6450,
+      "y": 2300,
+      "questIds": [
+        "rhythm.six-eight"
+      ]
+    }
+  ]
+}

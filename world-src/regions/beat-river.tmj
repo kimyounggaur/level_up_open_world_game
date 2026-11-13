@@ -1,0 +1,1045 @@
+{
+ "compressionlevel": -1,
+ "height": 192,
+ "infinite": false,
+ "layers": [
+  {
+   "draworder": "topdown",
+   "id": 1,
+   "name": "사물",
+   "objects": [
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 1,
+     "name": "tree-beat-river-1",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 7950,
+     "y": 3255
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 3,
+     "name": "tree-beat-river-3",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 15.12
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 27
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 54
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r54"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 7449,
+     "y": 1539
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 4,
+     "name": "tree-beat-river-4",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5978,
+     "y": 2729
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 5,
+     "name": "tree-beat-river-5",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 7515,
+     "y": 3430
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 6,
+     "name": "tree-beat-river-6",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 7704,
+     "y": 3494
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 7,
+     "name": "tree-beat-river-7",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6470,
+     "y": 1159
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 8,
+     "name": "tree-beat-river-8",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6154,
+     "y": 1172
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 9,
+     "name": "tree-beat-river-9",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 7875,
+     "y": 1204
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 10,
+     "name": "tree-beat-river-10",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5974,
+     "y": 853
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 11,
+     "name": "tree-beat-river-11",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 15.12
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 27
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 54
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r54"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 7451,
+     "y": 3820
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 12,
+     "name": "tree-beat-river-12",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6153,
+     "y": 494
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 13,
+     "name": "tree-beat-river-13",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 15.12
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 27
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 54
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r54"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6333,
+     "y": 658
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 14,
+     "name": "tree-beat-river-14",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 7771,
+     "y": 1681
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 15,
+     "name": "tree-beat-river-15",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6480,
+     "y": 842
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 16,
+     "name": "tree-beat-river-16",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 15.12
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 27
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 54
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r54"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5848,
+     "y": 1944
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 17,
+     "name": "tree-beat-river-17",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5897,
+     "y": 3787
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 18,
+     "name": "tree-beat-river-18",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 7843,
+     "y": 456
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 19,
+     "name": "tree-beat-river-19",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 15.12
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 27
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 54
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r54"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 7884,
+     "y": 3703
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 20,
+     "name": "tree-beat-river-20",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 15.12
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 27
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 54
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-tree-r54"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6176,
+     "y": 279
+    },
+    {
+     "class": "sign",
+     "height": 0,
+     "id": 21,
+     "name": "sign-E1",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "hitDx",
+       "type": "int",
+       "value": -48
+      },
+      {
+       "name": "hitDy",
+       "type": "int",
+       "value": -104
+      },
+      {
+       "name": "hitH",
+       "type": "int",
+       "value": 112
+      },
+      {
+       "name": "hitW",
+       "type": "int",
+       "value": 96
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-signpost"
+      },
+      {
+       "name": "station",
+       "type": "string",
+       "value": "E1"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6628,
+     "y": 2792
+    },
+    {
+     "class": "sign",
+     "height": 0,
+     "id": 22,
+     "name": "sign-E2",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "hitDx",
+       "type": "int",
+       "value": -48
+      },
+      {
+       "name": "hitDy",
+       "type": "int",
+       "value": -104
+      },
+      {
+       "name": "hitH",
+       "type": "int",
+       "value": 112
+      },
+      {
+       "name": "hitW",
+       "type": "int",
+       "value": 96
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-signpost"
+      },
+      {
+       "name": "station",
+       "type": "string",
+       "value": "E2"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6628,
+     "y": 3592
+    },
+    {
+     "class": "sign",
+     "height": 0,
+     "id": 23,
+     "name": "sign-E3",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "hitDx",
+       "type": "int",
+       "value": -48
+      },
+      {
+       "name": "hitDy",
+       "type": "int",
+       "value": -104
+      },
+      {
+       "name": "hitH",
+       "type": "int",
+       "value": 112
+      },
+      {
+       "name": "hitW",
+       "type": "int",
+       "value": 96
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-signpost"
+      },
+      {
+       "name": "station",
+       "type": "string",
+       "value": "E3"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6488,
+     "y": 1652
+    },
+    {
+     "class": "sign",
+     "height": 0,
+     "id": 24,
+     "name": "sign-E4",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "hitDx",
+       "type": "int",
+       "value": -48
+      },
+      {
+       "name": "hitDy",
+       "type": "int",
+       "value": -104
+      },
+      {
+       "name": "hitH",
+       "type": "int",
+       "value": 112
+      },
+      {
+       "name": "hitW",
+       "type": "int",
+       "value": 96
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-signpost"
+      },
+      {
+       "name": "station",
+       "type": "string",
+       "value": "E4"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6522,
+     "y": 2292
+    },
+    {
+     "class": "prop",
+     "height": 0,
+     "id": 25,
+     "name": "waysign-beat-river-1",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-signpost"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5709,
+     "y": 1247
+    },
+    {
+     "class": "prop",
+     "height": 0,
+     "id": 26,
+     "name": "waysign-beat-river-2",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-beat-river-signpost"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5764,
+     "y": 3657
+    }
+   ],
+   "opacity": 1,
+   "type": "objectgroup",
+   "visible": true,
+   "x": 0,
+   "y": 0
+  }
+ ],
+ "nextlayerid": 2,
+ "nextobjectid": 27,
+ "orientation": "orthogonal",
+ "renderorder": "right-down",
+ "tiledversion": "1.11.2",
+ "tileheight": 32,
+ "tilesets": [],
+ "tilewidth": 32,
+ "type": "map",
+ "version": "1.10",
+ "width": 256
+}

@@ -1,0 +1,171 @@
+{
+  "regionId": "staff-hill",
+  "items": [
+    {
+      "discoveryId": "disc.staff-hill.piece-1",
+      "kind": "soundPiece",
+      "name": "오르막",
+      "x": 3625,
+      "y": 1700,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 60, "onsetTicks": 0, "durationTicks": 960 },
+        { "midi": 64, "onsetTicks": 960, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 69, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.staff-hill.piece-2",
+      "kind": "soundPiece",
+      "name": "아침 햇살",
+      "x": 2850,
+      "y": 1625,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 62, "onsetTicks": 0, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 480, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 960, "durationTicks": 480 },
+        { "midi": 69, "onsetTicks": 1440, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 64, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.staff-hill.piece-3",
+      "kind": "soundPiece",
+      "name": "내리막 바람",
+      "x": 4375,
+      "y": 1800,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 69, "onsetTicks": 0, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 960, "durationTicks": 960 },
+        { "midi": 64, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 62, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.staff-hill.piece-4",
+      "kind": "soundPiece",
+      "name": "높은 계단",
+      "x": 5400,
+      "y": 1800,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 60, "onsetTicks": 0, "durationTicks": 480 },
+        { "midi": 62, "onsetTicks": 480, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 960, "durationTicks": 960 },
+        { "midi": 69, "onsetTicks": 1920, "durationTicks": 1920 }
+      ]
+    },
+    {
+      "discoveryId": "disc.staff-hill.piece-5",
+      "kind": "soundPiece",
+      "name": "풍향계가 돈다",
+      "x": 4950,
+      "y": 150,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 69, "onsetTicks": 0, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 480, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 960, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 1440, "durationTicks": 480 },
+        { "midi": 69, "onsetTicks": 1920, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 2400, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.staff-hill.piece-6",
+      "kind": "soundPiece",
+      "name": "구름 한 조각",
+      "x": 2725,
+      "y": 750,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 69, "onsetTicks": 0, "durationTicks": 1920 },
+        { "midi": 64, "onsetTicks": 1920, "durationTicks": 1920 }
+      ]
+    },
+    {
+      "discoveryId": "disc.staff-hill.note-1",
+      "kind": "conceptNote",
+      "name": "줄과 칸",
+      "x": 3250,
+      "y": 1225,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "staff.lines-and-spaces",
+      "text": "오선에는 줄 다섯 개와 칸 네 개가 있어요. 높은음자리표에서 줄은 아래부터 E G B D F, 칸은 아래부터 F A C E예요.",
+      "textbookRefs": [
+        { "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa", "originalFilename": "020-1.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    },
+    {
+      "discoveryId": "disc.staff-hill.note-2",
+      "kind": "conceptNote",
+      "name": "덧줄",
+      "x": 3925,
+      "y": 150,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "staff.ledger-lines",
+      "text": "오선 밖의 음은 짧은 덧줄을 더 그어서 써요. 덧줄도 한 줄 걸러 한 음씩 올라가고, 위쪽에 쓸수록 높은 음이에요.",
+      "textbookRefs": [
+        { "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa", "originalFilename": "001.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    },
+    {
+      "discoveryId": "disc.staff-hill.note-3",
+      "kind": "conceptNote",
+      "name": "줄 모양은 같아도",
+      "x": 4050,
+      "y": 1000,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "pitch.same-note-two-clefs",
+      "text": "같은 줄도 음자리표에 따라 이름이 달라요. 오선의 맨 아래 줄은 높은음자리표에서 E, 낮은음자리표에서 G예요.",
+      "textbookRefs": [
+        { "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa", "originalFilename": "001.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" },
+        { "sourceFileId": "1naJOesTOHHKcpPfhsvTeeoEIu2XvmrBa", "originalFilename": "020-1.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    }
+  ],
+  "playInstruments": [
+    {
+      "playId": "play.staff-hill.pitch-slide",
+      "name": "높낮이 미끄럼길",
+      "x": 3300,
+      "y": 500,
+      "timbre": "chime",
+      "echo": false,
+      "ground": "slope",
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "pads": [
+        { "dx": 0, "dy": 220, "midi": 60 },
+        { "dx": 0, "dy": 110, "midi": 62 },
+        { "dx": 0, "dy": 0, "midi": 64 },
+        { "dx": 0, "dy": -110, "midi": 67 },
+        { "dx": 0, "dy": -220, "midi": 69 }
+      ]
+    }
+  ]
+}

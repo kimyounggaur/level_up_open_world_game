@@ -1,0 +1,330 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "pitch.same-sound-different-names",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "같은 높이의 다른 이름",
+  "topicTags": [
+    "pitch",
+    "enharmonic",
+    "interval",
+    "accidental"
+  ],
+  "availability": "draft",
+  "variantIds": [
+    "name-tags",
+    "interval-names"
+  ],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.key-marsh.key-bridge",
+      "variantIds": [
+        "name-tags"
+      ]
+    },
+    {
+      "kind": "installation",
+      "installationId": "inst.key-marsh.interval-rope",
+      "variantIds": [
+        "interval-names"
+      ]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.clef",
+      "variantIds": [
+        "name-tags",
+        "interval-names"
+      ]
+    }
+  ],
+  "sourceRefs": [
+    {
+      "sourceFileId": "1CZiKdsGUk66iRrlEDAquFH2Tyoo4BVz6",
+      "originalFilename": "023.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": [
+        "교재 폴더 두 곳에 같은 이름의 사본이 있다(1gFEO9oLlcmz5dLpIg298PxhFy3cH8KHT). 어느 쪽이 원본인지 확인 필요",
+        "이 예시(C♯4와 D♭4, C4–D♯4 증2도, C4–E♭4 단3도)는 설계서 5.2의 것이다. 교재 쪽 내용과 대조해야 한다"
+      ]
+    }
+  ],
+  "variants": {
+    "name-tags": {
+      "label": "이름표 두 개",
+      "challengeDescriptor": {
+        "range": "C4-D4",
+        "voices": 1,
+        "smallestValue": "half",
+        "accidentals": "inBar",
+        "input": "choice"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {
+            "eventId": "n1",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 0,
+            "durationTicks": 1920,
+            "writtenPitch": {
+              "letter": "C",
+              "accidental": "sharp",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "C",
+              "alter": 1,
+              "octave": 4,
+              "midi": 61
+            }
+          },
+          {
+            "eventId": "n2",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 1920,
+            "durationTicks": 1920,
+            "writtenPitch": {
+              "letter": "D",
+              "accidental": "flat",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "D",
+              "alter": -1,
+              "octave": 4,
+              "midi": 61
+            }
+          }
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "pitchSpelling",
+        "targets": [
+          {
+            "slotId": "up",
+            "label": "올려 부른 이름표",
+            "expected": {
+              "letter": "C",
+              "alter": 1,
+              "octave": 4
+            },
+            "eventId": "n1"
+          },
+          {
+            "slotId": "down",
+            "label": "내려 부른 이름표",
+            "expected": {
+              "letter": "D",
+              "alter": -1,
+              "octave": 4
+            },
+            "eventId": "n2"
+          }
+        ]
+      }
+    },
+    "interval-names": {
+      "label": "같은 소리인가, 음정 이름",
+      "challengeDescriptor": {
+        "range": "C4-E4",
+        "voices": 1,
+        "smallestValue": "quarter",
+        "accidentals": "inBar",
+        "input": "choice"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {
+            "eventId": "n1",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 0,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "C",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 4,
+              "midi": 60
+            }
+          },
+          {
+            "eventId": "n2",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 960,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "D",
+              "accidental": "sharp",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "D",
+              "alter": 1,
+              "octave": 4,
+              "midi": 63
+            }
+          },
+          {
+            "eventId": "n3",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 1920,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "C",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 4,
+              "midi": 60
+            }
+          },
+          {
+            "eventId": "n4",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 2880,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "E",
+              "accidental": "flat",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "E",
+              "alter": -1,
+              "octave": 4,
+              "midi": 63
+            }
+          }
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "interval",
+        "questions": [
+          {
+            "qid": "c1",
+            "label": "C♯4와 D♭4",
+            "kind": "compare",
+            "a": {
+              "letter": "C",
+              "alter": 1,
+              "octave": 4
+            },
+            "b": {
+              "letter": "D",
+              "alter": -1,
+              "octave": 4
+            }
+          },
+          {
+            "qid": "i1",
+            "label": "C4에서 D♯4까지",
+            "kind": "identify",
+            "from": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 4
+            },
+            "to": {
+              "letter": "D",
+              "alter": 1,
+              "octave": 4
+            }
+          },
+          {
+            "qid": "i2",
+            "label": "C4에서 E♭4까지",
+            "kind": "identify",
+            "from": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 4
+            },
+            "to": {
+              "letter": "E",
+              "alter": -1,
+              "octave": 4
+            }
+          }
+        ]
+      }
+    }
+  },
+  "assistanceLinks": [
+    {
+      "type": "listenBar",
+      "label": "소리 듣기"
+    }
+  ],
+  "feedbackRules": [
+    {
+      "code": "MISSING_PLACEMENT",
+      "template": "{where}: 아직 답이 없어요."
+    }
+  ]
+}

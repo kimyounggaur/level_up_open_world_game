@@ -1,0 +1,756 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "scale.chromatic",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "반음계",
+  "topicTags": [
+    "scale",
+    "chromatic",
+    "accidental"
+  ],
+  "availability": "draft",
+  "variantIds": [
+    "ascending",
+    "descending"
+  ],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.key-marsh.chromatic-path",
+      "variantIds": [
+        "ascending",
+        "descending"
+      ]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.scale",
+      "variantIds": [
+        "ascending",
+        "descending"
+      ]
+    }
+  ],
+  "sourceRefs": [],
+  "variants": {
+    "ascending": {
+      "label": "오름",
+      "challengeDescriptor": {
+        "range": "C4-C5",
+        "voices": 1,
+        "smallestValue": "quarter",
+        "accidentals": "inBar",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {
+            "eventId": "n1",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 0,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "C",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 4,
+              "midi": 60
+            }
+          },
+          {
+            "eventId": "n2",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 960,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "C",
+              "accidental": "sharp",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "C",
+              "alter": 1,
+              "octave": 4,
+              "midi": 61
+            }
+          },
+          {
+            "eventId": "n3",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 1920,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "D",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "D",
+              "alter": 0,
+              "octave": 4,
+              "midi": 62
+            }
+          },
+          {
+            "eventId": "n4",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 2880,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "D",
+              "accidental": "sharp",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "D",
+              "alter": 1,
+              "octave": 4,
+              "midi": 63
+            }
+          },
+          {
+            "eventId": "n5",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 1,
+            "onsetTicks": 0,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "E",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "E",
+              "alter": 0,
+              "octave": 4,
+              "midi": 64
+            }
+          },
+          {
+            "eventId": "n6",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 1,
+            "onsetTicks": 960,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "F",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "F",
+              "alter": 0,
+              "octave": 4,
+              "midi": 65
+            }
+          },
+          {
+            "eventId": "n7",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 1,
+            "onsetTicks": 1920,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "F",
+              "accidental": "sharp",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "F",
+              "alter": 1,
+              "octave": 4,
+              "midi": 66
+            }
+          },
+          {
+            "eventId": "n8",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 1,
+            "onsetTicks": 2880,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "G",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "G",
+              "alter": 0,
+              "octave": 4,
+              "midi": 67
+            }
+          },
+          {
+            "eventId": "n9",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 2,
+            "onsetTicks": 0,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "G",
+              "accidental": "sharp",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "G",
+              "alter": 1,
+              "octave": 4,
+              "midi": 68
+            }
+          },
+          {
+            "eventId": "n10",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 2,
+            "onsetTicks": 960,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "A",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "A",
+              "alter": 0,
+              "octave": 4,
+              "midi": 69
+            }
+          },
+          {
+            "eventId": "n11",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 2,
+            "onsetTicks": 1920,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "A",
+              "accidental": "sharp",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "A",
+              "alter": 1,
+              "octave": 4,
+              "midi": 70
+            }
+          },
+          {
+            "eventId": "n12",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 2,
+            "onsetTicks": 2880,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "B",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "B",
+              "alter": 0,
+              "octave": 4,
+              "midi": 71
+            }
+          },
+          {
+            "eventId": "n13",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 3,
+            "onsetTicks": 0,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "C",
+              "accidental": null,
+              "octave": 5
+            },
+            "resolvedPitch": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 5,
+              "midi": 72
+            }
+          },
+          {
+            "eventId": "r1",
+            "type": "rest",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 3,
+            "onsetTicks": 960,
+            "durationTicks": 960
+          },
+          {
+            "eventId": "r2",
+            "type": "rest",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 3,
+            "onsetTicks": 1920,
+            "durationTicks": 960
+          },
+          {
+            "eventId": "r3",
+            "type": "rest",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 3,
+            "onsetTicks": 2880,
+            "durationTicks": 960
+          }
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "orderedScale",
+        "voiceId": "v1",
+        "count": 13,
+        "direction": "ascending",
+        "requireSpelling": true,
+        "requireOctave": true,
+        "midiSteps": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "keyName": "C 반음계(오름)"
+      }
+    },
+    "descending": {
+      "label": "내림",
+      "challengeDescriptor": {
+        "range": "C4-C5",
+        "voices": 1,
+        "smallestValue": "quarter",
+        "accidentals": "inBar",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {
+            "eventId": "n1",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 0,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "C",
+              "accidental": null,
+              "octave": 5
+            },
+            "resolvedPitch": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 5,
+              "midi": 72
+            }
+          },
+          {
+            "eventId": "n2",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 960,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "B",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "B",
+              "alter": 0,
+              "octave": 4,
+              "midi": 71
+            }
+          },
+          {
+            "eventId": "n3",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 1920,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "B",
+              "accidental": "flat",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "B",
+              "alter": -1,
+              "octave": 4,
+              "midi": 70
+            }
+          },
+          {
+            "eventId": "n4",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 0,
+            "onsetTicks": 2880,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "A",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "A",
+              "alter": 0,
+              "octave": 4,
+              "midi": 69
+            }
+          },
+          {
+            "eventId": "n5",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 1,
+            "onsetTicks": 0,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "A",
+              "accidental": "flat",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "A",
+              "alter": -1,
+              "octave": 4,
+              "midi": 68
+            }
+          },
+          {
+            "eventId": "n6",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 1,
+            "onsetTicks": 960,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "G",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "G",
+              "alter": 0,
+              "octave": 4,
+              "midi": 67
+            }
+          },
+          {
+            "eventId": "n7",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 1,
+            "onsetTicks": 1920,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "G",
+              "accidental": "flat",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "G",
+              "alter": -1,
+              "octave": 4,
+              "midi": 66
+            }
+          },
+          {
+            "eventId": "n8",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 1,
+            "onsetTicks": 2880,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "F",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "F",
+              "alter": 0,
+              "octave": 4,
+              "midi": 65
+            }
+          },
+          {
+            "eventId": "n9",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 2,
+            "onsetTicks": 0,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "E",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "E",
+              "alter": 0,
+              "octave": 4,
+              "midi": 64
+            }
+          },
+          {
+            "eventId": "n10",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 2,
+            "onsetTicks": 960,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "E",
+              "accidental": "flat",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "E",
+              "alter": -1,
+              "octave": 4,
+              "midi": 63
+            }
+          },
+          {
+            "eventId": "n11",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 2,
+            "onsetTicks": 1920,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "D",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "D",
+              "alter": 0,
+              "octave": 4,
+              "midi": 62
+            }
+          },
+          {
+            "eventId": "n12",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 2,
+            "onsetTicks": 2880,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "D",
+              "accidental": "flat",
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "D",
+              "alter": -1,
+              "octave": 4,
+              "midi": 61
+            }
+          },
+          {
+            "eventId": "n13",
+            "type": "note",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 3,
+            "onsetTicks": 0,
+            "durationTicks": 960,
+            "writtenPitch": {
+              "letter": "C",
+              "accidental": null,
+              "octave": 4
+            },
+            "resolvedPitch": {
+              "letter": "C",
+              "alter": 0,
+              "octave": 4,
+              "midi": 60
+            }
+          },
+          {
+            "eventId": "r1",
+            "type": "rest",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 3,
+            "onsetTicks": 960,
+            "durationTicks": 960
+          },
+          {
+            "eventId": "r2",
+            "type": "rest",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 3,
+            "onsetTicks": 1920,
+            "durationTicks": 960
+          },
+          {
+            "eventId": "r3",
+            "type": "rest",
+            "voiceId": "v1",
+            "staffId": "s1",
+            "measureIndex": 3,
+            "onsetTicks": 2880,
+            "durationTicks": 960
+          }
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "orderedScale",
+        "voiceId": "v1",
+        "count": 13,
+        "direction": "descending",
+        "requireSpelling": true,
+        "requireOctave": true,
+        "midiSteps": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "keyName": "C 반음계(내림)"
+      }
+    }
+  },
+  "assistanceLinks": [
+    {
+      "type": "listenPair",
+      "label": "인접 두 음 듣기"
+    },
+    {
+      "type": "showHalfSteps",
+      "label": "반음 위치 표시"
+    },
+    {
+      "type": "keyboardOverlay",
+      "label": "한 옥타브 건반 비교"
+    }
+  ],
+  "feedbackRules": [
+    {
+      "code": "WRONG_SPELLING_SAME_PITCH",
+      "template": "{positionOrdinal} 자리는 {expectedName:이에요}. 소리 높이는 같아요. 반음계는 오를 때 올림표, 내릴 때 내림표로 적는 것이 흔한 관례예요."
+    },
+    {
+      "code": "WRONG_ORDER",
+      "template": "{position}번째와 {otherPosition}번째 자리의 순서가 바뀌었어요."
+    },
+    {
+      "code": "OCTAVE_MISMATCH",
+      "template": "{where}의 옥타브가 달라요. 지금은 {actualName}, 목표는 {expectedName:이에요}. 반음계는 시작음에서 한 옥타브 위(아래)의 같은 음까지 이어져요."
+    },
+    {
+      "code": "MISSING",
+      "template": "{position}번째 자리가 비어 있어요."
+    }
+  ]
+}

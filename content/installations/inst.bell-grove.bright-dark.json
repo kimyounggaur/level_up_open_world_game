@@ -1,0 +1,158 @@
+{
+  "installationId": "inst.bell-grove.bright-dark",
+  "stationCode": "W2",
+  "regionId": "bell-grove",
+  "archetype": "bellTree",
+  "name": "밝은 종 어두운 종",
+  "interactPoint": {
+    "x": 1500,
+    "y": 3500
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "x": 1580,
+      "y": 3090,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 2,
+      "x": 1660,
+      "y": 3090,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 3,
+      "x": 1740,
+      "y": 3090,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 4,
+      "x": 1820,
+      "y": 3090,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 5,
+      "x": 1580,
+      "y": 3162,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 6,
+      "x": 1660,
+      "y": 3162,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 7,
+      "x": 1740,
+      "y": 3162,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 8,
+      "x": 1820,
+      "y": 3162,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 9,
+      "x": 1580,
+      "y": 3234,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 10,
+      "x": 1660,
+      "y": 3234,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 11,
+      "x": 1740,
+      "y": 3234,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 12,
+      "x": 1820,
+      "y": 3234,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 13,
+      "x": 1580,
+      "y": 3306,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 14,
+      "x": 1660,
+      "y": 3306,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 15,
+      "x": 1740,
+      "y": 3306,
+      "w": 80,
+      "h": 72
+    },
+    {
+      "slot": 16,
+      "x": 1820,
+      "y": 3306,
+      "w": 80,
+      "h": 72
+    }
+  ],
+  "slotMap": {
+    "kind": "bellTree",
+    "form": "tree",
+    "trees": 1,
+    "columns": 4,
+    "octaves": [
+      5,
+      4,
+      3,
+      2
+    ]
+  },
+  "quests": [
+    {
+      "questId": "chord.major-and-minor",
+      "variantIds": [
+        "c-minor",
+        "a-minor",
+        "d-minor",
+        "e-minor"
+      ]
+    },
+    {
+      "questId": "chord.diminished-augmented",
+      "variantIds": [
+        "b-dim",
+        "c-aug"
+      ]
+    }
+  ],
+  "panelTwin": "panel.chord",
+  "signatureSoundId": "sig.bell-grove.bright-dark",
+  "hearRadius": 800
+}

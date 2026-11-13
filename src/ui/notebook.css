@@ -1,0 +1,156 @@
+/* 수첩(4-7, 6.5): 쪽을 넘기며 한 일을 본다. 경험치, 별점, 순위, 완주율을 그리지 않는다(6.7). 글자는 모두 본문 대비를 지키고, 뜻은 색이 아니라 글자로 전한다. */
+
+.nb {
+  display: grid;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+/* 쪽 탭: 좁은 화면에서는 옆으로 밀어서 넘기고, 키보드로는 ← →로 넘긴다 */
+.nb-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 4px 4px 8px;
+  margin: 0 -4px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+.nb-tab {
+  flex: none;
+  scroll-snap-align: start;
+}
+
+.nb-page {
+  display: grid;
+  gap: 12px;
+  align-content: start;
+  min-height: 220px;
+}
+.nb-page h2 {
+  margin: 0;
+}
+.nb-lead {
+  margin: 0;
+}
+.nb-quests,
+.nb-observations {
+  margin-top: 4px;
+}
+
+/* 판본의 기록 한 줄씩. 통과의 방식(템포, 도움)이 줄마다 따로 있어 섞이지 않는다 */
+.nb-records {
+  display: grid;
+  gap: 2px;
+  margin: 2px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.nb-pass {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-weight: 600;
+}
+.nb-mark {
+  flex: none;
+  color: var(--teal);
+  font-weight: 800;
+}
+
+.nb-sentences {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 22px;
+  list-style: disc;
+}
+.nb-few {
+  background: var(--band);
+  border: 1px dashed var(--muted);
+}
+
+.nb-pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.nb-pager .btn {
+  min-height: 48px;
+  min-width: 112px;
+}
+
+/* 발견과 내 곡(6.5): 찾은 것은 이름과 다시 듣기, 못 찾은 것은 점선 빈칸만 */
+.nb-group {
+  display: grid;
+  gap: 8px;
+}
+.nb-group h3 {
+  margin: 0;
+}
+.nb-found-list,
+.nb-creations {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nb-found {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  padding: 10px 14px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.nb-found-text {
+  flex: 1 1 200px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.nb-note-name {
+  margin: 0 0 4px;
+  font-size: calc(16px * var(--text-scale, 1));
+}
+.nb-note-text {
+  margin: 0;
+}
+.nb-slot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 8px 14px;
+  border: 1px dashed var(--muted);
+  border-radius: 12px;
+}
+.nb-slot-mark {
+  color: var(--muted);
+}
+.nb-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.nb-actions > .btn {
+  flex: 1 1 120px;
+}
+.nb-confirm,
+.nb-rename {
+  display: grid;
+  gap: 8px;
+}
+.nb-confirm p {
+  margin: 0;
+}
+
+/* 낮은 가로 화면에서 탭이 본문을 밀어내지 않게 한다 */
+@media (orientation: landscape) and (max-height: 520px) {
+  .nb-page {
+    min-height: 0;
+  }
+}

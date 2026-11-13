@@ -1,0 +1,100 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "rhythm.short-notes-and-triplets",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "짧은 음과 셋잇단음",
+  "topicTags": ["rhythm", "thirty-second", "tuplet", "meter-4-4"],
+  "availability": "draft",
+  "variantIds": ["thirty-seconds-triplet"],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.beat-river.ripple-channel",
+      "variantIds": ["thirty-seconds-triplet"]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.rhythm",
+      "variantIds": ["thirty-seconds-triplet"]
+    }
+  ],
+  "sourceRefs": [
+    {
+      "sourceFileId": "1on2XONt-KWET1r6SYwObTbcEK09xgzMi",
+      "originalFilename": "010.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": ["교재 폴더 두 곳에 같은 이름의 사본이 있고(1fHghUK9Pjno5Fbpwj_qWsePFhtcx_yqs), 크기가 다른 010.png가 하나 더 있다(1ebpJ7k2XXFQbTG2QFDm2OgUFwo6XYLZf). 어느 쪽이 원본인지 확인 필요"]
+    },
+    {
+      "sourceFileId": "17aycXrOLkxdvJBhSCP3KfgVgxveed6LP",
+      "originalFilename": "032-1.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": ["교재 폴더 두 곳에 같은 이름의 사본이 있다(1vopl5ic1oUe-OouAqowWnYxQaBy0rJGh). 어느 쪽이 원본인지 확인 필요", "이 예시(C4 32분음표 8개, D4 E4 F4 8분 셋잇단, 2분쉼표)는 설계서 5.2의 것이다. 교재 쪽 내용과 대조해야 한다"]
+    }
+  ],
+  "variants": {
+    "thirty-seconds-triplet": {
+      "label": "32분음표 여덟 개와 8분 셋잇단",
+      "challengeDescriptor": {
+        "range": "C4-F4",
+        "voices": 1,
+        "smallestValue": "thirtySecond",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {"eventId": "s1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 120, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "s2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 120, "durationTicks": 120, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "s3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 240, "durationTicks": 120, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "s4", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 360, "durationTicks": 120, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "s5", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 480, "durationTicks": 120, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "s6", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 600, "durationTicks": 120, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "s7", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 720, "durationTicks": 120, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "s8", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 840, "durationTicks": 120, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "t1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 960, "durationTicks": 320, "writtenPitch": {"letter": "D", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "D", "alter": 0, "octave": 4, "midi": 62}, "groupId": "g1"},
+          {"eventId": "t2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1280, "durationTicks": 320, "writtenPitch": {"letter": "E", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 4, "midi": 64}, "groupId": "g1"},
+          {"eventId": "t3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1600, "durationTicks": 320, "writtenPitch": {"letter": "F", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "F", "alter": 0, "octave": 4, "midi": 65}, "groupId": "g1"},
+          {"eventId": "r1", "type": "rest", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1920, "durationTicks": 1920}
+        ],
+        "tuplets": [
+          {"groupId": "g1", "actualNotes": 3, "normalNotes": 2, "writtenBaseDuration": "eighth", "eventIds": ["t1", "t2", "t3"]}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "rhythmPlacement",
+        "voiceId": "v1",
+        "requirePitch": true
+      }
+    }
+  },
+  "assistanceLinks": [
+    {"type": "listenBar", "label": "한 마디 듣기"},
+    {"type": "showBeatGrid", "label": "박 격자 보기"}
+  ],
+  "feedbackRules": []
+}

@@ -1,0 +1,175 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "staff.range-ladder",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "음역 사다리",
+  "topicTags": ["pitch", "clef", "range"],
+  "availability": "draft",
+  "variantIds": ["c3-c5", "c2-c6"],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.staff-hill.middle-ledge",
+      "variantIds": ["c3-c5", "c2-c6"]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.clef",
+      "variantIds": ["c3-c5", "c2-c6"]
+    }
+  ],
+  "sourceRefs": [
+    {
+      "sourceFileId": "1sNSGPoSC2dctrbvAawdL-VC6dIk05tld",
+      "originalFilename": "020-1.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": [
+        "교재 폴더 세 곳에 같은 이름·같은 크기(1,274,935바이트)의 사본이 있다(7-8에서 확인, 처음 기록에는 두 곳이었다). 어느 쪽이 원본인지 확인 필요",
+        "설계서에 오류 후보로 기록된 교재(020-1): 대조 전",
+        "7-8 후보 대조(그림으로 봄, 검수 아님): 이 쪽은 건반 옆에 C1·C2·C3·C4(가온도)·C5·C6을 적고 큰보표의 음표와 점선으로 이은 그림이다. 이 과제의 사다리가 걸치는 C2~C6의 C 이름은 이 쪽에 있고, 기본 판본(C3 E3 G3 C4 E4 G4 C5)의 E·G 이름은 이 쪽에 없다. 점선이 가리키는 음표와 오선 위치가 맞는지는 여섯 개를 하나씩 재어 보지 않았고, 분석 보고서는 C1~C6 점선이 해당 C의 오선 위치와 대응하지 않는다고 적었다. 보고서가 연 사본은 다른 폴더의 사본이다. 사람이 확인"
+      ]
+    }
+  ],
+  "variants": {
+    "c3-c5": {
+      "label": "C3에서 C5까지",
+      "challengeDescriptor": {
+        "range": "C3-C5",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          },
+          {
+            "staffId": "s2",
+            "clef": "bass",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "음계(큰보표)"
+          },
+          {
+            "voiceId": "v2",
+            "staffId": "s2",
+            "label": "낮은음자리표 보표(쉼)"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 3, "midi": 48}},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "E", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 3, "midi": 52}},
+          {"eventId": "n3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 2, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "G", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 3, "midi": 55}},
+          {"eventId": "n4", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 3, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "n5", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 4, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "E", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 4, "midi": 64}},
+          {"eventId": "n6", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 5, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "G", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 4, "midi": 67}},
+          {"eventId": "n7", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 6, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 5}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 5, "midi": 72}},
+          {"eventId": "r1", "type": "rest", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840},
+          {"eventId": "r2", "type": "rest", "voiceId": "v2", "staffId": "s2", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 3840},
+          {"eventId": "r3", "type": "rest", "voiceId": "v2", "staffId": "s2", "measureIndex": 2, "onsetTicks": 0, "durationTicks": 3840},
+          {"eventId": "r4", "type": "rest", "voiceId": "v2", "staffId": "s2", "measureIndex": 3, "onsetTicks": 0, "durationTicks": 3840},
+          {"eventId": "r5", "type": "rest", "voiceId": "v2", "staffId": "s2", "measureIndex": 4, "onsetTicks": 0, "durationTicks": 3840},
+          {"eventId": "r6", "type": "rest", "voiceId": "v2", "staffId": "s2", "measureIndex": 5, "onsetTicks": 0, "durationTicks": 3840},
+          {"eventId": "r7", "type": "rest", "voiceId": "v2", "staffId": "s2", "measureIndex": 6, "onsetTicks": 0, "durationTicks": 3840}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "orderedScale",
+        "voiceId": "v1",
+        "count": 7,
+        "direction": "ascending",
+        "requireSpelling": true,
+        "requireOctave": true,
+        "midiSteps": [4, 3, 5, 4, 3, 5]
+      }
+    },
+    "c2-c6": {
+      "label": "C2에서 C6까지(높은 도전)",
+      "challengeDescriptor": {
+        "range": "C2-C6",
+        "voices": 1,
+        "smallestValue": "whole",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          },
+          {
+            "staffId": "s2",
+            "clef": "bass",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1",
+            "label": "음계(큰보표)"
+          },
+          {
+            "voiceId": "v2",
+            "staffId": "s2",
+            "label": "낮은음자리표 보표(쉼)"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 2}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 2, "midi": 36}},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 3, "midi": 48}},
+          {"eventId": "n3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 2, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "n4", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 3, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 5}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 5, "midi": 72}},
+          {"eventId": "n5", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 4, "onsetTicks": 0, "durationTicks": 3840, "writtenPitch": {"letter": "C", "accidental": null, "octave": 6}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 6, "midi": 84}},
+          {"eventId": "r1", "type": "rest", "voiceId": "v2", "staffId": "s2", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 3840},
+          {"eventId": "r2", "type": "rest", "voiceId": "v2", "staffId": "s2", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 3840},
+          {"eventId": "r3", "type": "rest", "voiceId": "v2", "staffId": "s2", "measureIndex": 2, "onsetTicks": 0, "durationTicks": 3840},
+          {"eventId": "r4", "type": "rest", "voiceId": "v2", "staffId": "s2", "measureIndex": 3, "onsetTicks": 0, "durationTicks": 3840},
+          {"eventId": "r5", "type": "rest", "voiceId": "v2", "staffId": "s2", "measureIndex": 4, "onsetTicks": 0, "durationTicks": 3840}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "orderedScale",
+        "voiceId": "v1",
+        "count": 5,
+        "direction": "ascending",
+        "requireSpelling": true,
+        "requireOctave": true,
+        "midiSteps": [12, 12, 12, 12]
+      }
+    }
+  },
+  "assistanceLinks": [],
+  "feedbackRules": [
+    {
+      "code": "MISSING_PLACEMENT",
+      "template": "{where}: 아직 놓지 않았어요."
+    }
+  ]
+}

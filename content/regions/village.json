@@ -1,0 +1,83 @@
+{
+  "regionId": "village",
+  "name": "음악 마을",
+  "boundsTiles": {
+    "x0": 81,
+    "x1": 174,
+    "y0": 63,
+    "y1": 128
+  },
+  "accentColor": "#17675D",
+  "ensemblePart": "chords",
+  "layerThresholds": [
+    1,
+    2,
+    3
+  ],
+  "ambientBedId": "bed.village",
+  "landmark": {
+    "name": "합주 광장",
+    "x": 4056,
+    "y": 3081
+  },
+  "stations": [
+    {
+      "stationId": "H1",
+      "name": "음자리 작업대",
+      "kind": "panel",
+      "archetype": "panel",
+      "x": 3219,
+      "y": 2964,
+      "questIds": [
+        "pitch.same-note-two-clefs",
+        "pitch.same-sound-different-names"
+      ]
+    },
+    {
+      "stationId": "H2",
+      "name": "리듬 작업대",
+      "kind": "panel",
+      "archetype": "panel",
+      "x": 4956,
+      "y": 2856,
+      "questIds": [
+        "rhythm.rest-in-a-bar",
+        "rhythm.short-notes-and-triplets"
+      ]
+    },
+    {
+      "stationId": "H3",
+      "name": "화음 작업대",
+      "kind": "panel",
+      "archetype": "panel",
+      "x": 3273,
+      "y": 3882,
+      "questIds": [
+        "chord.major-triad",
+        "chord.inversion"
+      ]
+    },
+    {
+      "stationId": "H4",
+      "name": "음계 디딤돌",
+      "kind": "installation",
+      "archetype": "T1",
+      "x": 4530,
+      "y": 3655,
+      "questIds": [
+        "scale.major"
+      ]
+    },
+    {
+      "stationId": "H5",
+      "name": "합주 무대",
+      "kind": "installation",
+      "archetype": "T7",
+      "x": 4056,
+      "y": 3081,
+      "questIds": [
+        "song.short-piece"
+      ]
+    }
+  ]
+}

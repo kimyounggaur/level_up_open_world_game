@@ -1,0 +1,120 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "scale.harmonic-minor",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "화성단음계",
+  "topicTags": ["scale", "minor", "harmonic-minor", "whole-and-half-steps"],
+  "availability": "draft",
+  "variantIds": ["a-harmonic-minor"],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.scale-trail.minor-path",
+      "variantIds": ["a-harmonic-minor"]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.scale",
+      "variantIds": ["a-harmonic-minor"]
+    }
+  ],
+  "sourceRefs": [
+    {
+      "sourceFileId": "10Fwv6Cl48WTqXk-APBORp0bzwB4mNlii",
+      "originalFilename": "052.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": [
+        "설계서 5.6은 이 과제의 관련 교재를 '확인 필요'로 적었다. 7-8에서 후보로 찾은 쪽이다(그림으로 봄, 검수 아님): 교재 052의 화성단음계 칸이 '자연단음계에서 7음을 반음 올린 음계'라고 적고, 간격 '전·반·전·전·반·증2도·반'과 예 '가화성단음계: 라-시-도-레-미-파-솔#-라'를 보인다. 이 과제의 A단조 판본(A3 B3 C4 D4 E4 F4 G♯4 A4)과 음 이름의 차례가 같고, 오선 그림에서 7음의 ♯를 조표가 아닌 음표 앞의 임시표로 적은 점도 같아 보인다. 다만 이 칸의 오선 그림도 첫 음표가 오선 아래의 도(C4) 자리에서 시작해 '라' 라벨과 맞지 않아 보이고, 분석 보고서는 이 칸의 ♯ 음표 높이가 잘못이라고 적었다. 보고서가 연 사본은 다른 폴더의 사본이다. 이 과제의 판본과 맞는지 사람이 확인",
+        "교재 폴더 세 곳에 같은 이름·같은 크기(1,329,737바이트)의 사본이 있다(7-8에서 확인). 어느 쪽이 원본인지 확인 필요"
+      ]
+    }
+  ],
+  "variants": {
+    "a-harmonic-minor": {
+      "label": "A단조",
+      "challengeDescriptor": {
+        "range": "A3-A4",
+        "voices": 1,
+        "smallestValue": "quarter",
+        "accidentals": "inBar",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 960, "writtenPitch": {"letter": "A", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "A", "alter": 0, "octave": 3, "midi": 57}},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 960, "durationTicks": 960, "writtenPitch": {"letter": "B", "accidental": null, "octave": 3}, "resolvedPitch": {"letter": "B", "alter": 0, "octave": 3, "midi": 59}},
+          {"eventId": "n3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1920, "durationTicks": 960, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "n4", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 2880, "durationTicks": 960, "writtenPitch": {"letter": "D", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "D", "alter": 0, "octave": 4, "midi": 62}},
+          {"eventId": "n5", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 0, "durationTicks": 960, "writtenPitch": {"letter": "E", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 4, "midi": 64}},
+          {"eventId": "n6", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 960, "durationTicks": 960, "writtenPitch": {"letter": "F", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "F", "alter": 0, "octave": 4, "midi": 65}},
+          {"eventId": "n7", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 1920, "durationTicks": 960, "writtenPitch": {"letter": "G", "accidental": "sharp", "octave": 4}, "resolvedPitch": {"letter": "G", "alter": 1, "octave": 4, "midi": 68}},
+          {"eventId": "n8", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 1, "onsetTicks": 2880, "durationTicks": 960, "writtenPitch": {"letter": "A", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "A", "alter": 0, "octave": 4, "midi": 69}}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "orderedScale",
+        "voiceId": "v1",
+        "count": 8,
+        "direction": "ascending",
+        "requireSpelling": true,
+        "requireOctave": true,
+        "midiSteps": [2, 1, 2, 2, 1, 3, 1],
+        "keyName": "A단조"
+      }
+    }
+  },
+  "assistanceLinks": [
+    {
+      "type": "listenPair",
+      "label": "인접 두 음 듣기"
+    },
+    {
+      "type": "showHalfSteps",
+      "label": "반음 위치 표시"
+    },
+    {
+      "type": "keyboardOverlay",
+      "label": "한 옥타브 건반 비교"
+    }
+  ],
+  "feedbackRules": [
+    {
+      "code": "WRONG_SPELLING_SAME_PITCH",
+      "template": "{positionOrdinal} 자리는 {expectedLetter} 이름을 써요. {keyName}에서는 {expectedName:이에요}. 소리 높이는 같아요."
+    },
+    {
+      "code": "WRONG_ORDER",
+      "template": "{position}번째와 {otherPosition}번째 자리의 순서가 바뀌었어요."
+    },
+    {
+      "code": "OCTAVE_MISMATCH",
+      "template": "{where}의 옥타브가 달라요. 지금은 {actualName}, 목표는 {expectedName:이에요}. 화성단음계도 시작음에서 한 옥타브 위까지 이어져요."
+    },
+    {
+      "code": "MISSING",
+      "template": "{position}번째 자리가 비어 있어요."
+    }
+  ]
+}

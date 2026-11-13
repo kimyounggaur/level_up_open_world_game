@@ -1,0 +1,168 @@
+{
+  "regionId": "beat-river",
+  "items": [
+    {
+      "discoveryId": "disc.beat-river.piece-1",
+      "kind": "soundPiece",
+      "name": "징검돌 걸음",
+      "x": 6000,
+      "y": 3350,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 60, "onsetTicks": 0, "durationTicks": 960 },
+        { "midi": 62, "onsetTicks": 960, "durationTicks": 960 },
+        { "midi": 64, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 62, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.beat-river.piece-2",
+      "kind": "soundPiece",
+      "name": "또르르 방울",
+      "x": 6550,
+      "y": 3900,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 69, "onsetTicks": 0, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 960, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 1920, "durationTicks": 480 },
+        { "midi": 62, "onsetTicks": 2880, "durationTicks": 480 }
+      ]
+    },
+    {
+      "discoveryId": "disc.beat-river.piece-3",
+      "kind": "soundPiece",
+      "name": "폭포 아래",
+      "x": 7500,
+      "y": 500,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 69, "onsetTicks": 0, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 480, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 960, "durationTicks": 480 },
+        { "midi": 62, "onsetTicks": 1440, "durationTicks": 480 },
+        { "midi": 60, "onsetTicks": 1920, "durationTicks": 480 },
+        { "midi": 64, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.beat-river.piece-4",
+      "kind": "soundPiece",
+      "name": "강둑 끝 노래",
+      "x": 7780,
+      "y": 3270,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 67, "onsetTicks": 0, "durationTicks": 960 },
+        { "midi": 64, "onsetTicks": 960, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 1440, "durationTicks": 480 },
+        { "midi": 69, "onsetTicks": 1920, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 2880, "durationTicks": 960 }
+      ]
+    },
+    {
+      "discoveryId": "disc.beat-river.piece-5",
+      "kind": "soundPiece",
+      "name": "갈대 물결",
+      "x": 7600,
+      "y": 3950,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 64, "onsetTicks": 480, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 1440, "durationTicks": 480 },
+        { "midi": 69, "onsetTicks": 2400, "durationTicks": 480 },
+        { "midi": 67, "onsetTicks": 3360, "durationTicks": 480 }
+      ]
+    },
+    {
+      "discoveryId": "disc.beat-river.piece-6",
+      "kind": "soundPiece",
+      "name": "물가의 아침",
+      "x": 5900,
+      "y": 600,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "notes": [
+        { "midi": 60, "onsetTicks": 0, "durationTicks": 960 },
+        { "midi": 64, "onsetTicks": 960, "durationTicks": 960 },
+        { "midi": 67, "onsetTicks": 1920, "durationTicks": 1920 }
+      ]
+    },
+    {
+      "discoveryId": "disc.beat-river.note-1",
+      "kind": "conceptNote",
+      "name": "쉼표의 길이",
+      "x": 7450,
+      "y": 2850,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "rhythm.rest-lengths",
+      "text": "쉼표도 음표처럼 길이가 있어요. 4분쉼표는 4분음표만큼, 2분쉼표는 2분음표만큼 쉬어요.",
+      "textbookRefs": [
+        { "sourceFileId": "1A-TWdrDg63B2hlfn7G3-AEpj82Zszo9C", "originalFilename": "005.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    },
+    {
+      "discoveryId": "disc.beat-river.note-2",
+      "kind": "conceptNote",
+      "name": "잘게 쪼갠 음표",
+      "x": 6350,
+      "y": 1250,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "rhythm.sixteenths",
+      "text": "16분음표는 4분음표의 4분의 1 길이예요. 4분음표 하나 안에 네 개가 들어가고, 8분음표 하나는 16분음표 둘과 같아요.",
+      "textbookRefs": [
+        { "sourceFileId": "1on2XONt-KWET1r6SYwObTbcEK09xgzMi", "originalFilename": "010.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    },
+    {
+      "discoveryId": "disc.beat-river.note-3",
+      "kind": "conceptNote",
+      "name": "셋으로 나눈 박",
+      "x": 5850,
+      "y": 1500,
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "questId": "rhythm.triplets",
+      "text": "셋잇단음표는 정해진 길이를 똑같이 셋으로 나눈 음표예요. 8분 셋잇단음표 셋은 4분음표 하나와 길이가 같아요. 음표 묶음에 3을 적어요.",
+      "textbookRefs": [
+        { "sourceFileId": "17aycXrOLkxdvJBhSCP3KfgVgxveed6LP", "originalFilename": "032-1.png", "reviewStatus": "unreviewed", "rightsStatus": "unconfirmed" }
+      ]
+    }
+  ],
+  "playInstruments": [
+    {
+      "playId": "play.beat-river.drum",
+      "name": "물방울 북",
+      "x": 7700,
+      "y": 2200,
+      "timbre": "thump",
+      "echo": false,
+      "ground": "pool",
+      "availability": "draft",
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "pads": [
+        { "dx": -72, "dy": -72, "midi": 48 },
+        { "dx": 72, "dy": -72, "midi": 55 },
+        { "dx": 72, "dy": 72, "midi": 60 },
+        { "dx": -72, "dy": 72, "midi": 64 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1002 @@
+{
+ "compressionlevel": -1,
+ "height": 192,
+ "infinite": false,
+ "layers": [
+  {
+   "draworder": "topdown",
+   "id": 1,
+   "name": "사물",
+   "objects": [
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 1,
+     "name": "tree-scale-trail-1",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5354,
+     "y": 5436
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 2,
+     "name": "tree-scale-trail-2",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 15.12
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 27
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 54
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r54"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5675,
+     "y": 5412
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 4,
+     "name": "tree-scale-trail-4",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 15.12
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 27
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 54
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r54"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6552,
+     "y": 5904
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 5,
+     "name": "tree-scale-trail-5",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 4473,
+     "y": 4844
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 6,
+     "name": "tree-scale-trail-6",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 4648,
+     "y": 5857
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 7,
+     "name": "tree-scale-trail-7",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6947,
+     "y": 5833
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 8,
+     "name": "tree-scale-trail-8",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 7500,
+     "y": 5587
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 9,
+     "name": "tree-scale-trail-9",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 15.12
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 27
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 54
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r54"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6914,
+     "y": 4461
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 11,
+     "name": "tree-scale-trail-11",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 15.12
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 27
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 54
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r54"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5086,
+     "y": 5083
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 12,
+     "name": "tree-scale-trail-12",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 15.12
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 27
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 54
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r54"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 7577,
+     "y": 5862
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 13,
+     "name": "tree-scale-trail-13",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 4810,
+     "y": 5045
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 14,
+     "name": "tree-scale-trail-14",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 4464,
+     "y": 5777
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 15,
+     "name": "tree-scale-trail-15",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 15.12
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 27
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 54
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r54"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 4550,
+     "y": 5498
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 16,
+     "name": "tree-scale-trail-16",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5062,
+     "y": 4865
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 17,
+     "name": "tree-scale-trail-17",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 4868,
+     "y": 5303
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 18,
+     "name": "tree-scale-trail-18",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5088,
+     "y": 5681
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 19,
+     "name": "tree-scale-trail-19",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5816,
+     "y": 5757
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 20,
+     "name": "tree-scale-trail-20",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 25.2
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 45
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 90
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r90"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5852,
+     "y": 5560
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 21,
+     "name": "tree-scale-trail-21",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 4401,
+     "y": 5031
+    },
+    {
+     "class": "tree",
+     "height": 0,
+     "id": 22,
+     "name": "tree-scale-trail-22",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.5
+      },
+      {
+       "name": "blockR",
+       "type": "float",
+       "value": 20.16
+      },
+      {
+       "name": "footDy",
+       "type": "int",
+       "value": 36
+      },
+      {
+       "name": "shadowR",
+       "type": "int",
+       "value": 72
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-tree-r72"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6708,
+     "y": 5649
+    },
+    {
+     "class": "sign",
+     "height": 0,
+     "id": 23,
+     "name": "sign-S1",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "hitDx",
+       "type": "int",
+       "value": -48
+      },
+      {
+       "name": "hitDy",
+       "type": "int",
+       "value": -104
+      },
+      {
+       "name": "hitH",
+       "type": "int",
+       "value": 112
+      },
+      {
+       "name": "hitW",
+       "type": "int",
+       "value": 96
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-signpost"
+      },
+      {
+       "name": "station",
+       "type": "string",
+       "value": "S1"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 5472,
+     "y": 4792
+    },
+    {
+     "class": "sign",
+     "height": 0,
+     "id": 24,
+     "name": "sign-S2",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "hitDx",
+       "type": "int",
+       "value": -48
+      },
+      {
+       "name": "hitDy",
+       "type": "int",
+       "value": -104
+      },
+      {
+       "name": "hitH",
+       "type": "int",
+       "value": 112
+      },
+      {
+       "name": "hitW",
+       "type": "int",
+       "value": 96
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-signpost"
+      },
+      {
+       "name": "station",
+       "type": "string",
+       "value": "S2"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6172,
+     "y": 5292
+    },
+    {
+     "class": "sign",
+     "height": 0,
+     "id": 25,
+     "name": "sign-S3",
+     "point": true,
+     "properties": [
+      {
+       "name": "ay",
+       "type": "float",
+       "value": 0.9333333333333333
+      },
+      {
+       "name": "blockR",
+       "type": "int",
+       "value": 14
+      },
+      {
+       "name": "hitDx",
+       "type": "int",
+       "value": -48
+      },
+      {
+       "name": "hitDy",
+       "type": "int",
+       "value": -104
+      },
+      {
+       "name": "hitH",
+       "type": "int",
+       "value": 112
+      },
+      {
+       "name": "hitW",
+       "type": "int",
+       "value": 96
+      },
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-signpost"
+      },
+      {
+       "name": "station",
+       "type": "string",
+       "value": "S3"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 6872,
+     "y": 4992
+    },
+    {
+     "class": "prop",
+     "height": 0,
+     "id": 26,
+     "name": "prop-scale-trail-gazebo",
+     "point": true,
+     "properties": [
+      {
+       "name": "sprite",
+       "type": "string",
+       "value": "obj-scale-trail-gazebo"
+      }
+     ],
+     "rotation": 0,
+     "visible": true,
+     "width": 0,
+     "x": 7320,
+     "y": 5680
+    },
+    {
+     "class": "block",
+     "height": 48,
+     "id": 27,
+     "name": "block-scale-trail-gazebo",
+     "rotation": 0,
+     "visible": true,
+     "width": 184,
+     "x": 7232,
+     "y": 5632
+    }
+   ],
+   "opacity": 1,
+   "type": "objectgroup",
+   "visible": true,
+   "x": 0,
+   "y": 0
+  }
+ ],
+ "nextlayerid": 2,
+ "nextobjectid": 28,
+ "orientation": "orthogonal",
+ "renderorder": "right-down",
+ "tiledversion": "1.11.2",
+ "tileheight": 32,
+ "tilesets": [],
+ "tilewidth": 32,
+ "type": "map",
+ "version": "1.10",
+ "width": 256
+}

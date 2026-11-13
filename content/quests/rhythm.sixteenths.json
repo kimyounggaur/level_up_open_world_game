@@ -1,0 +1,103 @@
+{
+  "projectId": "levelup-music-world",
+  "questId": "rhythm.sixteenths",
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "title": "잘게 쪼갠 물결",
+  "topicTags": [
+    "rhythm",
+    "sixteenth",
+    "meter-4-4"
+  ],
+  "availability": "draft",
+  "variantIds": [
+    "sixteenths-and-eighths"
+  ],
+  "placements": [
+    {
+      "kind": "installation",
+      "installationId": "inst.beat-river.ripple-channel",
+      "variantIds": [
+        "sixteenths-and-eighths"
+      ]
+    },
+    {
+      "kind": "panel",
+      "panelId": "panel.rhythm",
+      "variantIds": [
+        "sixteenths-and-eighths"
+      ]
+    }
+  ],
+  "sourceRefs": [
+    {
+      "sourceFileId": "1on2XONt-KWET1r6SYwObTbcEK09xgzMi",
+      "originalFilename": "010.png",
+      "variantOf": null,
+      "reviewStatus": "unreviewed",
+      "rightsStatus": "unconfirmed",
+      "issues": [
+        "설계서 5.4가 관련 교재로 적은 장이다. 16분음표와 8분음표가 섞인 한 마디가 교재에 있는지 대조 필요. 교재 폴더 두 곳에 같은 이름의 사본이 있고 크기가 다른 010.png가 하나 더 있어 어느 쪽이 원본인지 확인 필요",
+        "6-11 후보 대조(그림으로 봄, 검수 아님): 이 파일은 '32분 음표와 32분 쉼표' 쪽이고 16분음표와 8분음표가 섞인 한 마디는 보이지 않는다(32분과 16분·8분·4분의 길이 관계만 나온다). 교재 폴더 두 곳의 010.png는 크기가 같다(1,433,126바이트). 이 과제에 맞는 쪽이 따로 있는지 사람이 찾아야 한다"
+      ]
+    }
+  ],
+  "variants": {
+    "sixteenths-and-eighths": {
+      "label": "16분음표 넷, 8분음표 둘, 2분음표",
+      "challengeDescriptor": {
+        "range": "C4-G4",
+        "voices": 1,
+        "smallestValue": "sixteenth",
+        "accidentals": "none",
+        "input": "placement"
+      },
+      "score": {
+        "PPQ": 960,
+        "tuning": "12TET",
+        "octaveConvention": "C4=MIDI60",
+        "tempoReference": "quarter",
+        "tempoBpm": 80,
+        "meter": "4/4",
+        "staves": [
+          {
+            "staffId": "s1",
+            "clef": "treble",
+            "keySignature": 0
+          }
+        ],
+        "voices": [
+          {
+            "voiceId": "v1",
+            "staffId": "s1"
+          }
+        ],
+        "events": [
+          {"eventId": "n1", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 0, "durationTicks": 240, "writtenPitch": {"letter": "C", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "C", "alter": 0, "octave": 4, "midi": 60}},
+          {"eventId": "n2", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 240, "durationTicks": 240, "writtenPitch": {"letter": "D", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "D", "alter": 0, "octave": 4, "midi": 62}},
+          {"eventId": "n3", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 480, "durationTicks": 240, "writtenPitch": {"letter": "E", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 4, "midi": 64}},
+          {"eventId": "n4", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 720, "durationTicks": 240, "writtenPitch": {"letter": "F", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "F", "alter": 0, "octave": 4, "midi": 65}},
+          {"eventId": "n5", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 960, "durationTicks": 480, "writtenPitch": {"letter": "G", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 4, "midi": 67}},
+          {"eventId": "n6", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1440, "durationTicks": 480, "writtenPitch": {"letter": "G", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "G", "alter": 0, "octave": 4, "midi": 67}},
+          {"eventId": "n7", "type": "note", "voiceId": "v1", "staffId": "s1", "measureIndex": 0, "onsetTicks": 1920, "durationTicks": 1920, "writtenPitch": {"letter": "E", "accidental": null, "octave": 4}, "resolvedPitch": {"letter": "E", "alter": 0, "octave": 4, "midi": 64}}
+        ]
+      },
+      "evaluatorSpec": {
+        "type": "rhythmPlacement",
+        "voiceId": "v1",
+        "requirePitch": true
+      }
+    }
+  },
+  "assistanceLinks": [
+    {
+      "type": "listenBar",
+      "label": "한 마디 듣기"
+    },
+    {
+      "type": "showBeatGrid",
+      "label": "박 격자 보기"
+    }
+  ],
+  "feedbackRules": []
+}
