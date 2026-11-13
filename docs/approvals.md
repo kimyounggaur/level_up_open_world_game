@@ -2076,3 +2076,25 @@ G3의 3번은 '절반에 못 미치면 과제를 늘리기 전에 검수 속도�
 - 프레임 속도(PC 60 fps, 기준 태블릿 30 fps 이상)는 이 환경(소프트웨어 그리기)에서 잴 수 없다. 사람이 기준 기기에서 손 점검표 P3로 잰다.
 
 **사람 확인 대기**: 8-1~8-6의 '사람 확인 대기'가 그대로이고, 한곳에 모은 목록은 `docs/human-pending.md`에 있다. 이 기록과 README를 쓴 뒤의 `npm run verify` 재실행 결과는 이 기록이 그 점검의 대상이라 여기에 적지 않고 전달 보고에 적는다. G1·G2·G3의 '통과'는 이 점검에서도 적지 않는다.
+
+## 새 복제본 점검 (호스팅 준비, 2026-11-13)
+
+호스팅(Vercel)에 올리기 전에, 올릴 저장소가 처음부터 설치·빌드·시험되는지를 새로 복제한 폴더에서 확인했다. 앞의 `npm run verify`와 흐름 시험은 모두 작업 폴더에서 돌린 것이었다.
+
+**발견과 고침** (D-306)
+- 처음 새 복제본(c939fab)에서 `npm ci`는 통과했고 `npm run build`가 첫 단계 `npm run validate`에서 `[FOLDER] content/ensemble: content 폴더가 없어요` 한 건으로 멈췄다. `tools/content-loader.ts`의 `CONTENT_DIRS`는 여섯 폴더(`quests`, `installations`, `regions`, `discoveries`, `ensemble`, `sources`)가 있는지를 보는데, `content/ensemble/`은 작업 폴더에서 비어 있었고 git은 빈 폴더를 담지 않는다(`git ls-files content/ensemble`이 0개). 이미 GitHub에 올린 저장소(b703457)도 같았다.
+- 고침: `content/ensemble/.gitkeep`(0 B)을 더했다(564bcd7). `loadContent`는 이 폴더의 파일을 읽지 않고 폴더가 있는지만 보므로 시험과 빌드의 결과는 바뀌지 않는다.
+
+**고친 뒤 결과** (새 복제본 564bcd7, Node 22.23.4, npm 10.9.9)
+
+| 단계 | 결과 |
+|---|---|
+| `npm ci` | 통과(7초) |
+| `npm run build` (= `validate` + `tsc --noEmit` + `vite build`) | 통과(30초). 콘텐츠 검사: 과제 31개, 설치물 20개, 지역 6개, 발견 요소 59개, 내용 잠금 31개와 맞음 |
+| `npm run check:deps` | 통과(208개 파일) |
+| `npm test` | 188개 파일 6,084개 통과(170.60초) |
+| `dist` | 58개 파일 4,220,445 B. 파일마다 sha256이 작업 폴더의 `dist`와 같다 |
+
+`npm run verify`의 네 단계 중 `validate`와 `typecheck`는 `npm run build`가 함께 하고 `check:deps`와 `test`는 따로 돌렸다. `verify` 명령 자체를 새 복제본에서 돌리지는 않았다.
+
+**`vercel.json`** (c939fab) 정적 점검: 보안 머리말 다섯 개의 값이 `docs/hosting.md` 본문의 값과 같다. `dist`의 파일 58개와 루트 주소(`/`)마다 `Cache-Control` 규칙이 정확히 하나씩 맞는다(`assets/*` 4개는 `public, max-age=31536000, immutable`, 나머지 55개는 `no-cache`). 이 파일을 Vercel이 받아들이는지(문법, 머리말이 응답에 실제로 붙는지)는 이 점검이 보지 못했다.
