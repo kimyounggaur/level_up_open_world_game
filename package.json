@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "description": "레벨업 음악이론 오픈월드 — 걸어 다니며 음악이론을 배치로 익히는 2D 탑다운 게임",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "npm run validate && tsc --noEmit && vite build",
