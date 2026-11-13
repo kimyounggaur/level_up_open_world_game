@@ -2,13 +2,13 @@
 
 정식 공개(release) 빌드를 정적 호스팅에 올릴 때 지켜야 할 조건이다. 이 저장소는 서버를 갖지 않는다. 앱이 하는 일은 같은 주소에서 파일을 받는 것뿐이라(`docs/privacy-flow.md`) 아래 조건은 모두 **호스팅의 설정**이다.
 
-이 문서의 값은 시험 도구 `tests/flow/hosting.ts`가 보내는 머리말과 같다. 같은지는 단위 시험 `tests/unit/hosting-doc.test.ts`가 지키고, 값을 고치려면 두 곳을 함께 고친다. 이 저장소는 아래 설정을 실제 호스팅에 올려 본 적이 없다. 같은 머리말을 보내는 시험 서버로 실제 Chrome에서 본 것이 전부다(맨 아래 '알려진 한계').
+이 문서의 값은 시험 도구 `tests/flow/hosting.ts`가 보내는 머리말과 같다. 같은지는 단위 시험 `tests/unit/hosting-doc.test.ts`가 지키고, 값을 고치려면 세 곳(`hosting.ts`, 이 문서, 저장소 뿌리의 `vercel.json`)을 함께 고친다. `vercel.json`이 같은지도 같은 시험이 지킨다. 이 저장소는 아래 설정을 실제 호스팅에 올려 본 적이 없다. 같은 머리말을 보내는 시험 서버로 실제 Chrome에서 본 것이 전부다(맨 아래 '알려진 한계').
 
 ## 한눈에
 
 | 조건 | 값 | 왜 | 확인한 방법 |
 |---|---|---|---|
-| 올리는 폴더 | `npm run build:release`가 만드는 `dist-release/`의 안쪽 전부. 미리보기 빌드(`dist/`)는 공개 호스팅에 올리지 않는다 | 미리보기는 검수 전 콘텐츠를 '검수 전' 표지로 열고, 점검용 연결(`window.__game`)과 개발용 화면이 있다 | `release.flow.ts`가 공개 빌드에 점검용 연결이 없고 개발용 주소가 닫혀 있음을 실제 Chrome에서 본다 |
+| 올리는 폴더 | `npm run build:release`가 만드는 `dist-release/`의 안쪽 전부. 미리보기 빌드(`dist/`)는 공개 호스팅에 올리지 않는다(`vercel.json`은 지금 미리보기를 짓도록 적혀 있다: D-307) | 미리보기는 검수 전 콘텐츠를 '검수 전' 표지로 열고, 점검용 연결(`window.__game`)과 개발용 화면이 있다 | `release.flow.ts`가 공개 빌드에 점검용 연결이 없고 개발용 주소가 닫혀 있음을 실제 Chrome에서 본다 |
 | 글 파일 압축 | **gzip 필수**(html, js, css, json, svg, txt). brotli는 선택이고 재지 않았다 | 느린 회선(3G Fast, CPU 4배 느리게)에서 월드 준비가 압축이 없으면 20.86초, gzip이면 10.89초다(D-292) | 8-4의 불러오기 시간 표, `release.flow.ts`가 받은 응답의 `content-encoding`을 본다 |
 | 캐시 | `assets/*`는 `public, max-age=31536000, immutable`. 나머지(`index.html`, `world/*`, `THIRD-PARTY-NOTICES.txt`)는 `no-cache`(검사자 `ETag`) | `assets/*`는 이름에 해시가 있어 내용이 바뀌면 이름이 바뀐다. 나머지는 이름이 그대로라 쓸 때마다 확인해야 낡은 파일이 새 앱과 섞이지 않는다 | `release.flow.ts`가 받은 응답의 `cache-control`, `revisit.flow.ts`의 두 번째 방문 측정 |
 | 내용 보안 정책 | 아래 '보안 머리말'의 한 줄 | 앱이 부르는 곳은 같은 주소뿐이고 그것을 브라우저가 지키게 한다 | `default-src 'self'`에서 시작해 막힌 것을 하나씩 열었다. `release.flow.ts`와 `FLOW_HOSTED=1` 흐름 시험 |
@@ -92,20 +92,31 @@ HTTPS에서는 여기에 `Strict-Transport-Security: max-age=31536000`을 더한
   Cache-Control: public, max-age=31536000, immutable
 ```
 
-**Vercel**(`vercel.json`. 압축은 자동):
+**Vercel**(저장소 뿌리의 `vercel.json`이 이 내용이다. 압축은 자동. 설치(`npm ci`), 빌드(`npm run build`), 출력 폴더(`dist`)도 함께 적었다. `index.html`, 루트 주소, `world/*`, 고지문은 `no-cache`를 `source`마다 적었다. **지금의 `vercel.json`은 미리보기 빌드(`dist/`)를 짓는다**: 공개 점검이 막혀 `dist-release/`를 만들 수 없어서다(D-307). 정식 공개 빌드를 올릴 때는 `buildCommand`를 `npm run build:release`로, `outputDirectory`를 `dist-release`로 바꾼다):
 
 ```json
 {
+  "framework": "vite",
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "headers": [
-    { "source": "/(.*)", "headers": [
-      { "key": "Content-Security-Policy", "value": "default-src 'self'; img-src 'self' data: blob:; font-src 'self' data:; worker-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'" },
-      { "key": "Referrer-Policy", "value": "no-referrer" },
-      { "key": "X-Content-Type-Options", "value": "nosniff" },
-      { "key": "X-Frame-Options", "value": "DENY" },
-      { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=()" },
-      { "key": "Strict-Transport-Security", "value": "max-age=31536000" }
-    ] },
-    { "source": "/assets/(.*)", "headers": [ { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" } ] }
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; img-src 'self' data: blob:; font-src 'self' data:; worker-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'" },
+        { "key": "Referrer-Policy", "value": "no-referrer" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=()" },
+        { "key": "Strict-Transport-Security", "value": "max-age=31536000" }
+      ]
+    },
+    { "source": "/assets/(.*)", "headers": [ { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" } ] },
+    { "source": "/", "headers": [ { "key": "Cache-Control", "value": "no-cache" } ] },
+    { "source": "/index.html", "headers": [ { "key": "Cache-Control", "value": "no-cache" } ] },
+    { "source": "/world/(.*)", "headers": [ { "key": "Cache-Control", "value": "no-cache" } ] },
+    { "source": "/THIRD-PARTY-NOTICES.txt", "headers": [ { "key": "Cache-Control", "value": "no-cache" } ] }
   ]
 }
 ```

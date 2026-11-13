@@ -9,6 +9,15 @@ import { CACHE_ASSETS, CACHE_REVALIDATE, CSP, SECURITY_HEADERS } from '../flow/h
 const doc = fs.readFileSync(path.resolve(__dirname, '../../docs/hosting.md'), 'utf-8');
 const titleCase = (name: string): string => name.replace(/(^|-)([a-z])/g, (_, a: string, c: string) => a + c.toUpperCase());
 
+// 저장소 뿌리의 vercel.json: 모든 응답에 붙는 머리말(source '/(.*)')과 캐시 규칙(source별 Cache-Control)
+interface VercelRule {
+  source: string;
+  headers: { key: string; value: string }[];
+}
+const vercel = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../vercel.json'), 'utf-8')) as { headers: VercelRule[] };
+const vercelHeaders = vercel.headers.find((r) => r.source === '/(.*)')?.headers ?? [];
+const vercelCache = vercel.headers.filter((r) => r.headers.some((h) => h.key === 'Cache-Control')).map((r) => ({ source: r.source, value: r.headers.find((h) => h.key === 'Cache-Control')?.value }));
+
 describe('docs/hosting.md와 시험 서버의 머리말', () => {
   it('보안 머리말 다섯 개가 문서의 "이름: 값" 모든 곳(본문, Netlify, 글 속)과 Vercel 예시에서 시험 서버와 같은 값이다', () => {
     expect(Object.keys(SECURITY_HEADERS)).toEqual(['content-security-policy', 'referrer-policy', 'x-content-type-options', 'x-frame-options', 'permissions-policy']);
@@ -20,6 +29,8 @@ describe('docs/hosting.md와 시험 서버의 머리말', () => {
       for (const f of found) expect(f, name).toBe(v);
       // Vercel 예시는 JSON이라 꼴이 다르다
       expect(doc, `${name} (Vercel 예시)`).toContain(`{ "key": "${name}", "value": "${v}" }`);
+      // Vercel에 올릴 때 쓰는 저장소 뿌리의 vercel.json도 같은 값이다(손으로 옮긴 값이 낡는 것을 같은 시험에서 잡는다)
+      expect(vercelHeaders.find((h) => h.key === name)?.value, `vercel.json ${name}`).toBe(v);
     }
   });
 
@@ -31,6 +42,10 @@ describe('docs/hosting.md와 시험 서버의 머리말', () => {
     expect(doc).toContain(CACHE_ASSETS);
     expect(doc).toContain(CACHE_REVALIDATE);
     expect(doc.split(CACHE_ASSETS).length - 1).toBeGreaterThanOrEqual(5);
+    // vercel.json: assets는 오래, 나머지(루트 주소, index.html, world, 고지문)는 확인. 시험 서버(cacheControlFor)와 같은 나눔이다
+    expect(vercelCache.filter((c) => c.source.startsWith('/assets/')).map((c) => c.value)).toEqual([CACHE_ASSETS]);
+    expect(vercelCache.filter((c) => !c.source.startsWith('/assets/')).map((c) => c.source).sort()).toEqual(['/', '/THIRD-PARTY-NOTICES.txt', '/index.html', '/world/(.*)']);
+    for (const c of vercelCache.filter((x) => !x.source.startsWith('/assets/'))) expect(c.value, `vercel.json ${c.source}`).toBe(CACHE_REVALIDATE);
   });
 
   it('정책에서 열어 둔 네 가지가 문서의 설명과 같다(정책을 고치면 설명도 고쳐야 한다)', () => {
