@@ -3,7 +3,7 @@
 // 끌지 않아도 모두 할 수 있다(W-4): 키보드(terraceKeys의 표), 높이를 눌러 놓기, 이 화면의 단추.
 // 맞고 틀림은 색만으로 말하지 않는다: 기호(그림)와 문장을 함께 두고, 같은 문장을 오선 패널과 같이 쓴다(staffText).
 // 문제를 푸는 중에는 높이를 보표 위치(아래 첫 덧줄 …)로만 말한다. 이름을 알려 주면 높이를 찾는 일이 사라진다. 자유로 놀 때만 이름도 말한다(4.7).
-import { useEffect, useRef } from 'preact/hooks';
+import { useLayoutEffect, useRef } from 'preact/hooks';
 import { terraceSpeakOf } from '../../domain/terrace';
 import type { WorldBridge } from '../../platform/bridge';
 import { isActivatableElement, isTypingElement } from '../challenge/benchKeys';
@@ -61,7 +61,7 @@ export function TerraceHud({ bridge, controller, bench, installation, onNavigate
   // 키보드(terraceKeys의 표). 모드에 있는 동안 월드는 키를 받지 않는다.
   // Esc는 열려 있는 표지판 목록이나 도움 카드를 먼저 닫고, 닫을 것이 없을 때만 나간다
   const helpOpen = ui.helpOpen;
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!installationId) return;
     const onKeyDown = (e: KeyboardEvent): void => {
       if (e.defaultPrevented || e.isComposing || bridge.pause.get()) return;

@@ -38,6 +38,7 @@ import type { DrawnResident } from './residents/layer';
 import { SpotLayer } from './spots/layer';
 import type { DrawnSpot } from './spots/layer';
 import { depthOfFoot } from './objects';
+import { PLAYER_FOOT_Y, PLAYER_FRAME_H, PLAYER_FRAME_W, advanceWalk, playerLook } from './playerSprite';
 import type { WorldObjectData } from './objects';
 import type { MoveInput } from './player';
 import type { WorldRuntime } from './runtime';
@@ -79,17 +80,11 @@ export const TELEPORT_FADE_MS = 300;
 /** 설치물 모드에서 돌을 누를 때 돌 사이 틈의 절반쯤을 더해 본다(손가락이 빗나가도 가까운 돌이 눌린다, W-4) */
 export const SLOT_TAP_SLOP = 10;
 const TEAL = 0x17675d;
-const PAPER_WHITE = 0xfffefa;
-const MARKER_PURPLE = 0x755675; // 캐릭터에만 쓰는 보라(9.2)
-const MARKER_SHADOW = 0xb7bdc6;
 
 /** 사물 그림 틀의 이름: 그림 파일 이름에서 .svg를 뗀 것 */
 export const spriteKey = (file: string): string => file.replace(/\.svg$/, '');
 /** 사물 아틀라스를 Phaser 텍스처로 올릴 때 쓰는 키 */
 export const OBJECT_ATLAS_KEY = 'world-objects';
-
-/** 위쪽을 보는 화살표를 방향에 맞게 돌린다 */
-export const ARROW_ROTATION: Readonly<Record<Facing, number>> = { up: 0, right: Math.PI / 2, down: Math.PI, left: -Math.PI / 2 };
 
 export interface SceneDebugState {
   center: Point;
@@ -154,7 +149,10 @@ export class WorldScene extends Phaser.Scene {
   cull!: ViewCull;
   private clock = 0;
   private player!: Phaser.GameObjects.Container;
-  private arrow!: Phaser.GameObjects.Graphics;
+  /** 캐릭터 그림(아틀라스의 chr-player-… 틀)과 지금 그린 틀 이름, 걷기 한 바퀴의 진행(0–1) */
+  private playerSprite!: Phaser.GameObjects.Image;
+  private playerFrame = '';
+  private walkPhase = 0;
   private marks!: Phaser.GameObjects.Graphics;
   private ripple: { x: number; y: number; t0: number } | null = null;
   private lastView: ViewReport | null = null;
@@ -292,10 +290,10 @@ export class WorldScene extends Phaser.Scene {
     this.streamChunks(seen);
     this.publishView(seen, size, dt);
 
-    // 캐릭터: 발 위치의 y가 겹침 순서다. 걸을 때는 위아래로 살짝 흔들린다(움직임 줄이기에서는 없다)
-    const bob = p.moving && !reduce ? -Math.abs(Math.sin(this.clock * 11)) * 2 : 0;
-    this.player.setPosition(p.x, p.y + bob).setDepth(depthOfFoot(p.y));
-    this.arrow.setRotation(ARROW_ROTATION[p.facing]);
+    // 캐릭터: 발 위치의 y가 겹침 순서다. 걸을 때는 걷기 장을 넘기고 위아래로 살짝 흔들린다(움직임 줄이기에서는 장도 흔들림도 없다)
+    this.walkPhase = advanceWalk(this.walkPhase, p.moving, dt);
+    this.showPlayer(p.facing, p.moving, reduce);
+    this.player.setDepth(depthOfFoot(p.y));
 
     if (rt.consumeFade() && !reduce) {
       this.fades += 1;
@@ -430,19 +428,25 @@ export class WorldScene extends Phaser.Scene {
 
   // ───── 캐릭터와 바닥 표시 ─────
 
-  /** 4단계까지는 시안의 방향 표식으로 캐릭터를 대신한다(9.3). 흰 테두리 원, 보라색 원, 바라보는 쪽을 가리키는 화살표 */
+  /** 캐릭터(9.3): 아틀라스의 캐릭터 그림 한 장. 발이 캐릭터의 월드 좌표에 오도록 기준점을 발에 둔다(D-308) */
   private buildPlayer(): void {
-    const shadow = this.add.graphics();
-    shadow.fillStyle(MARKER_SHADOW, 1).fillEllipse(6, 9, 52, 42);
-    const ring = this.add.graphics();
-    ring.fillStyle(PAPER_WHITE, 1).fillCircle(0, 0, 24);
-    const disc = this.add.graphics();
-    disc.fillStyle(MARKER_PURPLE, 1).fillCircle(0, 0, 18);
-    this.arrow = this.add.graphics();
-    this.arrow.fillStyle(PAPER_WHITE, 1).fillTriangle(0, -15, -8, 5, 0, 0).fillTriangle(0, -15, 0, 0, 8, 5);
     const p = this.o.runtime.player;
-    this.player = this.add.container(p.x, p.y, [shadow, ring, disc, this.arrow]).setDepth(depthOfFoot(p.y));
-    this.arrow.setRotation(ARROW_ROTATION[p.facing]);
+    this.playerSprite = this.add.image(0, 0, OBJECT_ATLAS_KEY, playerLook(p.facing, false, 0, 0, true).frame);
+    this.playerSprite.setOrigin(0.5, PLAYER_FOOT_Y / PLAYER_FRAME_H).setDisplaySize(PLAYER_FRAME_W, PLAYER_FRAME_H);
+    this.player = this.add.container(p.x, p.y, [this.playerSprite]).setDepth(depthOfFoot(p.y));
+    this.showPlayer(p.facing, false, this.o.reduceMotion());
+  }
+
+  /** 바라보는 쪽과 걷기에 맞는 장을 고르고 위아래 흔들림을 준다 */
+  private showPlayer(facing: Facing, moving: boolean, reduce: boolean): void {
+    const p = this.o.runtime.player;
+    const look = playerLook(facing, moving, this.walkPhase, this.clock, reduce);
+    if (look.frame !== this.playerFrame) {
+      this.playerSprite.setFrame(look.frame);
+      this.playerSprite.setDisplaySize(PLAYER_FRAME_W, PLAYER_FRAME_H);
+      this.playerFrame = look.frame;
+    }
+    this.player.setPosition(p.x, p.y + look.bob);
   }
 
   private onPointer(pointer: Phaser.Input.Pointer): void {

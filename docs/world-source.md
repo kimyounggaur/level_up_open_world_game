@@ -146,10 +146,18 @@
 - **바꾸는 법**: 표지판을 옮기거나 더하려면 지역의 `.tmj`에서 소품을 고치고(번호는 지도의 `nextobjectid`를 따른다) `npm run build:world`를 돌린다(`npm run validate`는 생성된 월드 데이터를 읽으므로 이 순서를 지킨다). 정거장이나 길을 옮기면 `npm run validate`(곧 `npm run build`)가 `ROAD_BARE` 문제로 어느 길의 어느 구간이 600 px를 넘는지 알려 준다. `npm run roadsight`는 길마다 빈 구간과 한도에 가까운 구간, 어림값을 바꿨을 때의 숫자를 찍는다(자리를 골라 주지는 않는다).
 - **어긋나면**: `tests/unit/roadsight.test.ts`(계산, 27개)와 `tests/unit/world-sight.test.ts`(월드의 데이터, 23개)가 규칙 1과 2, 표지판의 자리, 걷는 시간을 잡고, 실제 Chrome `tests/flow/phase7-waysigns.flow.ts`가 여섯 표지판마다 길 위에서 보았을 때 그림의 색이 그 자리에 보이는지를 읽고 사진(`docs/verification/screens/phase7-waysign-*.png`)을 남긴다. 그림이 길 위에서 알아보기 쉬운지는 눈으로 보는 점검이다(사람 확인 대기).
 
+## 그림을 칠하는 코드(햇살 과슈, D-308)
+
+2026-11-14부터 `world-src/sprites/`의 그림 33장(나무 21, 표지판 5, 지역 표지 3, 메아리 벽, 허수아비 2, 밧줄)과 주인공 캐릭터 그림 32장(`chr-player-<방향>-<자세>-<번호>.svg`)은 `world-src/art/`의 코드가 칠해 쓴다(`npm run paint:sprites`). 원칙과 지킨 자리는 `docs/art-direction.md`에 있다.
+
+- 사물을 더하는 길(위의 1–4)은 그대로다. 칠하는 코드가 모르는 이름의 SVG는 손으로 그린 원본으로 보고 건드리지 않는다.
+- 칠하는 코드가 아는 이름의 파일을 손으로 고치면 `npm test`(`tests/unit/art-paint.test.ts`)와 `npm run check:paint`가 코드와 다르다고 알린다. 손으로 관리하려면 `world-src/art/index.ts`의 목록에서 뺀다.
+- 캐릭터 그림도 같은 아틀라스에 들어간다(65장, 2048×2304). 아틀라스는 색을 품질 88의 손실 압축, 투명도를 무손실로 굽는다(D-309).
+
 ## 처음 옮겨 담은 일
 
 5단계까지 나무(163)와 표지판(18)은 코드(`world-src/outer.ts`의 `scatterTrees`, `signSpecs`, `village.ts`의 `villageTrees`)가 계산했다. 6단계에서 `npm run seed:world-source`(`tools/seed-world-source.ts`)가 그 결과를 한 번 지도 파일 6개와 그림 26개로 옮겨 썼다. 옮긴 뒤 다시 구운 결과가 이전과 **같은지**를 지문으로 비교했다: 바닥 그림(SVG 글), 막힌 칸 표, 사물 181개, 누르기 영역, 정거장 서는 자리, 그림 원본, 지역 칸 표가 모두 일치했다. 이 도구는 이미 있는 파일을 덮어쓰지 않는다(`--force`는 손으로 고친 것을 지운다).
 
 ## 아틀라스
 
-`world-src/atlas.ts`가 선반 방식으로 틀을 쌓고(키가 큰 순서, 틀 사이 4 px 비움, 가로 2048 이하, 가로·세로는 2의 거듭제곱), `tools/atlas.ts`가 sharp로 2배로 칠해 무손실 WebP 한 장(`objects.webp`)과 Phaser JSON Hash(`objects.json`)로 쓴다. `npm run build:atlas`로 그림만 다시 구울 수도 있다. 장면은 `this.load.atlas`로 한 번에 불러온다(낱장 SVG 26개 요청이 2개로 줄었다).
+`world-src/atlas.ts`가 선반 방식으로 틀을 쌓고(키가 큰 순서, 틀 사이 4 px 비움, 가로 2048 이하, 가로는 2의 거듭제곱이고 세로는 16의 배수, D-291), `tools/atlas.ts`가 sharp로 2배로 칠해 WebP 한 장(`objects.webp`, 색은 품질 88의 손실 압축이고 투명도는 무손실, D-309)과 Phaser JSON Hash(`objects.json`)로 쓴다. `npm run build:atlas`로 그림만 다시 구울 수도 있다. 장면은 `this.load.atlas`로 한 번에 불러온다(낱장 SVG 26개 요청이 2개로 줄었다).

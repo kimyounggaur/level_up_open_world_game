@@ -2,7 +2,7 @@
 import type { WorldObjectData } from '../objects';
 
 /** 바닥 원본의 해시. 원본이 바뀌었는데 다시 굽지 않았으면 테스트가 알린다 */
-export const WORLD_SOURCE_HASH = 'c8d808a3a597e22e';
+export const WORLD_SOURCE_HASH = '8a3672251e54ffa8';
 
 /** 막힌 칸 표. 줄마다 256칸, '#'은 막힌 칸, '.'은 걸을 수 있는 칸 */
 export const NAV_ROWS: readonly string[] = [
@@ -375,6 +375,38 @@ export const OBJECT_ATLAS = { image: 'objects.webp', data: 'objects.json' } as c
 
 /** 아틀라스에 든 틀 이름(그림 파일 이름에서 .svg를 뗀 것) */
 export const OBJECT_FRAMES: readonly string[] = [
+  'chr-player-down-idle-0',
+  'chr-player-down-idle-1',
+  'chr-player-down-walk-0',
+  'chr-player-down-walk-1',
+  'chr-player-down-walk-2',
+  'chr-player-down-walk-3',
+  'chr-player-down-walk-4',
+  'chr-player-down-walk-5',
+  'chr-player-left-idle-0',
+  'chr-player-left-idle-1',
+  'chr-player-left-walk-0',
+  'chr-player-left-walk-1',
+  'chr-player-left-walk-2',
+  'chr-player-left-walk-3',
+  'chr-player-left-walk-4',
+  'chr-player-left-walk-5',
+  'chr-player-right-idle-0',
+  'chr-player-right-idle-1',
+  'chr-player-right-walk-0',
+  'chr-player-right-walk-1',
+  'chr-player-right-walk-2',
+  'chr-player-right-walk-3',
+  'chr-player-right-walk-4',
+  'chr-player-right-walk-5',
+  'chr-player-up-idle-0',
+  'chr-player-up-idle-1',
+  'chr-player-up-walk-0',
+  'chr-player-up-walk-1',
+  'chr-player-up-walk-2',
+  'chr-player-up-walk-3',
+  'chr-player-up-walk-4',
+  'chr-player-up-walk-5',
   'obj-beat-river-signpost',
   'obj-beat-river-tree-r54',
   'obj-beat-river-tree-r72',

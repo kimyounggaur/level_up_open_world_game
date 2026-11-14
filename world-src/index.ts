@@ -7,6 +7,7 @@ import { reachableFrom } from '../src/world/nav';
 import type { NavGrid, Point } from '../src/world/nav';
 import type { WorldObjectData } from '../src/world/objects';
 import { COLOR } from './palette';
+import { grassSvg, roadDecorSvg } from './art/ground';
 import { roadsSvg } from './curves';
 import type { RoadSegment } from './curves';
 import { RIVER_HALF_WIDTH, bridgeSvg, bridgeWalkable, fenceSvg, fordColliders, fordSvg, millPondColliders, millPondSvg, outerPatchesSvg, outerRoads, riverCenter, riverSvg } from './outer';
@@ -63,11 +64,12 @@ function layout(): Layout {
 
 function groundBody(regions: readonly RegionDef[], l: Layout, placed: Placed): string {
   return [
-    DOT_PATTERN_DEFS,
-    `<rect x="0" y="0" width="${WORLD_W}" height="${WORLD_H}" fill="url(#groundDots)"/>`,
     outerPatchesSvg(regions),
     villagePatchesSvg(),
+    // 햇살 과슈 화풍의 풀 결(D-308): 시안의 점 무늬 대신 반투명한 풀 포기와 들꽃. 바닥색과 얼룩 위, 길 아래에 깐다
+    grassSvg(WORLD_W, WORLD_H),
     roadsSvg(l.roads),
+    roadDecorSvg(l.roads, COLOR.road, COLOR.roadEdge),
     villageFrontSvg(),
     // 음계 길의 디딤돌(7-2): 길 위, 나무 그림자 아래
     trailStonesSvg(),

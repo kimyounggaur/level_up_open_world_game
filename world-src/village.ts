@@ -5,6 +5,8 @@ import type { Rect } from '../src/world/interact';
 import type { Collider } from './shapes';
 import { circle, line, num, path, rect, splitAlpha } from './shapes';
 import { COLOR } from './palette';
+import { hedgeSvg, hipRoofSvg, plazaPavingSvg, stageSvg, stoolSvg } from './art/ground';
+import { SHADOW } from './art/paint';
 import { roadsSvg } from './curves';
 import type { RoadSegment } from './curves';
 import { treeCanopyInlineSvg, treeShadowSvg } from './trees';
@@ -57,6 +59,7 @@ interface BuildingSpec {
   /** 지붕 (x, y, 너비, 높이) 시안 좌표 */
   roof: readonly [number, number, number, number];
   roofColor: string;
+  /** 시안 그림(mock)에서 지붕 가운데 마름모의 색 */
   diamondColor: string;
   /** 지붕 위 무늬(창, 건반 따위). 시안 좌표 */
   extras: string[];
@@ -135,36 +138,58 @@ export const villageTrees = (): TreeSpec[] => TREE_MOCK.map((t, i) => ({ id: `tr
 
 const BENCH = { x: 568, y: 456, w: 54, h: 29 } as const;
 
+/**
+ * 그림 방식: 'painted'는 게임의 바닥(햇살 과슈 화풍, D-308), 'mock'은 시안 B01과 같은 평면 그림이다.
+ * 둘은 자리와 크기(시안 좌표)가 같고 칠하는 방식만 다르다. 'mock'은 시안과 나란히 놓고 배치를 픽셀로 대조할 때만 쓴다(3-2 시험).
+ */
+export type VillageStyle = 'painted' | 'mock';
+
 /** 마을의 앞쪽 그림: 합주 광장, 건물, 울타리, 디딤돌, 의자. 길 위에 그린다 */
-export function villageFrontSvg(): string {
+export function villageFrontSvg(style: VillageStyle = 'painted'): string {
   const parts: string[] = [];
+  const painted = style === 'painted';
   const { cx, cy } = PLAZA;
   parts.push(circle(cx, cy, 120, COLOR.plazaOuter), circle(cx, cy, 111, COLOR.plaza));
+  // 햇살 과슈 화풍(D-308): 바닥 돌의 이음매와 볕, 나무 무대, 둥근 나무 의자. 자리와 크기는 시안 그대로다
+  if (painted) parts.push(plazaPavingSvg(cx, cy, 79, 111, COLOR.plazaRing));
   parts.push(circle(cx, cy, 96, 'none', { stroke: COLOR.plazaRing, 'stroke-width': 2 }), circle(cx, cy, 79, 'none', { stroke: COLOR.plazaRing, 'stroke-width': 2 }));
-  parts.push(rect(435, 300, 106, 47, COLOR.stage, { rx: 8 }), rect(443, 295, 90, 38, COLOR.stageTop, { rx: 4 }));
-  parts.push(line(450, 305, 527, 305, COLOR.stageLine, { 'stroke-width': 2 }), line(450, 316, 527, 316, COLOR.stageLine, { 'stroke-width': 2 }));
-  for (const [x, y] of [[418, 373], [441, 398], [478, 407], [515, 398], [538, 373]] as const) parts.push(rect(x, y, 20, 12, COLOR.stool, { rx: 3 }));
+  const stools = [[418, 373], [441, 398], [478, 407], [515, 398], [538, 373]] as const;
+  if (painted) {
+    parts.push(stageSvg({ x: 435, y: 300, w: 106, h: 47 }, { x: 443, y: 295, w: 90, h: 38 }, COLOR.stage));
+    for (const [x, y] of stools) parts.push(stoolSvg(x, y, 20, 12, COLOR.stool));
+  } else {
+    parts.push(rect(435, 300, 106, 47, COLOR.stage, { rx: 8 }), rect(443, 295, 90, 38, COLOR.stageTop, { rx: 4 }));
+    parts.push(line(450, 305, 527, 305, COLOR.stageLine, { 'stroke-width': 2 }), line(450, 316, 527, 316, COLOR.stageLine, { 'stroke-width': 2 }));
+    for (const [x, y] of stools) parts.push(rect(x, y, 20, 12, COLOR.stool, { rx: 3 }));
+  }
   parts.push(circle(cx, cy, 128, 'none', { stroke: COLOR.teal, 'stroke-width': 3 }), circle(cx, cy, 135, 'none', { stroke: COLOR.white, 'stroke-width': 3 }));
 
   for (const b of BUILDINGS) {
     const [x, y, w, h] = b.roof;
     const mx = x + w / 2;
-    const my = y + h / 2;
-    parts.push(rect(x + 7, y + 12, w, h, COLOR.buildingShadow, { rx: 12 }));
-    parts.push(rect(x, y, w, h, b.roofColor, { rx: 10 }));
-    parts.push(path(`M${num(x)} ${num(my)}L${num(mx)} ${num(y + 14)}L${num(x + w)} ${num(my)}L${num(mx)} ${num(y + h - 14)}Z`, { fill: b.diamondColor }));
-    const l1 = splitAlpha('#FFFFFF55');
-    const l2 = splitAlpha('#FFFFFF44');
-    parts.push(line(x + 18, my, x + w - 18, my, l1.color, { 'stroke-width': 2, 'stroke-opacity': l1.opacity }));
-    parts.push(line(mx, y + 14, mx, y + h - 14, l2.color, { 'stroke-width': 2, 'stroke-opacity': l2.opacity }));
+    if (painted) {
+      // 반투명 그림자 두 겹과 네 면을 해의 방향에 맞춰 칠한 모임지붕
+      parts.push(rect(x + 7, y + 12, w, h, SHADOW, { rx: 12, opacity: 0.16 }), rect(x + 4, y + 7, w, h, SHADOW, { rx: 11, opacity: 0.1 }));
+      parts.push(hipRoofSvg(x, y, w, h, b.roofColor));
+    } else {
+      const my = y + h / 2;
+      parts.push(rect(x + 7, y + 12, w, h, COLOR.buildingShadow, { rx: 12 }));
+      parts.push(rect(x, y, w, h, b.roofColor, { rx: 10 }));
+      parts.push(path(`M${num(x)} ${num(my)}L${num(mx)} ${num(y + 14)}L${num(x + w)} ${num(my)}L${num(mx)} ${num(y + h - 14)}Z`, { fill: b.diamondColor }));
+      const l1 = splitAlpha('#FFFFFF55');
+      const l2 = splitAlpha('#FFFFFF44');
+      parts.push(line(x + 18, my, x + w - 18, my, l1.color, { 'stroke-width': 2, 'stroke-opacity': l1.opacity }));
+      parts.push(line(mx, y + 14, mx, y + h - 14, l2.color, { 'stroke-width': 2, 'stroke-opacity': l2.opacity }));
+    }
     parts.push(rect(mx - 22, y + h - 3, 44, 17, COLOR.doorStep, { rx: 2 }), line(mx - 26, y + h + 17, mx + 26, y + h + 17, COLOR.doorLine, { 'stroke-width': 2 }));
   }
   for (const b of BUILDINGS) parts.push(...b.extras);
 
-  for (const [x, y, w, h] of HEDGES) {
+  HEDGES.forEach(([x, y, w, h], i) => {
     const rx = Math.min(w, h) / 2;
-    parts.push(rect(x + 3, y + 5, w, h, COLOR.hedgeShadow, { rx }), rect(x, y, w, h, COLOR.hedge, { rx }));
-  }
+    if (painted) parts.push(rect(x + 3, y + 5, w, h, SHADOW, { rx, opacity: 0.16 }), hedgeSvg(x, y, w, h, COLOR.hedge, 20261117 + i));
+    else parts.push(rect(x + 3, y + 5, w, h, COLOR.hedgeShadow, { rx }), rect(x, y, w, h, COLOR.hedge, { rx }));
+  });
 
   for (let i = 0; i < STONE_COUNT; i++) {
     const [x, y, w, h] = stoneRect(i);
@@ -197,4 +222,4 @@ const STAGE_HIT: Rect = worldRect(435, 295, 106, 130);
 export const villageHits = (): Record<string, Rect> => ({ ...BUILDING_HITS, H4: STONES_HIT, H5: STAGE_HIT });
 
 /** 마을만 따로 그린 그림(시안과 나란히 놓아 볼 때). 월드 좌표의 SVG 조각이며 밑바닥 색과 점 무늬를 포함하지 않는다 */
-export const villageStandaloneSvg = (): string => `${villagePatchesSvg()}${roadsSvg(villageRoads())}${villageFrontSvg()}${villageTrees().map(treeShadowSvg).join('')}${villageCanopiesSvg()}`;
+export const villageStandaloneSvg = (): string => `${villagePatchesSvg()}${roadsSvg(villageRoads())}${villageFrontSvg('mock')}${villageTrees().map(treeShadowSvg).join('')}${villageCanopiesSvg()}`;

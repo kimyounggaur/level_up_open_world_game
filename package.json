@@ -34,6 +34,8 @@
     "check:lock": "vite-node tools/content-lock.ts",
     "build:release": "node tools/build-release.mjs",
     "build:atlas": "vite-node tools/build-atlas.ts",
+    "paint:sprites": "vite-node tools/paint-sprites.ts",
+    "check:paint": "vite-node tools/paint-sprites.ts -- --check",
     "seed:world-source": "vite-node tools/seed-world-source.ts"
   },
   "dependencies": {

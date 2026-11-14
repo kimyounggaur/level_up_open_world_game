@@ -399,18 +399,32 @@ describe('7.5 화면 상태와 단축키', () => {
   });
 });
 
-// 캐릭터 표식의 보라(9.2). 캐릭터에만 쓰는 색이라서, 이 색의 픽셀 수가 곧 '캐릭터가 보이는 정도'다
-const MARKER_RGB = [0x75, 0x56, 0x75] as const;
+// 캐릭터의 보라(9.2): 캐릭터에만 쓰는 색이라서 이 색의 픽셀 수가 곧 '캐릭터가 보이는 정도'다.
+// D-310부터 캐릭터는 그림이다. 보라는 베레모(#755675)와 웃옷(#8E6E91), 그 그늘과 볕에 있다. 셀 셰이딩과 구운 그림의 축소 때문에 한 색이 아니라
+// 색상 285–340°, 채도 0.12 이상, 밝기 0.18–0.62인 점을 센다. 바닥의 연보라 들꽃(밝기 0.85 남짓)과 다른 지역의 연보라 강조색은 들지 않는다.
+// 잰 값(1280×800, 배율 1.11, tree-village-1): 앞에 섰을 때 캐릭터 둘레에서 441점(화면 전체도 441점), 뒤에 섰을 때 0점.
 const SHOTS = path.resolve(__dirname, '../../docs/verification/screens');
 
-/** 화면(또는 clip)에서 캐릭터 표식의 보라와 같은 픽셀을 센다 */
+const isCharacterPurple = (r: number, g: number, b: number): boolean => {
+  const R = r / 255;
+  const G = g / 255;
+  const B = b / 255;
+  const max = Math.max(R, G, B);
+  const min = Math.min(R, G, B);
+  const l = (max + min) / 2;
+  if (max === min) return false;
+  const d = max - min;
+  const s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+  const h = (max === R ? (G - B) / d + (G < B ? 6 : 0) : max === G ? (B - R) / d + 2 : (R - G) / d + 4) * 60;
+  return h >= 285 && h <= 340 && s >= 0.12 && l >= 0.18 && l <= 0.62;
+};
+
+/** 화면(또는 clip)에서 캐릭터의 보라인 픽셀을 센다 */
 async function markerPixels(page: Page, clip?: { x: number; y: number; width: number; height: number }): Promise<number> {
   const png = await page.screenshot(clip ? { clip } : {});
   const { data, info } = await sharp(png).removeAlpha().raw().toBuffer({ resolveWithObject: true });
   let n = 0;
-  for (let i = 0; i < data.length; i += info.channels) {
-    if (Math.abs(data[i]! - MARKER_RGB[0]) <= 6 && Math.abs(data[i + 1]! - MARKER_RGB[1]) <= 6 && Math.abs(data[i + 2]! - MARKER_RGB[2]) <= 6) n++;
-  }
+  for (let i = 0; i < data.length; i += info.channels) if (isCharacterPurple(data[i]!, data[i + 1]!, data[i + 2]!)) n++;
   return n;
 }
 
@@ -434,26 +448,27 @@ describe('3-5 사물 겹침: 나무 뒤로 지나가면 가려진다', () => {
     const tree = WORLD_OBJECTS.find((o) => o.id === 'tree-village-1')!;
     fs.mkdirSync(SHOTS, { recursive: true });
 
-    /** (x, y)에 서서 카메라가 따라올 때까지 기다리고, 캐릭터가 서 있는 화면 자리 둘레의 clip을 돌려준다 */
+    /** (x, y)에 서서 카메라가 따라올 때까지 기다리고, 캐릭터 그림 전체(발에서 위로 70 px, 좌우 30 px) 둘레의 clip을 돌려준다 */
     const standAt = async (x: number, y: number) => {
       await command(page, { type: 'teleport', x, y });
       await until(() => pos(page), (p) => Math.hypot(p.x - x, p.y - y) < 1, `캐릭터가 (${x}, ${y})에 선다`);
       const d = await until(() => dbg(page), (v) => Math.abs(v.center.x - x) < 2 && Math.abs(v.center.y - y) < 2, '카메라가 따라온다');
       const at = toScreen(d, x, y);
-      return { d, clip: { x: Math.round(at.x) - 40, y: Math.round(at.y) - 40, width: 80, height: 80 } };
+      const z = d.zoom;
+      return { d, clip: { x: Math.round(at.x - 30 * z), y: Math.round(at.y - 70 * z), width: Math.round(60 * z), height: Math.round(76 * z) } };
     };
     const evidence = async (name: string, d: Dbg) => {
       const at = toScreen(d, tree.x, tree.y);
       await page.screenshot({ path: path.join(SHOTS, name), clip: { x: Math.max(0, Math.round(at.x) - 200), y: Math.max(0, Math.round(at.y) - 160), width: 400, height: 320 } });
     };
 
-    // 앞: 줄기 남쪽 70 px. 표식 전체(보라 원)가 보인다
+    // 앞: 줄기 남쪽 70 px. 캐릭터 전체(보라 베레모와 웃옷)가 보인다
     const front = await standAt(tree.x, tree.sortY + 70);
-    const frontSeen = await until(() => markerPixels(page, front.clip), (n) => n >= 600, '캐릭터 표식이 보인다');
+    const frontSeen = await until(() => markerPixels(page, front.clip), (n) => n >= 250, '캐릭터가 보인다');
     expect(front.d.playerDepth).toBeGreaterThan(tree.sortY); // 캐릭터가 나무보다 나중에 그려진다
     await evidence('phase3-tree-front.png', front.d);
 
-    // 뒤: 줄기 북쪽 70 px(캐노피 아래). 나무가 위에 그려져 표식이 거의 보이지 않는다
+    // 뒤: 줄기 북쪽 70 px(캐노피 아래). 나무가 위에 그려져 캐릭터가 거의 보이지 않는다
     const behind = await standAt(tree.x, tree.sortY - 70);
     const hidden = await until(() => markerPixels(page, behind.clip), (n) => n <= 20, '나무가 캐릭터를 가린다');
     const hiddenAnywhere = await markerPixels(page); // 다른 곳에 보이는 것이 아니라 화면 어디에도 없다
@@ -465,7 +480,7 @@ describe('3-5 사물 겹침: 나무 뒤로 지나가면 가려진다', () => {
 
     // 다시 앞으로 나오면 곧바로 다시 보인다(가려진 채로 남지 않는다)
     const again = await standAt(tree.x, tree.sortY + 70);
-    await until(() => markerPixels(page, again.clip), (n) => n >= 600, '다시 나오면 캐릭터가 보인다');
+    await until(() => markerPixels(page, again.clip), (n) => n >= 250, '다시 나오면 캐릭터가 보인다');
     expect(errors).toEqual([]);
     await ctx.close();
   });

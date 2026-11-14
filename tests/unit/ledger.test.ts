@@ -294,12 +294,13 @@ describe('실제 저장소의 대장(8-1)', () => {
     expect(validateLedgerDir(root)).toEqual([]);
   });
 
-  it('배포 파일은 모두 대장에 있다. 월드 그림 50장과 목록 2개와 고지 파일이다', () => {
+  it('배포 파일은 모두 대장에 있다. 월드 그림 50장, 화면 그림 1장(첫 안내 카드의 풍경 띠, D-308), 목록 2개, 고지 파일이다', () => {
     const pub = facts.publicFiles;
     expect(pub.filter((f) => f.endsWith('.webp')).length).toBe(50);
+    expect(pub.filter((f) => f.endsWith('.svg'))).toEqual(['public/world/ui-intro-banner.svg']);
     expect(pub.filter((f) => f.endsWith('.json')).length).toBe(2);
     expect(pub).toContain(NOTICES_FILE);
-    expect(pub.length).toBe(53);
+    expect(pub.length).toBe(54);
     for (const f of pub) expect(ledger.entries.some((e) => entryCovers(e, f)), f).toBe(true);
   });
 

@@ -3,7 +3,7 @@
 // 끌지 않아도 모두 할 수 있다(W-4): 키보드(bellKeys의 표), 가지를 눌러 걸기, 이 화면의 단추.
 // 맞고 틀림은 색만으로 말하지 않는다: 기호(그림)와 문장을 함께 두고, 같은 문장을 패널과 같이 쓴다.
 // 소리를 끈 종과 가장 낮게 울리는 종도 글로 말한다(꺼짐, 낮음): 종탑의 전위는 눈이 아니라 귀로 확인하는 것이라서, 보이는 것이 소리와 어긋나지 않게 한다.
-import { useEffect, useRef } from 'preact/hooks';
+import { useLayoutEffect, useRef } from 'preact/hooks';
 import type { WorldBridge } from '../../platform/bridge';
 import { BELL_LETTERS, handNameOf } from '../challenge/bellBench';
 import type { BellBench, BellHand } from '../challenge/bellBench';
@@ -60,7 +60,7 @@ export function BellHud({ bridge, controller, bench, installation, onNavigate, t
   // 키보드(bellKeys의 표). 모드에 있는 동안 월드는 키를 받지 않는다.
   // Esc는 열려 있는 표지판 목록이나 도움 카드를 먼저 닫고, 닫을 것이 없을 때만 나간다
   const helpOpen = ui.helpOpen;
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!installationId) return;
     const onKeyDown = (e: KeyboardEvent): void => {
       if (e.defaultPrevented || e.isComposing || bridge.pause.get()) return;

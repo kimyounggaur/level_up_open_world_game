@@ -31,11 +31,31 @@ const PATHS: Record<IconName, string> = {
 
 const FILLED = new Set<IconName>(['play', 'stop']);
 
+/**
+ * 두 겹 아이콘(햇살 과슈 UI, D-308): 선과 같은 색의 옅은 채움을 더한다(skin.css의 .icon-fill, 투명도 0.2).
+ * 채움은 선 다음에 둔다: 같은 색이라 선 위에 얹혀도 보이는 것은 같고, 첫 경로를 읽는 시험은 선을 읽는다.
+ * 틀린 곳을 알리는 'alert'는 채움 없이 선 하나로 둔다: 안내 줄의 아이콘이 모두 같은 경고 그림인지 시험이 경로 전체를 읽는다.
+ * 색이 하나라 글자색을 그대로 따르고, 채움은 장식이다(뜻은 선과 옆의 글자가 전한다).
+ */
+const FILLS: Partial<Record<IconName, string>> = {
+  speaker: 'M4 9v6h4l5 4V5L8 9H4z',
+  'speaker-off': 'M4 9v6h4l5 4V5L8 9H4z',
+  help: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z',
+  eraser: 'm7 20-4-4 11-11 7 7-8 8H7z',
+  trash: 'M7 7l1 13h8l1-13z',
+  map: 'm9 4-6 2v14l6-2 6 2 6-2V4l-6 2-6-2z',
+  pin: 'M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z',
+  footsteps: 'M8 4c1.7 0 2.5 1.7 2.5 3.5S9.7 11 8 11 5.5 9.3 5.5 7.5 6.3 4 8 4zm6.5 7c1.7 0 2.5 1.7 2.5 3.5S16.2 18 14.5 18 12 16.3 12 14.5 12.8 11 14.5 11z',
+  notebook: 'M7 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z',
+};
+
 export function Icon({ name }: { name: IconName }) {
   const filled = FILLED.has(name);
+  const under = FILLS[name];
   return (
     <svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill={filled ? 'currentColor' : 'none'} stroke={filled ? 'none' : 'currentColor'} stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d={PATHS[name]} />
+      {under ? <path class="icon-fill" d={under} /> : null}
     </svg>
   );
 }

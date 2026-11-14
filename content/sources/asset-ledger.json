@@ -22,8 +22,8 @@
       "origin": "자체 제작",
       "rights": "own",
       "license": "자체 제작(외부 라이선스 없음)",
-      "basis": "tools/atlas.ts가 world-src/sprites/*.svg와 코드가 만든 사물 SVG(나무, 표지판 등)를 한 장에 구운 사물 그림 모음과 그 좌표 목록이다. 외부 그림 파일을 읽지 않는다.",
-      "checkedOn": "2026-11-13",
+      "basis": "tools/atlas.ts가 world-src/sprites/*.svg와 코드가 만든 사물 SVG(나무, 표지판 등)를 한 장에 구운 사물 그림 모음과 그 좌표 목록이다. 외부 그림 파일을 읽지 않는다. 2026-11-14부터 주인공 캐릭터 그림 32장(chr-player-*)도 같은 한 장에 들어 있다(D-308).",
+      "checkedOn": "2026-11-14",
       "files": [
         "public/world/objects.webp",
         "public/world/objects.json"
@@ -36,8 +36,8 @@
       "origin": "자체 제작",
       "rights": "own",
       "license": "자체 제작(외부 라이선스 없음)",
-      "basis": "굽기의 원본이다. 스프라이트 SVG는 도형(rect, ellipse, path 등)만으로 그렸고 <image>·href·data:image로 외부 그림을 끌어오지 않는다(world-src/sprites 33개 검사, 0건). 지역 지도(.tmj) 여섯 개에는 tilesets 항목이 없어 그림 파일을 가리키지 않는다.",
-      "checkedOn": "2026-11-13",
+      "basis": "굽기의 원본이다. 스프라이트 SVG는 도형(rect, ellipse, path 등)만으로 그렸고 <image>·href·data:image로 외부 그림을 끌어오지 않는다(world-src/sprites 65개 검사, 0건). 지역 지도(.tmj) 여섯 개에는 tilesets 항목이 없어 그림 파일을 가리키지 않는다. 2026-11-14부터 나무·표지판·지역 표지·소품 31장과 캐릭터 32장은 world-src/art의 코드가 칠해 쓴다(npm run paint:sprites, D-308). 칠하는 코드도 도형과 그라디언트만 쓴다.",
+      "checkedOn": "2026-11-14",
       "files": [
         "world-src/sprites/*.svg",
         "world-src/regions/*.tmj"
@@ -54,6 +54,19 @@
       "checkedOn": "2026-11-13",
       "files": [
         "index.html"
+      ],
+      "ids": []
+    },
+    {
+      "assetId": "img.ui.intro-banner",
+      "kind": "그림",
+      "origin": "자체 제작",
+      "rights": "own",
+      "license": "자체 제작(외부 라이선스 없음)",
+      "basis": "첫 안내 카드 위의 풍경 띠(장식)다. world-src/art/banner.ts의 코드가 도형과 그라디언트만으로 그려 tools/paint-sprites.ts가 쓴다(npm run paint:sprites, D-308). <image>·href·data:image로 외부 그림을 끌어오지 않는다. 화면 CSS(src/ui/skin.css)가 world/ 주소로 부른다.",
+      "checkedOn": "2026-11-14",
+      "files": [
+        "public/world/ui-intro-banner.svg"
       ],
       "ids": []
     },

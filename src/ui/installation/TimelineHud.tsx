@@ -3,7 +3,7 @@
 // 끌지 않아도 모두 할 수 있다(W-4): 키보드(timelineKeys의 표), 돌을 눌러 놓기, 이 화면의 단추.
 // 맞고 틀림은 색만으로 말하지 않는다: 기호(그림)와 문장을 함께 두고, 같은 문장을 패널과 같이 쓴다.
 // 남은 물은 판정이 아니라 지금 초안의 사실이라서 확인하기 전에도 늘 문장으로 보인다. 마디가 덜 채워졌다는 판정이 있으면 그 줄이 강조된다.
-import { useEffect, useRef } from 'preact/hooks';
+import { useLayoutEffect, useRef } from 'preact/hooks';
 import { pitchName } from '../../domain/pitch';
 import { eventCovering, tupletKindName } from '../../domain/timeline';
 import { followsBeat } from '../../domain/timelineStones';
@@ -60,7 +60,7 @@ export function TimelineHud({ bridge, controller, bench, installation, onNavigat
   // 키보드(timelineKeys의 표). 모드에 있는 동안 월드는 키를 받지 않는다.
   // Esc는 열려 있는 표지판 목록이나 도움 카드를 먼저 닫고, 닫을 것이 없을 때만 나간다
   const helpOpen = ui.helpOpen;
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!installationId) return;
     const onKeyDown = (e: KeyboardEvent): void => {
       if (e.defaultPrevented || e.isComposing || bridge.pause.get()) return;

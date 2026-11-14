@@ -3,7 +3,7 @@
 // 끌지 않아도 모두 할 수 있다(W-4): 키보드(keyBridgeKeys의 표), 널 눌러 놓기, 이 화면의 단추.
 // 맞고 틀림은 색만으로 말하지 않는다: 기호(그림)와 문장을 함께 두고, 문장은 판정기의 설명을 그대로 쓴다.
 // 문제를 푸는 중에는 검은 널을 이웃한 흰 널로만 말하고 이름은 말하지 않는다. 자유로 놀 때만 이름도 말한다(4.8).
-import { useEffect, useRef } from 'preact/hooks';
+import { useLayoutEffect, useRef } from 'preact/hooks';
 import { NAME_TAGS, namesForMidi, stakeNameOf } from '../../domain/keyBridge';
 import { INTERVAL_PICK_NUMBERS, INTERVAL_PICK_QUALITIES, intervalQualityName } from '../../domain/slotplan';
 import type { WorldBridge } from '../../platform/bridge';
@@ -75,7 +75,7 @@ export function KeyBridgeHud({ bridge, controller, bench, installation, onNaviga
   // 키보드(keyBridgeKeys의 표). 모드에 있는 동안 월드는 키를 받지 않는다.
   // Esc는 열려 있는 표지판 목록이나 도움 카드를 먼저 닫고, 닫을 것이 없을 때만 나간다
   const helpOpen = ui.helpOpen;
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!installationId) return;
     const onKeyDown = (e: KeyboardEvent): void => {
       if (e.defaultPrevented || e.isComposing || bridge.pause.get()) return;

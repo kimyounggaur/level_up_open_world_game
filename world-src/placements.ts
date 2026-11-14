@@ -2,8 +2,7 @@
 // 사물을 더할 때 이 파일을 고치지 않는다: 지도에 점을 하나 찍고(class와 속성), 그림이 새것이면 world-src/sprites/에 SVG를 넣는다.
 import type { Rect } from '../src/world/interact';
 import type { WorldObjectData } from '../src/world/objects';
-import { COLOR } from './palette';
-import { circle } from './shapes';
+import { softShadowCircle } from './art/ground';
 import type { Collider } from './shapes';
 import { propReader } from './tiled';
 import type { TiledMap, TiledObject } from './tiled';
@@ -47,8 +46,8 @@ export interface Placed {
   issues: string[];
 }
 
-/** 바닥에 굽는 그림자: 오른쪽 아래로 (15, 24)만큼 어긋난 원(9.1) */
-export const shadowsSvg = (shadows: readonly Shadow[]): string => shadows.map((s) => circle(s.x + SHADOW_DX, s.y + SHADOW_DY, s.r, COLOR.treeShadow)).join('');
+/** 바닥에 굽는 그림자: 오른쪽 아래로 (15, 24)만큼 어긋난 원(9.1). 햇살 과슈 화풍에서는 차가운 반투명 두 겹이다(D-308) */
+export const shadowsSvg = (shadows: readonly Shadow[]): string => shadows.map((s) => softShadowCircle(s.x + SHADOW_DX, s.y + SHADOW_DY, s.r)).join('');
 
 const spriteName = (raw: string): string => raw.replace(/\.svg$/, '');
 

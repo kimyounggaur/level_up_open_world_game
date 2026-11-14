@@ -95,11 +95,25 @@ export class LanternLayer {
   }
 }
 
+/** 햇살 과슈 화풍(D-308)의 그늘색과 쇠 기둥, 놋쇠 갓, 받침 돌. 모양의 뜻(빈 고리 · 찬 등 · 꽃잎)은 그대로다 */
+const SHADE = 0x3e5a5c;
+const IRON = 0x55525c;
+const IRON_LIGHT = 0x8a8692;
+const BRASS = 0xc9a24e;
+const BRASS_LIGHT = 0xf0d58c;
+const FOOT_STONE = 0xe4d9bd;
+const FOOT_STONE_DARK = 0xc9bb98;
+
 /** 발치가 (0, 0)인 등 하나를 그린다 */
 function draw(g: Phaser.GameObjects.Graphics, state: LanternState): void {
   g.clear();
-  g.fillStyle(INK, 0.14).fillEllipse(0, 3, 28, 9);
-  g.fillStyle(POST, 1).fillRect(-2, HEAD_Y + HEAD_R, 4, -HEAD_Y - HEAD_R);
+  // 그림자(해가 왼쪽 위라 오른쪽 아래로), 받침 돌, 쇠 기둥(왼쪽 볕)
+  g.fillStyle(SHADE, 0.14).fillEllipse(5, 3, 32, 10);
+  g.fillStyle(SHADE, 0.12).fillEllipse(3, 2, 20, 6);
+  g.fillStyle(FOOT_STONE, 1).fillRoundedRect(-6, -4, 12, 6, 2);
+  g.fillStyle(FOOT_STONE_DARK, 1).fillRoundedRect(0, -4, 6, 6, { tl: 0, tr: 2, bl: 0, br: 2 });
+  g.fillStyle(IRON, 1).fillRect(-2, HEAD_Y + HEAD_R, 4, -HEAD_Y - HEAD_R - 3);
+  g.fillStyle(IRON_LIGHT, 1).fillRect(-2, HEAD_Y + HEAD_R, 1.4, -HEAD_Y - HEAD_R - 3);
   if (state === 'flower') {
     // 꽃잎 여섯 장: 켜진 등을 둘러싸고, 가운데 등은 그 위에 다시 그린다
     for (let i = 0; i < 6; i++) {
@@ -112,7 +126,10 @@ function draw(g: Phaser.GameObjects.Graphics, state: LanternState): void {
   }
   if (state === 'off') {
     g.fillStyle(PAPER, 1).fillCircle(0, HEAD_Y, HEAD_R);
-    g.lineStyle(3, POST, 1).strokeCircle(0, HEAD_Y, HEAD_R);
+    g.fillStyle(SHADE, 0.08).fillCircle(2.5, HEAD_Y + 2.5, HEAD_R - 3);
+    g.lineStyle(3, IRON, 1).strokeCircle(0, HEAD_Y, HEAD_R);
+    cap(g);
+    g.fillStyle(0xffffff, 0.9).fillCircle(-4, HEAD_Y - 4, 2);
     return;
   }
   // 켜진 등: 번지는 불빛, 빛살 넷, 불빛이 찬 등
@@ -125,6 +142,17 @@ function draw(g: Phaser.GameObjects.Graphics, state: LanternState): void {
     }
   }
   g.fillStyle(GOLD_LIGHT, 1).fillCircle(0, HEAD_Y, HEAD_R);
+  g.fillStyle(0xfff6d8, 1).fillCircle(-1.5, HEAD_Y - 1.5, HEAD_R - 4);
   g.lineStyle(3, INK, 1).strokeCircle(0, HEAD_Y, HEAD_R);
   g.fillStyle(GOLD, 1).fillCircle(0, HEAD_Y, 4);
+  cap(g);
+  g.fillStyle(0xffffff, 0.95).fillCircle(-4, HEAD_Y - 4, 2);
+}
+
+/** 등 머리 위의 놋쇠 갓과 꼭지 */
+function cap(g: Phaser.GameObjects.Graphics): void {
+  const top = HEAD_Y - HEAD_R - 3;
+  g.fillStyle(BRASS, 1).fillRoundedRect(-7, top - 2, 14, 5, 2.5);
+  g.fillStyle(BRASS_LIGHT, 1).fillRoundedRect(-7, top - 2, 7, 2, 1);
+  g.fillStyle(BRASS, 1).fillCircle(0, top - 4, 2.2);
 }

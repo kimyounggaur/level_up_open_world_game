@@ -1,5 +1,5 @@
 // 사물 그림 아틀라스 굽기(설계서 6-3): world-src/sprites/*.svg → public/world/objects.webp + objects.json.
-// 그림은 2배로 칠해 무손실 WebP 한 장에 쌓는다. build-world와 build-atlas가 같은 함수를 쓴다.
+// 그림은 2배로 칠해 WebP 한 장에 쌓는다(색은 품질 88의 손실 압축, 투명도는 무손실. D-309). build-world와 build-atlas가 같은 함수를 쓴다.
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
@@ -38,9 +38,9 @@ export async function bakeAtlas(sprites: Readonly<Record<string, string>>, outDi
   fs.mkdirSync(outDir, { recursive: true });
   const info = await sharp({ create: { width: layout.width, height: layout.height, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } } })
     .composite(layers)
-    // quality는 무손실에서 압축에 들이는 힘이다(화소는 그대로). 세로를 4096→2160으로 줄이니 기본값(80)에서는 파일이 133,616 B→180,196 B로 늘었고(같은 화소),
-    // 100에서는 124,356 B다. 굽는 시간은 약 2초→6초다(8-4).
-    .webp({ lossless: true, effort: 6, quality: 100 })
+    // 햇살 과슈 화풍(D-308)의 그림은 그라디언트와 붓자국이 많아 무손실로는 778 KB(65장, 2048×2304)였다. 색을 품질 88의 손실 압축으로 바꾸면 322 KB다(D-309).
+    // 투명도는 무손실(alphaQuality 100)이라 가장자리가 번지지 않는다. 그림은 2배로 구워 절반으로 줄여 그려지므로 손실 압축의 흔적은 화면에서 보이지 않는다.
+    .webp({ quality: 88, alphaQuality: 100, effort: 6, smartSubsample: true })
     .toFile(path.join(outDir, ATLAS_IMAGE));
   fs.writeFileSync(path.join(outDir, ATLAS_DATA), json);
   return { layout, hash, json, imageBytes: info.size };
