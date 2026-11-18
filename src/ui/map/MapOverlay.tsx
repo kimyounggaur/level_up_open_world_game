@@ -314,6 +314,7 @@ export function MapOverlay({ map, catalog, panels, position, onWalk, onTeleport,
             })}
 
             <div class="map-me" data-me style={{ left: `${me.x}px`, top: `${me.y}px` }} role="img" aria-label={`내 위치. 가장 가까운 정거장은 ${nearestToMe?.name ?? '없음'}`}>
+              <img class="map-player-portrait" src="/assets/remaster/characters/player-portrait.webp" alt="" aria-hidden="true" width="40" height="40" />
               <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true" style={{ transform: `rotate(${FACING_DEG[here.facing]}deg)` }}>
                 <circle cx="15" cy="15" r="13" fill="#755675" stroke="#fffefa" stroke-width="2.5" />
                 <path d="M15 7 21 20 15 17 9 20z" fill="#fffefa" />
@@ -345,6 +346,7 @@ export function MapOverlay({ map, catalog, panels, position, onWalk, onTeleport,
 
         <aside class="map-side" aria-label="고른 장소">
           <section class="map-card" data-selected-station={selected.stationId} aria-labelledby="map-card-title">
+            <img class="map-region-landscape" src={`/assets/remaster/frottage/backgrounds/webp/bg-${selectedRegion.regionId}.webp`} alt="" aria-hidden="true" width="1536" height="1024" loading="lazy" />
             <p class="map-card-region">
               <span class="map-card-dot" style={{ background: selectedRegion.accentColor }} aria-hidden="true" />
               {selectedRegion.name} · {STATION_KIND_NAME_KO[selected.archetype]}

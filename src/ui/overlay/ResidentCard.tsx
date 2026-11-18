@@ -29,7 +29,8 @@ export function ResidentCard({ resident, say, related, onClose }: ResidentCardPr
   }, [onClose]);
   return (
     <div class="intro-shell" data-resident-card={resident.residentId}>
-      <section class="intro-card note-card" role="dialog" aria-modal="true" aria-labelledby="resident-card-title" aria-describedby="resident-card-line">
+      <section class="intro-card note-card resident-dialogue" role="dialog" aria-modal="true" aria-labelledby="resident-card-title" aria-describedby="resident-card-line">
+        <img class="resident-portrait" src={`/assets/remaster/characters/${resident.part}-portrait.webp`} alt="" aria-hidden="true" width="120" height="120" />
         <p class="muted small">주민</p>
         <h1 id="resident-card-title">{resident.name}</h1>
         <p id="resident-card-line" class="note-card-text" data-resident-line data-say={say.kind}>

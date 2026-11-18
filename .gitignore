@@ -5,3 +5,18 @@ dist-release/
 .DS_Store
 test-results/
 .vite/
+
+# Restored byte-for-byte by postinstall from asset-source/remaster-parts.
+/public/assets/remaster/frottage/backgrounds/webp/bg-beat-river.webp
+/public/assets/remaster/frottage/backgrounds/webp/bg-bell-grove.webp
+/public/assets/remaster/frottage/backgrounds/webp/bg-key-marsh.webp
+/public/assets/remaster/frottage/backgrounds/webp/bg-scale-trail.webp
+/public/assets/remaster/frottage/backgrounds/webp/bg-staff-hill.webp
+/public/assets/remaster/frottage/backgrounds/webp/bg-village.webp
+/public/assets/remaster/frottage/concepts/webp/world-art-direction.webp
+/public/assets/remaster/frottage/materials/webp/tex-aged-spruce.webp
+/public/assets/remaster/frottage/materials/webp/tex-fiber-paper.webp
+/public/assets/remaster/frottage/materials/webp/tex-jade-water.webp
+/public/assets/remaster/frottage/materials/webp/tex-limestone.webp
+/public/assets/remaster/frottage/materials/webp/tex-sage-grass.webp
+/public/assets/remaster/frottage/materials/webp/tex-sandy-path.webp

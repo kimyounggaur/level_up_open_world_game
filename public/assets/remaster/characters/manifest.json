@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "source": "LevelUp_Character_Sheets_20261118",
+  "method": "Exact artwork crops; edge-connected paper removed; down/up/left/right are original front/back/side/three-quarter views. Player idle and walking atlas frames reuse each direction drawing; movement is a small runtime bob, not newly drawn poses.",
+  "frameSize": [
+    96,
+    144
+  ],
+  "foot": [
+    48,
+    136
+  ],
+  "characters": [
+    {
+      "part": "player",
+      "source": "00_player/00_player.png",
+      "sourceSha256": "47783b3eeb08f355f9baf360e6c2c230f39d5f828a49bb141dbec6446c9edbcc",
+      "crops": {
+        "front": [
+          548,
+          40,
+          220,
+          460
+        ],
+        "portrait": [
+          985,
+          590,
+          210,
+          210
+        ],
+        "down": [
+          548,
+          40,
+          220,
+          460
+        ],
+        "up": [
+          1290,
+          40,
+          225,
+          460
+        ],
+        "left": [
+          1050,
+          40,
+          190,
+          460
+        ],
+        "right": [
+          802,
+          40,
+          197,
+          460
+        ]
+      },
+      "portrait": "player-portrait.webp"
+    },
+    {
+      "part": "bed",
+      "source": "01_bed_harmony/01_bed_harmony.png",
+      "sourceSha256": "d0a032629368f13981e17d96c7a06ec61dbaacc0dffd21f558efc97d7fe5e278",
+      "crops": {
+        "front": [
+          538,
+          42,
+          222,
+          455
+        ],
+        "portrait": [
+          985,
+          590,
+          210,
+          210
+        ]
+      },
+      "portrait": "bed-portrait.webp"
+    },
+    {
+      "part": "melody",
+      "source": "02_melody_flute/02_melody_flute.png",
+      "sourceSha256": "02d33ba9e93c007d328025705cb5c5bab9175d77b9fd83b8df8a3f4be040e531",
+      "crops": {
+        "front": [
+          540,
+          40,
+          202,
+          455
+        ],
+        "portrait": [
+          980,
+          589,
+          210,
+          212
+        ]
+      },
+      "portrait": "melody-portrait.webp"
+    },
+    {
+      "part": "percussion",
+      "source": "03_percussion_tambourine/03_percussion_tambourine.png",
+      "sourceSha256": "105ac34b612e5c14688179a69cb3ee2399203f66c970b5a4f79d3895dbcec792",
+      "crops": {
+        "front": [
+          536,
+          40,
+          224,
+          435
+        ],
+        "portrait": [
+          963,
+          570,
+          210,
+          212
+        ]
+      },
+      "portrait": "percussion-portrait.webp"
+    },
+    {
+      "part": "bass",
+      "source": "04_bass_strings/04_bass_strings.png",
+      "sourceSha256": "552550a34c126aa0fb1e1794e16a553e6ff5fcc0a6f5d1c7eb2c5c7857a49cd1",
+      "crops": {
+        "front": [
+          432,
+          53,
+          280,
+          394
+        ],
+        "portrait": [
+          949,
+          565,
+          216,
+          218
+        ]
+      },
+      "portrait": "bass-portrait.webp"
+    },
+    {
+      "part": "runner",
+      "source": "05_runner_xylophone/05_runner_xylophone.png",
+      "sourceSha256": "f2b9960f42e03ebc980563cbe3f367f08af0dd2ad85cfa3fcbb5605d9d31883e",
+      "crops": {
+        "front": [
+          541,
+          40,
+          215,
+          457
+        ],
+        "portrait": [
+          939,
+          590,
+          211,
+          211
+        ]
+      },
+      "portrait": "runner-portrait.webp"
+    },
+    {
+      "part": "ornament",
+      "source": "06_ornament_triangle/06_ornament_triangle.png",
+      "sourceSha256": "698523975398bee0389f567f45aed23df3711400b95e6884f52e893996faab19",
+      "crops": {
+        "front": [
+          539,
+          41,
+          219,
+          459
+        ],
+        "portrait": [
+          982,
+          588,
+          211,
+          213
+        ]
+      },
+      "portrait": "ornament-portrait.webp"
+    },
+    {
+      "part": "pulse",
+      "source": "07_pulse_drum/07_pulse_drum.png",
+      "sourceSha256": "9d411aa0401b0bdee38fc6d6166b455c328fb087c27c75ac3b44e8a5a06c9baf",
+      "crops": {
+        "front": [
+          505,
+          40,
+          253,
+          438
+        ],
+        "portrait": [
+          946,
+          570,
+          214,
+          210
+        ]
+      },
+      "portrait": "pulse-portrait.webp"
+    }
+  ]
+}

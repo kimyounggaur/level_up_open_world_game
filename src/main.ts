@@ -13,6 +13,7 @@ import './ui/notebook.css';
 import './ui/installation.css';
 // 햇살 과슈 UI 스킨(D-308): 겉모습만 덮어쓰므로 마지막에 불러온다
 import './ui/skin.css';
+import './ui/remaster.css';
 
 async function start(): Promise<void> {
   const root = document.getElementById('ui-root');

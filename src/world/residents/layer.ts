@@ -13,6 +13,7 @@ import type { ViewCull } from '../cull';
 import { INSTRUMENT, drawMusicianBody } from '../festival/layer';
 import { MARK_PALETTE } from '../lanterns/layer';
 import { depthOfFoot } from '../objects';
+import { musicianImage } from '../characterArt';
 
 const { INK, PAPER } = MARK_PALETTE;
 
@@ -49,6 +50,8 @@ export interface DrawnResident {
 interface Node {
   def: ResidentDef;
   body: Phaser.GameObjects.Graphics;
+  /** Original-sheet figure, when the remaster atlas is available. */
+  art: Phaser.GameObjects.Image | null;
   tool: Phaser.GameObjects.Graphics;
   note: Phaser.GameObjects.Graphics;
   /** 지금 그린 자세와 장. 아직 그리지 않았으면 null */
@@ -76,9 +79,12 @@ export class ResidentLayer {
       const note = scene.add.graphics().setPosition(def.x, def.y).setDepth(depth);
       drawNoteMark(note);
       note.setVisible(false);
+      const art = musicianImage(scene, def.part, def.x, def.y)?.setDepth(depth) ?? null;
+      if (art) { body.setVisible(false); tool.setVisible(false); note.setDepth(depth + 0.1); }
       const box = footBox(def.x, def.y);
       for (const g of [body, tool, note]) this.cull.track(g, box);
-      this.nodes.push({ def, body, tool, note, shown: null, closed: null, playing: false });
+      if (art) this.cull.track(art, box);
+      this.nodes.push({ def, body, art, tool, note, shown: null, closed: null, playing: false });
     }
     this.apply(bridge.residents.get());
     this.off = bridge.residents.subscribe((ids) => this.apply(ids));
@@ -104,7 +110,7 @@ export class ResidentLayer {
     n.shown = { pose, frame };
     // 몸: 눈을 감은 장(서 있기 둘째 장)만 눈이 감긴다. 눈이 바뀔 때만 다시 그린다
     const closed = pose === 'standing' && frame === 1;
-    if (n.closed !== closed) {
+    if (!n.art && n.closed !== closed) {
       n.closed = closed;
       n.body.clear();
       drawMusicianBody(n.body, n.def.part);
@@ -112,6 +118,9 @@ export class ResidentLayer {
     }
     const sway = pose === 'playing' ? PLAY_SWAY[frame % PLAY_SWAY.length]! : { dx: 0, dy: 0, rot: 0 };
     n.tool.setPosition(n.def.x + sway.dx, n.def.y + sway.dy).setRotation(sway.rot);
+    // The sheets contain still views, so the original figure moves gently as one piece.
+    // Do not invent articulated or blinking frames by painting over the supplied artwork.
+    n.art?.setPosition(n.def.x + sway.dx * 0.35, n.def.y + sway.dy * 0.35).setRotation(sway.rot * 0.25);
     n.note.setVisible(pose === 'playing');
   }
 
@@ -134,7 +143,7 @@ export class ResidentLayer {
   destroy(): void {
     this.off();
     for (const n of this.nodes.splice(0)) {
-      for (const g of [n.body, n.tool, n.note]) {
+      for (const g of [n.body, n.tool, n.note, ...(n.art ? [n.art] : [])]) {
         this.cull.untrack(g);
         g.destroy();
       }

@@ -7,6 +7,8 @@ import sharp from 'sharp';
 import { CHUNK_COLS, CHUNK_PAD, CHUNK_ROWS, CHUNK_SIZE, OVERVIEW_H, OVERVIEW_SCALE, OVERVIEW_W, REGION_IDS, WORLD_H, WORLD_TILES_X, WORLD_TILES_Y, WORLD_W } from '../src/domain/world';
 import { ATLAS_DATA, ATLAS_IMAGE } from '../world-src/atlas';
 import { buildWorld } from '../world-src/index';
+import { embedFrottageMaterials } from './frottage-materials';
+import { artTransform, BUILDING_ART_PLACEMENTS, ENVIRONMENT_ART, EXTRA_ART_PLACEMENTS } from '../src/world/remaster';
 import type { WorldBuild } from '../world-src/index';
 import { groundTint } from '../world-src/palette';
 import { bakeAtlas, planAtlas } from './atlas';
@@ -82,8 +84,20 @@ async function bakeChunk(padded: Buffer, build: WorldBuild, c: number, r: number
 
 /** 줄인 조각 48장을 이어 붙여 악보 지도 배경 그림 한 장을 굽는다 */
 async function bakeOverview(tiles: Array<{ c: number; r: number; tile: Buffer }>, outDir: string): Promise<number> {
+  // Terrain chunks omit the old flat roofs. The overview uses the very same
+  // supplied paintings and foot transforms as the live world layer.
+  const artwork = await Promise.all([...BUILDING_ART_PLACEMENTS, EXTRA_ART_PLACEMENTS[0]!].map(async (p) => {
+    const transform = artTransform(p);
+    const width = Math.max(1, Math.round(transform.width * OVERVIEW_SCALE));
+    const height = Math.max(1, Math.round(transform.height * OVERVIEW_SCALE));
+    return {
+      input: await sharp(path.join(process.cwd(), 'public', ENVIRONMENT_ART[p.asset].path)).resize(width, height).png().toBuffer(),
+      left: Math.round(p.x * OVERVIEW_SCALE - transform.ax * width),
+      top: Math.round(p.y * OVERVIEW_SCALE - transform.ay * height),
+    };
+  }));
   const info = await sharp({ create: { width: OVERVIEW_W, height: OVERVIEW_H, channels: 3, background: BACKGROUND_HEX } })
-    .composite(tiles.map((t) => ({ input: t.tile, left: t.c * OVERVIEW_TILE, top: t.r * OVERVIEW_TILE })))
+    .composite([...tiles.map((t) => ({ input: t.tile, left: t.c * OVERVIEW_TILE, top: t.r * OVERVIEW_TILE })), ...artwork])
     .webp({ quality: OVERVIEW_WEBP_QUALITY, effort: 5 })
     .toFile(path.join(outDir, OVERVIEW_NAME));
   return info.size;
@@ -126,6 +140,7 @@ function main(): Promise<void> {
     fs.mkdirSync(path.dirname(path.join(root, GENERATED_PATH)), { recursive: true });
 
     const base = await padBase(await tintBase(build));
+    const bakeBuild = { ...build, svgBody: await embedFrottageMaterials(build.svgBody, root) };
     let total = 0;
     const jobs: Array<[number, number]> = [];
     for (let r = 0; r < CHUNK_ROWS; r++) for (let c = 0; c < CHUNK_COLS; c++) jobs.push([c, r]);
@@ -133,7 +148,7 @@ function main(): Promise<void> {
     const tiles: Array<{ c: number; r: number; tile: Buffer }> = [];
     for (let i = 0; i < jobs.length; i += 4) {
       const batch = jobs.slice(i, i + 4);
-      const done = await Promise.all(batch.map(([c, r]) => bakeChunk(base, build, c, r, outDir)));
+      const done = await Promise.all(batch.map(([c, r]) => bakeChunk(base, bakeBuild, c, r, outDir)));
       done.forEach((d, k) => {
         sizes.push(d.size);
         tiles.push({ c: batch[k]![0], r: batch[k]![1], tile: d.tile });

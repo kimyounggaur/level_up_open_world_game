@@ -96,7 +96,9 @@ export function startWorld(opts: StartWorldOptions): WorldHandle {
   let game: Phaser.Game;
   try {
     game = new Phaser.Game({
-      type: Phaser.WEBGL,
+      // Some classroom devices disable WebGL. Phaser keeps the same world and
+      // input with its Canvas renderer when GPU acceleration is unavailable.
+      type: Phaser.AUTO,
       parent: opts.parent,
       backgroundColor: '#DDE5D3',
       scale: { mode: Phaser.Scale.RESIZE, width: '100%', height: '100%' },

@@ -7,8 +7,8 @@
       "origin": "자체 제작",
       "rights": "own",
       "license": "자체 제작(외부 라이선스 없음)",
-      "basis": "tools/build-world.ts가 world-src의 코드(좌표·팔레트·모양)와 지역 지도(world-src/regions/*.tmj)에서 SVG를 만들어 sharp로 구운 바닥 조각 48장, 악보 지도 그림, 그림 목록이다. 굽는 도구의 입력은 메모리의 SVG와 화소뿐이고 외부 그림 파일을 읽지 않는다(tools/build-world.ts, tools/atlas.ts, world-src/*.ts를 읽어 확인). npm run check:world가 구운 결과가 원본과 같은지 본다.",
-      "checkedOn": "2026-11-13",
+      "basis": "tools/build-world.ts가 world-src의 좌표·팔레트·모양 및 지도에서 바닥 조각 48장과 악보 지도를 굽는다. 2026-11-19부터 사용자가 제공한 프로타주 WebP 소재를 tools/frottage-materials.ts가 SHA-256 검증 후 메모리 SVG에 삽입한다. 지도에는 동일한 제공 건물 그림도 합성한다. 원본 출처는 img.remaster.frottage이며 충돌·정거장·학습 데이터는 유지한다. npm run check:world로 생성 데이터 일치를 확인한다.",
+      "checkedOn": "2026-11-19",
       "files": [
         "public/world/ground-*.webp",
         "public/world/overview.webp",
@@ -50,8 +50,8 @@
       "origin": "자체 제작",
       "rights": "own",
       "license": "자체 제작(외부 라이선스 없음)",
-      "basis": "탭 아이콘은 index.html에 직접 쓴 SVG(data 주소)다. 화면의 도형과 아이콘은 src/ui의 SVG 요소와 CSS로 직접 그린다. 소스·CSS·HTML에 배포물의 world/ 밖 그림·소리·글꼴 파일을 가리키는 곳이 없음을 npm run validate가 검사한다.",
-      "checkedOn": "2026-11-13",
+      "basis": "탭 아이콘은 index.html에 직접 쓴 SVG(data 주소)다. 화면 도형과 아이콘은 src/ui의 SVG와 CSS로 그린다. 2026-11-19 리마스터 UI는 사용자가 제공한 SVG·WebP·캐릭터 초상화도 함께 사용한다(img.remaster.frottage, img.remaster.characters). 외부 URL 참조 없이 대장에 등록된 로컬 파일만 사용하는지 validate가 확인한다.",
+      "checkedOn": "2026-11-19",
       "files": [
         "index.html"
       ],
@@ -394,6 +394,32 @@
       "checkedOn": "2026-11-13",
       "files": [
         "public/THIRD-PARTY-NOTICES.txt"
+      ],
+      "ids": []
+    },
+    {
+      "assetId": "img.remaster.frottage",
+      "kind": "그림",
+      "origin": "자체 제작",
+      "rights": "own",
+      "license": "사용자 제공 프로젝트 생성 에셋(외부 작품 원본 미포함)",
+      "basis": "사용자가 게임 적용을 요청하며 첨부한 LevelUp_Frottage_Runtime_v1_20261118 웹 최적화 ZIP의 WebP 29장, 자체 벡터 SVG 8장, asset_manifest.json을 바이트 변경 없이 보관한다. 첨부 manifest는 built-in image_gen 생성물과 native-vector UI로 출처를 구분하며 기준 저장소 커밋 b20fc29372b1f5556c8ff551f3c0198f28f5e7cb와 파일별 SHA-256을 기록한다. 전체 PNG 마스터 ZIP과 별도 runtime ZIP의 WebP 해시가 일치한다. 원본 manifest의 proposal 표시는 제공 당시 상태이며 현재 연결 내역은 docs/remaster.md에 기록한다. 외부 게임의 이미지·로고·상표를 가져오지 않았다.",
+      "checkedOn": "2026-11-19",
+      "files": [
+        "public/assets/remaster/frottage/**"
+      ],
+      "ids": []
+    },
+    {
+      "assetId": "img.remaster.characters",
+      "kind": "그림",
+      "origin": "자체 제작",
+      "rights": "own",
+      "license": "사용자 제공 프로젝트 생성 캐릭터 시트의 런타임 추출본",
+      "basis": "사용자가 첨부한 LevelUp_Character_Sheets_20261118.zip의 built-in image_gen 캐릭터 시트 PNG 8장에서 tools/prepare-characters.mjs가 캐릭터와 초상화를 추출한다. 새 그림 생성·복장 변경·재채색 없이 외곽에 연결된 종이 배경만 제거한다. public/assets/remaster/characters/manifest.json에 PNG 원본 SHA-256과 추출 사각형을 기록한다. atlas의 걷기·눈감기 이름들은 같은 원본 방향 그림을 재사용하며 실제 연속 애니메이션 원화가 아니다. 방향별 작은 상하 이동으로 움직임을 표현하고 움직임 줄이기 설정을 따른다.",
+      "checkedOn": "2026-11-19",
+      "files": [
+        "public/assets/remaster/characters/**"
       ],
       "ids": []
     }

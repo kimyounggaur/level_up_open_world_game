@@ -2,7 +2,7 @@
 import type { WorldObjectData } from '../objects';
 
 /** 바닥 원본의 해시. 원본이 바뀌었는데 다시 굽지 않았으면 테스트가 알린다 */
-export const WORLD_SOURCE_HASH = '8a3672251e54ffa8';
+export const WORLD_SOURCE_HASH = 'e1907c8bb8570f0a';
 
 /** 막힌 칸 표. 줄마다 256칸, '#'은 막힌 칸, '.'은 걸을 수 있는 칸 */
 export const NAV_ROWS: readonly string[] = [

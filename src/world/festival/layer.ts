@@ -11,6 +11,7 @@ import { BAR_SEC } from '../../domain/worldsound';
 import type { FestivalWorld, WorldBridge } from '../../platform/bridge';
 import { MARK_PALETTE } from '../lanterns/layer';
 import { depthOfFoot } from '../objects';
+import { musicianImage } from '../characterArt';
 
 const { INK, PAPER, GOLD, GOLD_LIGHT, CORAL, CORAL_LIGHT } = MARK_PALETTE;
 const TEAL = 0x17675d;
@@ -47,7 +48,7 @@ export interface DrawnMusician {
 
 interface Node {
   part: MusicianPart;
-  g: Phaser.GameObjects.Graphics;
+  g: Phaser.GameObjects.Graphics | Phaser.GameObjects.Image;
   x: number;
   y: number;
   lift: number;
@@ -77,8 +78,10 @@ export class FestivalLayer {
     const spots = musicianSpots(this.floor, f.musicians.length);
     f.musicians.forEach((part, i) => {
       const spot = spots[i]!;
-      const g = this.scene.add.graphics().setPosition(spot.x, spot.y).setDepth(depthOfFoot(spot.y));
-      drawMusician(g, part);
+      const art = musicianImage(this.scene, part, spot.x, spot.y);
+      const g = art ?? this.scene.add.graphics().setPosition(spot.x, spot.y);
+      g.setDepth(depthOfFoot(spot.y));
+      if (!art) drawMusician(g as Phaser.GameObjects.Graphics, part);
       this.nodes.push({ part, g, x: spot.x, y: spot.y, lift: 0 });
     });
   }
