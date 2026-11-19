@@ -42,6 +42,9 @@ import { PLAYER_FOOT_Y, PLAYER_FRAME_H, PLAYER_FRAME_W, advanceWalk, playerLook 
 import type { WorldObjectData } from './objects';
 import type { MoveInput } from './player';
 import type { WorldRuntime } from './runtime';
+import { CHARACTER_ATLAS_DATA, CHARACTER_ATLAS_IMAGE, CHARACTER_ATLAS_KEY, hasCharacterArt } from './characterArt';
+import { BUILDING_ART_PLACEMENTS, ENVIRONMENT_ART, EXTRA_ART_PLACEMENTS, environmentKey, objectArtwork } from './remaster';
+import { placeArtwork } from './remasterLayer';
 
 export interface WorldSceneOptions {
   runtime: WorldRuntime;
@@ -173,6 +176,10 @@ export class WorldScene extends Phaser.Scene {
   preload(): void {
     // 사물 그림은 2배로 구운 한 장이다. 틀을 화면 크기(w, h)로 줄여 그린다(9.3)
     this.load.atlas(OBJECT_ATLAS_KEY, `world/${this.o.atlas.image}`, `world/${this.o.atlas.data}`);
+    this.load.atlas(CHARACTER_ATLAS_KEY, CHARACTER_ATLAS_IMAGE, CHARACTER_ATLAS_DATA);
+    for (const [id, asset] of Object.entries(ENVIRONMENT_ART)) {
+      this.load.image(environmentKey(id as keyof typeof ENVIRONMENT_ART), asset.path);
+    }
     // 시작할 때 화면에 보이는 바닥 조각만 먼저 올린다. 나머지는 걸으면서 이어서 불러온다
     const size = this.viewSize();
     const p = this.o.runtime.player;
@@ -196,9 +203,11 @@ export class WorldScene extends Phaser.Scene {
     // 처음에 올라온 바닥 조각
     for (const name of [...this.chunkPending]) if (this.textures.exists(name)) this.placeChunk(name);
     for (const ob of this.o.objects) {
-      const img = this.add.image(ob.x, ob.y, OBJECT_ATLAS_KEY, spriteKey(ob.file)).setOrigin(ob.ax, ob.ay).setDisplaySize(ob.w, ob.h).setDepth(ob.sortY);
+      const remaster = objectArtwork(ob);
+      const img = remaster && this.textures.exists(environmentKey(remaster.asset)) ? placeArtwork(this, remaster) : this.add.image(ob.x, ob.y, OBJECT_ATLAS_KEY, spriteKey(ob.file)).setOrigin(ob.ax, ob.ay).setDisplaySize(ob.w, ob.h).setDepth(ob.sortY);
       this.objectImages.push(img);
     }
+    for (const p of [...BUILDING_ART_PLACEMENTS, ...EXTRA_ART_PLACEMENTS]) placeArtwork(this, p);
     this.buildPlayer();
     this.marks = this.add.graphics().setDepth(MARK_DEPTH);
     this.cull = new ViewCull(cam);
@@ -431,7 +440,7 @@ export class WorldScene extends Phaser.Scene {
   /** 캐릭터(9.3): 아틀라스의 캐릭터 그림 한 장. 발이 캐릭터의 월드 좌표에 오도록 기준점을 발에 둔다(D-308) */
   private buildPlayer(): void {
     const p = this.o.runtime.player;
-    this.playerSprite = this.add.image(0, 0, OBJECT_ATLAS_KEY, playerLook(p.facing, false, 0, 0, true).frame);
+    this.playerSprite = this.add.image(0, 0, hasCharacterArt(this) ? CHARACTER_ATLAS_KEY : OBJECT_ATLAS_KEY, playerLook(p.facing, false, 0, 0, true).frame);
     this.playerSprite.setOrigin(0.5, PLAYER_FOOT_Y / PLAYER_FRAME_H).setDisplaySize(PLAYER_FRAME_W, PLAYER_FRAME_H);
     this.player = this.add.container(p.x, p.y, [this.playerSprite]).setDepth(depthOfFoot(p.y));
     this.showPlayer(p.facing, false, this.o.reduceMotion());

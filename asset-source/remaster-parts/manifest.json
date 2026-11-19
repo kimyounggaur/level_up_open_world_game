@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "target": "public/assets/remaster/frottage/backgrounds/webp/bg-beat-river.webp",
+      "sha256": "1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad",
+      "bytes": 789194,
+      "parts": [
+        "asset-source/remaster-parts/1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad-0.part",
+        "asset-source/remaster-parts/1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad-1.part",
+        "asset-source/remaster-parts/1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad-2.part",
+        "asset-source/remaster-parts/1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad-3.part",
+        "asset-source/remaster-parts/1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad-4.part",
+        "asset-source/remaster-parts/1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad-5.part",
+        "asset-source/remaster-parts/1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad-6.part",
+        "asset-source/remaster-parts/1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad-7.part",
+        "asset-source/remaster-parts/1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad-8.part",
+        "asset-source/remaster-parts/1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad-9.part",
+        "asset-source/remaster-parts/1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad-10.part",
+        "asset-source/remaster-parts/1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad-11.part",
+        "asset-source/remaster-parts/1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad-12.part"
+      ]
+    },
+    {
+      "target": "public/assets/remaster/frottage/backgrounds/webp/bg-bell-grove.webp",
+      "sha256": "75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63",
+      "bytes": 790532,
+      "parts": [
+        "asset-source/remaster-parts/75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63-0.part",
+        "asset-source/remaster-parts/75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63-1.part",
+        "asset-source/remaster-parts/75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63-2.part",
+        "asset-source/remaster-parts/75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63-3.part",
+        "asset-source/remaster-parts/75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63-4.part",
+        "asset-source/remaster-parts/75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63-5.part",
+        "asset-source/remaster-parts/75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63-6.part",
+        "asset-source/remaster-parts/75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63-7.part",
+        "asset-source/remaster-parts/75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63-8.part",
+        "asset-source/remaster-parts/75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63-9.part",
+        "asset-source/remaster-parts/75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63-10.part",
+        "asset-source/remaster-parts/75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63-11.part",
+        "asset-source/remaster-parts/75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63-12.part"
+      ]
+    },
+    {
+      "target": "public/assets/remaster/frottage/backgrounds/webp/bg-key-marsh.webp",
+      "sha256": "219552946d37437446d2b79bbaf52f25aaea5e180545766776fbb15ad0dfeb0c",
+      "bytes": 776168,
+      "parts": [
+        "asset-source/remaster-parts/219552946d37437446d2b79bbaf52f25aaea5e180545766776fbb15ad0dfeb0c-0.part",
+        "asset-source/remaster-parts/219552946d37437446d2b79bbaf52f25aaea5e180545766776fbb15ad0dfeb0c-1.part",
+        "asset-source/remaster-parts/219552946d37437446d2b79bbaf52f25aaea5e180545766776fbb15ad0dfeb0c-2.part",
+        "asset-source/remaster-parts/219552946d37437446d2b79bbaf52f25aaea5e180545766776fbb15ad0dfeb0c-3.part",
+        "asset-source/remaster-parts/219552946d37437446d2b79bbaf52f25aaea5e180545766776fbb15ad0dfeb0c-4.part",
+        "asset-source/remaster-parts/219552946d37437446d2b79bbaf52f25aaea5e180545766776fbb15ad0dfeb0c-5.part",
+        "asset-source/remaster-parts/219552946d37437446d2b79bbaf52f25aaea5e180545766776fbb15ad0dfeb0c-6.part",
+        "asset-source/remaster-parts/219552946d37437446d2b79bbaf52f25aaea5e180545766776fbb15ad0dfeb0c-7.part",
+        "asset-source/remaster-parts/219552946d37437446d2b79bbaf52f25aaea5e180545766776fbb15ad0dfeb0c-8.part",
+        "asset-source/remaster-parts/219552946d37437446d2b79bbaf52f25aaea5e180545766776fbb15ad0dfeb0c-9.part",
+        "asset-source/remaster-parts/219552946d37437446d2b79bbaf52f25aaea5e180545766776fbb15ad0dfeb0c-10.part",
+        "asset-source/remaster-parts/219552946d37437446d2b79bbaf52f25aaea5e180545766776fbb15ad0dfeb0c-11.part"
+      ]
+    },
+    {
+      "target": "public/assets/remaster/frottage/backgrounds/webp/bg-scale-trail.webp",
+      "sha256": "835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878",
+      "bytes": 800806,
+      "parts": [
+        "asset-source/remaster-parts/835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878-0.part",
+        "asset-source/remaster-parts/835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878-1.part",
+        "asset-source/remaster-parts/835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878-2.part",
+        "asset-source/remaster-parts/835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878-3.part",
+        "asset-source/remaster-parts/835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878-4.part",
+        "asset-source/remaster-parts/835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878-5.part",
+        "asset-source/remaster-parts/835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878-6.part",
+        "asset-source/remaster-parts/835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878-7.part",
+        "asset-source/remaster-parts/835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878-8.part",
+        "asset-source/remaster-parts/835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878-9.part",
+        "asset-source/remaster-parts/835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878-10.part",
+        "asset-source/remaster-parts/835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878-11.part",
+        "asset-source/remaster-parts/835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878-12.part"
+      ]
+    },
+    {
+      "target": "public/assets/remaster/frottage/backgrounds/webp/bg-staff-hill.webp",
+      "sha256": "1d4073df28bfc655b7ca140660fe39d99adbb3494083dc5e1f1ac1ee1c42a833",
+      "bytes": 758752,
+      "parts": [
+        "asset-source/remaster-parts/1d4073df28bfc655b7ca140660fe39d99adbb3494083dc5e1f1ac1ee1c42a833-0.part",
+        "asset-source/remaster-parts/1d4073df28bfc655b7ca140660fe39d99adbb3494083dc5e1f1ac1ee1c42a833-1.part",
+        "asset-source/remaster-parts/1d4073df28bfc655b7ca140660fe39d99adbb3494083dc5e1f1ac1ee1c42a833-2.part",
+        "asset-source/remaster-parts/1d4073df28bfc655b7ca140660fe39d99adbb3494083dc5e1f1ac1ee1c42a833-3.part",
+        "asset-source/remaster-parts/1d4073df28bfc655b7ca140660fe39d99adbb3494083dc5e1f1ac1ee1c42a833-4.part",
+        "asset-source/remaster-parts/1d4073df28bfc655b7ca140660fe39d99adbb3494083dc5e1f1ac1ee1c42a833-5.part",
+        "asset-source/remaster-parts/1d4073df28bfc655b7ca140660fe39d99adbb3494083dc5e1f1ac1ee1c42a833-6.part",
+        "asset-source/remaster-parts/1d4073df28bfc655b7ca140660fe39d99adbb3494083dc5e1f1ac1ee1c42a833-7.part",
+        "asset-source/remaster-parts/1d4073df28bfc655b7ca140660fe39d99adbb3494083dc5e1f1ac1ee1c42a833-8.part",
+        "asset-source/remaster-parts/1d4073df28bfc655b7ca140660fe39d99adbb3494083dc5e1f1ac1ee1c42a833-9.part",
+        "asset-source/remaster-parts/1d4073df28bfc655b7ca140660fe39d99adbb3494083dc5e1f1ac1ee1c42a833-10.part",
+        "asset-source/remaster-parts/1d4073df28bfc655b7ca140660fe39d99adbb3494083dc5e1f1ac1ee1c42a833-11.part"
+      ]
+    },
+    {
+      "target": "public/assets/remaster/frottage/backgrounds/webp/bg-village.webp",
+      "sha256": "8a3c8e8cbce6670318cb597614415b4bb198b938d8d67713acad2afc802ce8eb",
+      "bytes": 781986,
+      "parts": [
+        "asset-source/remaster-parts/8a3c8e8cbce6670318cb597614415b4bb198b938d8d67713acad2afc802ce8eb-0.part",
+        "asset-source/remaster-parts/8a3c8e8cbce6670318cb597614415b4bb198b938d8d67713acad2afc802ce8eb-1.part",
+        "asset-source/remaster-parts/8a3c8e8cbce6670318cb597614415b4bb198b938d8d67713acad2afc802ce8eb-2.part",
+        "asset-source/remaster-parts/8a3c8e8cbce6670318cb597614415b4bb198b938d8d67713acad2afc802ce8eb-3.part",
+        "asset-source/remaster-parts/8a3c8e8cbce6670318cb597614415b4bb198b938d8d67713acad2afc802ce8eb-4.part",
+        "asset-source/remaster-parts/8a3c8e8cbce6670318cb597614415b4bb198b938d8d67713acad2afc802ce8eb-5.part",
+        "asset-source/remaster-parts/8a3c8e8cbce6670318cb597614415b4bb198b938d8d67713acad2afc802ce8eb-6.part",
+        "asset-source/remaster-parts/8a3c8e8cbce6670318cb597614415b4bb198b938d8d67713acad2afc802ce8eb-7.part",
+        "asset-source/remaster-parts/8a3c8e8cbce6670318cb597614415b4bb198b938d8d67713acad2afc802ce8eb-8.part",
+        "asset-source/remaster-parts/8a3c8e8cbce6670318cb597614415b4bb198b938d8d67713acad2afc802ce8eb-9.part",
+        "asset-source/remaster-parts/8a3c8e8cbce6670318cb597614415b4bb198b938d8d67713acad2afc802ce8eb-10.part",
+        "asset-source/remaster-parts/8a3c8e8cbce6670318cb597614415b4bb198b938d8d67713acad2afc802ce8eb-11.part"
+      ]
+    },
+    {
+      "target": "public/assets/remaster/frottage/concepts/webp/world-art-direction.webp",
+      "sha256": "ce41545dfe59199188bea8cf752c161f38252453a0f4350c16d6d3c37b0bca25",
+      "bytes": 768690,
+      "parts": [
+        "asset-source/remaster-parts/ce41545dfe59199188bea8cf752c161f38252453a0f4350c16d6d3c37b0bca25-0.part",
+        "asset-source/remaster-parts/ce41545dfe59199188bea8cf752c161f38252453a0f4350c16d6d3c37b0bca25-1.part",
+        "asset-source/remaster-parts/ce41545dfe59199188bea8cf752c161f38252453a0f4350c16d6d3c37b0bca25-2.part",
+        "asset-source/remaster-parts/ce41545dfe59199188bea8cf752c161f38252453a0f4350c16d6d3c37b0bca25-3.part",
+        "asset-source/remaster-parts/ce41545dfe59199188bea8cf752c161f38252453a0f4350c16d6d3c37b0bca25-4.part",
+        "asset-source/remaster-parts/ce41545dfe59199188bea8cf752c161f38252453a0f4350c16d6d3c37b0bca25-5.part",
+        "asset-source/remaster-parts/ce41545dfe59199188bea8cf752c161f38252453a0f4350c16d6d3c37b0bca25-6.part",
+        "asset-source/remaster-parts/ce41545dfe59199188bea8cf752c161f38252453a0f4350c16d6d3c37b0bca25-7.part",
+        "asset-source/remaster-parts/ce41545dfe59199188bea8cf752c161f38252453a0f4350c16d6d3c37b0bca25-8.part",
+        "asset-source/remaster-parts/ce41545dfe59199188bea8cf752c161f38252453a0f4350c16d6d3c37b0bca25-9.part",
+        "asset-source/remaster-parts/ce41545dfe59199188bea8cf752c161f38252453a0f4350c16d6d3c37b0bca25-10.part",
+        "asset-source/remaster-parts/ce41545dfe59199188bea8cf752c161f38252453a0f4350c16d6d3c37b0bca25-11.part"
+      ]
+    },
+    {
+      "target": "public/assets/remaster/frottage/materials/webp/tex-aged-spruce.webp",
+      "sha256": "aeb6bb107d9af32d95139c44683ce1600fd799ddaba790af9758f27ad1892caf",
+      "bytes": 541820,
+      "parts": [
+        "asset-source/remaster-parts/aeb6bb107d9af32d95139c44683ce1600fd799ddaba790af9758f27ad1892caf-0.part",
+        "asset-source/remaster-parts/aeb6bb107d9af32d95139c44683ce1600fd799ddaba790af9758f27ad1892caf-1.part",
+        "asset-source/remaster-parts/aeb6bb107d9af32d95139c44683ce1600fd799ddaba790af9758f27ad1892caf-2.part",
+        "asset-source/remaster-parts/aeb6bb107d9af32d95139c44683ce1600fd799ddaba790af9758f27ad1892caf-3.part",
+        "asset-source/remaster-parts/aeb6bb107d9af32d95139c44683ce1600fd799ddaba790af9758f27ad1892caf-4.part",
+        "asset-source/remaster-parts/aeb6bb107d9af32d95139c44683ce1600fd799ddaba790af9758f27ad1892caf-5.part",
+        "asset-source/remaster-parts/aeb6bb107d9af32d95139c44683ce1600fd799ddaba790af9758f27ad1892caf-6.part",
+        "asset-source/remaster-parts/aeb6bb107d9af32d95139c44683ce1600fd799ddaba790af9758f27ad1892caf-7.part",
+        "asset-source/remaster-parts/aeb6bb107d9af32d95139c44683ce1600fd799ddaba790af9758f27ad1892caf-8.part"
+      ]
+    },
+    {
+      "target": "public/assets/remaster/frottage/materials/webp/tex-fiber-paper.webp",
+      "sha256": "1827eb27239f4b29523fe160176e45bef4257236ecd7c3aa1d13eef95f825eb2",
+      "bytes": 343534,
+      "parts": [
+        "asset-source/remaster-parts/1827eb27239f4b29523fe160176e45bef4257236ecd7c3aa1d13eef95f825eb2-0.part",
+        "asset-source/remaster-parts/1827eb27239f4b29523fe160176e45bef4257236ecd7c3aa1d13eef95f825eb2-1.part",
+        "asset-source/remaster-parts/1827eb27239f4b29523fe160176e45bef4257236ecd7c3aa1d13eef95f825eb2-2.part",
+        "asset-source/remaster-parts/1827eb27239f4b29523fe160176e45bef4257236ecd7c3aa1d13eef95f825eb2-3.part",
+        "asset-source/remaster-parts/1827eb27239f4b29523fe160176e45bef4257236ecd7c3aa1d13eef95f825eb2-4.part",
+        "asset-source/remaster-parts/1827eb27239f4b29523fe160176e45bef4257236ecd7c3aa1d13eef95f825eb2-5.part"
+      ]
+    },
+    {
+      "target": "public/assets/remaster/frottage/materials/webp/tex-jade-water.webp",
+      "sha256": "acbb2806712f9377485e99d8bf6c354aa6b8eb7f8f78fc1e6b1c287c16b2b178",
+      "bytes": 406014,
+      "parts": [
+        "asset-source/remaster-parts/acbb2806712f9377485e99d8bf6c354aa6b8eb7f8f78fc1e6b1c287c16b2b178-0.part",
+        "asset-source/remaster-parts/acbb2806712f9377485e99d8bf6c354aa6b8eb7f8f78fc1e6b1c287c16b2b178-1.part",
+        "asset-source/remaster-parts/acbb2806712f9377485e99d8bf6c354aa6b8eb7f8f78fc1e6b1c287c16b2b178-2.part",
+        "asset-source/remaster-parts/acbb2806712f9377485e99d8bf6c354aa6b8eb7f8f78fc1e6b1c287c16b2b178-3.part",
+        "asset-source/remaster-parts/acbb2806712f9377485e99d8bf6c354aa6b8eb7f8f78fc1e6b1c287c16b2b178-4.part",
+        "asset-source/remaster-parts/acbb2806712f9377485e99d8bf6c354aa6b8eb7f8f78fc1e6b1c287c16b2b178-5.part",
+        "asset-source/remaster-parts/acbb2806712f9377485e99d8bf6c354aa6b8eb7f8f78fc1e6b1c287c16b2b178-6.part"
+      ]
+    },
+    {
+      "target": "public/assets/remaster/frottage/materials/webp/tex-limestone.webp",
+      "sha256": "4fc9987870591d2df34c8a9ac7e9a4bad25383552d68eb87dbfc8037f84a7f01",
+      "bytes": 516932,
+      "parts": [
+        "asset-source/remaster-parts/4fc9987870591d2df34c8a9ac7e9a4bad25383552d68eb87dbfc8037f84a7f01-0.part",
+        "asset-source/remaster-parts/4fc9987870591d2df34c8a9ac7e9a4bad25383552d68eb87dbfc8037f84a7f01-1.part",
+        "asset-source/remaster-parts/4fc9987870591d2df34c8a9ac7e9a4bad25383552d68eb87dbfc8037f84a7f01-2.part",
+        "asset-source/remaster-parts/4fc9987870591d2df34c8a9ac7e9a4bad25383552d68eb87dbfc8037f84a7f01-3.part",
+        "asset-source/remaster-parts/4fc9987870591d2df34c8a9ac7e9a4bad25383552d68eb87dbfc8037f84a7f01-4.part",
+        "asset-source/remaster-parts/4fc9987870591d2df34c8a9ac7e9a4bad25383552d68eb87dbfc8037f84a7f01-5.part",
+        "asset-source/remaster-parts/4fc9987870591d2df34c8a9ac7e9a4bad25383552d68eb87dbfc8037f84a7f01-6.part",
+        "asset-source/remaster-parts/4fc9987870591d2df34c8a9ac7e9a4bad25383552d68eb87dbfc8037f84a7f01-7.part"
+      ]
+    },
+    {
+      "target": "public/assets/remaster/frottage/materials/webp/tex-sage-grass.webp",
+      "sha256": "9971a69a61385c7c09559bff918fbe1c9d134ea48d7e7d5a3705eea8e799164a",
+      "bytes": 568014,
+      "parts": [
+        "asset-source/remaster-parts/9971a69a61385c7c09559bff918fbe1c9d134ea48d7e7d5a3705eea8e799164a-0.part",
+        "asset-source/remaster-parts/9971a69a61385c7c09559bff918fbe1c9d134ea48d7e7d5a3705eea8e799164a-1.part",
+        "asset-source/remaster-parts/9971a69a61385c7c09559bff918fbe1c9d134ea48d7e7d5a3705eea8e799164a-2.part",
+        "asset-source/remaster-parts/9971a69a61385c7c09559bff918fbe1c9d134ea48d7e7d5a3705eea8e799164a-3.part",
+        "asset-source/remaster-parts/9971a69a61385c7c09559bff918fbe1c9d134ea48d7e7d5a3705eea8e799164a-4.part",
+        "asset-source/remaster-parts/9971a69a61385c7c09559bff918fbe1c9d134ea48d7e7d5a3705eea8e799164a-5.part",
+        "asset-source/remaster-parts/9971a69a61385c7c09559bff918fbe1c9d134ea48d7e7d5a3705eea8e799164a-6.part",
+        "asset-source/remaster-parts/9971a69a61385c7c09559bff918fbe1c9d134ea48d7e7d5a3705eea8e799164a-7.part",
+        "asset-source/remaster-parts/9971a69a61385c7c09559bff918fbe1c9d134ea48d7e7d5a3705eea8e799164a-8.part"
+      ]
+    },
+    {
+      "target": "public/assets/remaster/frottage/materials/webp/tex-sandy-path.webp",
+      "sha256": "972c1f3cc39d41e4bb8c043403697bbedeb0cd2fb61dce5530576fd93cdfd634",
+      "bytes": 504500,
+      "parts": [
+        "asset-source/remaster-parts/972c1f3cc39d41e4bb8c043403697bbedeb0cd2fb61dce5530576fd93cdfd634-0.part",
+        "asset-source/remaster-parts/972c1f3cc39d41e4bb8c043403697bbedeb0cd2fb61dce5530576fd93cdfd634-1.part",
+        "asset-source/remaster-parts/972c1f3cc39d41e4bb8c043403697bbedeb0cd2fb61dce5530576fd93cdfd634-2.part",
+        "asset-source/remaster-parts/972c1f3cc39d41e4bb8c043403697bbedeb0cd2fb61dce5530576fd93cdfd634-3.part",
+        "asset-source/remaster-parts/972c1f3cc39d41e4bb8c043403697bbedeb0cd2fb61dce5530576fd93cdfd634-4.part",
+        "asset-source/remaster-parts/972c1f3cc39d41e4bb8c043403697bbedeb0cd2fb61dce5530576fd93cdfd634-5.part",
+        "asset-source/remaster-parts/972c1f3cc39d41e4bb8c043403697bbedeb0cd2fb61dce5530576fd93cdfd634-6.part",
+        "asset-source/remaster-parts/972c1f3cc39d41e4bb8c043403697bbedeb0cd2fb61dce5530576fd93cdfd634-7.part"
+      ]
+    }
+  ]
+}

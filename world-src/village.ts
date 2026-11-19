@@ -7,6 +7,7 @@ import { circle, line, num, path, rect, splitAlpha } from './shapes';
 import { COLOR } from './palette';
 import { hedgeSvg, hipRoofSvg, plazaPavingSvg, stageSvg, stoolSvg } from './art/ground';
 import { SHADOW } from './art/paint';
+import { materialFill } from './art/frottage';
 import { roadsSvg } from './curves';
 import type { RoadSegment } from './curves';
 import { treeCanopyInlineSvg, treeShadowSvg } from './trees';
@@ -139,23 +140,27 @@ export const villageTrees = (): TreeSpec[] => TREE_MOCK.map((t, i) => ({ id: `tr
 const BENCH = { x: 568, y: 456, w: 54, h: 29 } as const;
 
 /**
- * 그림 방식: 'painted'는 게임의 바닥(햇살 과슈 화풍, D-308), 'mock'은 시안 B01과 같은 평면 그림이다.
- * 둘은 자리와 크기(시안 좌표)가 같고 칠하는 방식만 다르다. 'mock'은 시안과 나란히 놓고 배치를 픽셀로 대조할 때만 쓴다(3-2 시험).
+ * 'painted' keeps the previous gouache ground; 'mock' retains the B01 fixture.
+ * 'remaster' adds the supplied materials and leaves roofs to the live art layer.
+ * All three share the same collision and interaction geometry.
  */
-export type VillageStyle = 'painted' | 'mock';
+export type VillageStyle = 'painted' | 'mock' | 'remaster';
 
 /** 마을의 앞쪽 그림: 합주 광장, 건물, 울타리, 디딤돌, 의자. 길 위에 그린다 */
 export function villageFrontSvg(style: VillageStyle = 'painted'): string {
   const parts: string[] = [];
-  const painted = style === 'painted';
+  const painted = style !== 'mock';
+  const remaster = style === 'remaster';
   const { cx, cy } = PLAZA;
   parts.push(circle(cx, cy, 120, COLOR.plazaOuter), circle(cx, cy, 111, COLOR.plaza));
+  if (remaster) parts.push(circle(cx, cy, 111, materialFill('tex-limestone'), { opacity: 0.38 }));
   // 햇살 과슈 화풍(D-308): 바닥 돌의 이음매와 볕, 나무 무대, 둥근 나무 의자. 자리와 크기는 시안 그대로다
   if (painted) parts.push(plazaPavingSvg(cx, cy, 79, 111, COLOR.plazaRing));
   parts.push(circle(cx, cy, 96, 'none', { stroke: COLOR.plazaRing, 'stroke-width': 2 }), circle(cx, cy, 79, 'none', { stroke: COLOR.plazaRing, 'stroke-width': 2 }));
   const stools = [[418, 373], [441, 398], [478, 407], [515, 398], [538, 373]] as const;
   if (painted) {
     parts.push(stageSvg({ x: 435, y: 300, w: 106, h: 47 }, { x: 443, y: 295, w: 90, h: 38 }, COLOR.stage));
+    if (remaster) parts.push(rect(443, 295, 90, 38, materialFill('tex-aged-spruce'), { opacity: 0.32, rx: 4 }));
     for (const [x, y] of stools) parts.push(stoolSvg(x, y, 20, 12, COLOR.stool));
   } else {
     parts.push(rect(435, 300, 106, 47, COLOR.stage, { rx: 8 }), rect(443, 295, 90, 38, COLOR.stageTop, { rx: 4 }));
@@ -164,7 +169,7 @@ export function villageFrontSvg(style: VillageStyle = 'painted'): string {
   }
   parts.push(circle(cx, cy, 128, 'none', { stroke: COLOR.teal, 'stroke-width': 3 }), circle(cx, cy, 135, 'none', { stroke: COLOR.white, 'stroke-width': 3 }));
 
-  for (const b of BUILDINGS) {
+  for (const b of remaster ? [] : BUILDINGS) {
     const [x, y, w, h] = b.roof;
     const mx = x + w / 2;
     if (painted) {
@@ -183,7 +188,7 @@ export function villageFrontSvg(style: VillageStyle = 'painted'): string {
     }
     parts.push(rect(mx - 22, y + h - 3, 44, 17, COLOR.doorStep, { rx: 2 }), line(mx - 26, y + h + 17, mx + 26, y + h + 17, COLOR.doorLine, { 'stroke-width': 2 }));
   }
-  for (const b of BUILDINGS) parts.push(...b.extras);
+  if (!remaster) for (const b of BUILDINGS) parts.push(...b.extras);
 
   HEDGES.forEach(([x, y, w, h], i) => {
     const rx = Math.min(w, h) / 2;

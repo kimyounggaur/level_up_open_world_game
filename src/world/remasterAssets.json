@@ -1,0 +1,178 @@
+{
+  "bld-ensemble-stage": {
+    "path": "assets/remaster/frottage/buildings/webp/bld-ensemble-stage.webp",
+    "width": 1024,
+    "height": 683,
+    "bounds": [
+      69,
+      56,
+      957,
+      622
+    ]
+  },
+  "bld-h1-pitch-workshop": {
+    "path": "assets/remaster/frottage/buildings/webp/bld-h1-pitch-workshop.webp",
+    "width": 1024,
+    "height": 683,
+    "bounds": [
+      60,
+      98,
+      964,
+      562
+    ]
+  },
+  "bld-h2-rhythm-workshop": {
+    "path": "assets/remaster/frottage/buildings/webp/bld-h2-rhythm-workshop.webp",
+    "width": 1024,
+    "height": 683,
+    "bounds": [
+      78,
+      62,
+      946,
+      622
+    ]
+  },
+  "bld-h3-harmony-workshop": {
+    "path": "assets/remaster/frottage/buildings/webp/bld-h3-harmony-workshop.webp",
+    "width": 1024,
+    "height": 683,
+    "bounds": [
+      66,
+      56,
+      959,
+      633
+    ]
+  },
+  "lm-scale-trail-gazebo": {
+    "path": "assets/remaster/frottage/buildings/webp/lm-scale-trail-gazebo.webp",
+    "width": 1024,
+    "height": 683,
+    "bounds": [
+      198,
+      44,
+      827,
+      629
+    ]
+  },
+  "lm-beat-river-waterwheel-shell": {
+    "path": "assets/remaster/frottage/landmarks/webp/lm-beat-river-waterwheel-shell.webp",
+    "width": 1024,
+    "height": 683,
+    "bounds": [
+      153,
+      16,
+      869,
+      660
+    ]
+  },
+  "lm-bell-grove-bell-tower-shell": {
+    "path": "assets/remaster/frottage/landmarks/webp/lm-bell-grove-bell-tower-shell.webp",
+    "width": 683,
+    "height": 1024,
+    "bounds": [
+      103,
+      17,
+      582,
+      989
+    ]
+  },
+  "lm-bell-grove-echo-wall": {
+    "path": "assets/remaster/frottage/landmarks/webp/lm-bell-grove-echo-wall.webp",
+    "width": 1024,
+    "height": 341,
+    "bounds": [
+      30,
+      53,
+      994,
+      297
+    ]
+  },
+  "lm-key-marsh-tuning-tower": {
+    "path": "assets/remaster/frottage/landmarks/webp/lm-key-marsh-tuning-tower.webp",
+    "width": 1024,
+    "height": 683,
+    "bounds": [
+      373,
+      7,
+      651,
+      664
+    ]
+  },
+  "lm-staff-hill-windvane": {
+    "path": "assets/remaster/frottage/landmarks/webp/lm-staff-hill-windvane.webp",
+    "width": 683,
+    "height": 1024,
+    "bounds": [
+      157,
+      8,
+      604,
+      1003
+    ]
+  },
+  "prop-bell-grove-tree": {
+    "path": "assets/remaster/frottage/props/webp/prop-bell-grove-tree.webp",
+    "width": 1024,
+    "height": 683,
+    "bounds": [
+      132,
+      6,
+      881,
+      671
+    ]
+  },
+  "prop-brass-lantern": {
+    "path": "assets/remaster/frottage/props/webp/prop-brass-lantern.webp",
+    "width": 683,
+    "height": 1024,
+    "bounds": [
+      168,
+      0,
+      516,
+      1005
+    ]
+  },
+  "prop-limestone-rock": {
+    "path": "assets/remaster/frottage/props/webp/prop-limestone-rock.webp",
+    "width": 1024,
+    "height": 683,
+    "bounds": [
+      197,
+      84,
+      828,
+      610
+    ]
+  },
+  "prop-stone-footbridge": {
+    "path": "assets/remaster/frottage/props/webp/prop-stone-footbridge.webp",
+    "width": 936,
+    "height": 1024,
+    "bounds": [
+      113,
+      57,
+      821,
+      958
+    ]
+  },
+  "prop-village-tree": {
+    "path": "assets/remaster/frottage/props/webp/prop-village-tree.webp",
+    "width": 1024,
+    "height": 683,
+    "bounds": [
+      192,
+      11,
+      820,
+      639
+    ]
+  },
+  "prop-wayfinding-sign": {
+    "path": "assets/remaster/frottage/props/webp/prop-wayfinding-sign.webp",
+    "width": 1024,
+    "height": 683,
+    "bounds": [
+      118,
+      21,
+      905,
+      663
+    ]
+  }
+}

@@ -56,7 +56,12 @@ export function IntroCard({ controller, touchOnly, onStart, onList }: IntroCardP
   const lines = introLines(touchOnly);
   return (
     <div class="intro-shell" data-intro>
-      <section class="intro-card" role="dialog" aria-modal="true" aria-labelledby="intro-title">
+      <section class="intro-card intro-welcome" role="dialog" aria-modal="true" aria-labelledby="intro-title">
+        <div class="intro-landscape" aria-hidden="true">
+          <img src="/assets/remaster/frottage/backgrounds/webp/bg-village.webp" alt="" width="1536" height="1024" fetchPriority="high" />
+          <img class="intro-player-portrait" src="/assets/remaster/characters/player-portrait.webp" alt="" width="112" height="112" />
+        </div>
+        <p class="intro-eyebrow">레벨업 음악이론 오픈월드</p>
         <h1 id="intro-title">음악 마을</h1>
         <p class="subtitle">걸어 다니며 음악 이론을 만져 보는 마을이에요.</p>
         <ol class="intro-steps">

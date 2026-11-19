@@ -193,13 +193,19 @@ describe('바닥 그림은 막힌 칸과 같다(3.8: 보이지 않는 벽이 없
     expect(isWater(await pixel(6450, 2300))).toBe(false);
   });
 
-  it('E1 웅덩이와 같은 물 색이다(그림 규칙이 같다)', async () => {
-    // 가장자리 가까이(안쪽 옅은 물이 시작하기 전 16 px 띠)의 물 색은 웅덩이마다 같다
+  it('방앗간과 E1은 프로타주 명암이 달라도 같은 청록 물 계열이다', async () => {
+    // Compare corresponding water strips before the inner pale-water band.
     const mill = await pixel(E4.x + 340, E4.y + 8);
     const ford = await pixel(6752 + 256, 2720 + 8);
     expect(isWater(mill)).toBe(true);
     expect(isWater(ford)).toBe(true);
-    // 그림은 WebP(손실 압축)라서 한 점의 값이 몇 단계 흔들린다: 채널마다 10 안이면 같은 색이다
-    mill.forEach((v, i) => expect(Math.abs(v - ford[i]!)).toBeLessThanOrEqual(10));
+    // Frottage grain changes luminance. Compare the cyan hue coordinate instead
+    // of requiring a flat RGB fill: blue is 0, cyan is 1 on this normalized axis.
+    const cyanHue = ([r, g, b]: [number, number, number]): number => (g - r) / (b - r);
+    for (const p of [mill, ford]) {
+      expect(cyanHue(p)).toBeGreaterThanOrEqual(0.7);
+      expect(cyanHue(p)).toBeLessThanOrEqual(1.05);
+    }
+    expect(Math.abs(cyanHue(mill) - cyanHue(ford))).toBeLessThan(0.15);
   });
 });

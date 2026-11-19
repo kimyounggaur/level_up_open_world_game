@@ -211,11 +211,19 @@ describe('바닥 그림은 막힌 칸과 같다(3.8: 보이지 않는 벽이 없
     expect(near(await pixel(6618, 1500), COLOR.bank)).toBe(true);
   });
 
-  it('E1의 물웅덩이도 같은 물 색이다(세 여울목이 같은 그림 규칙을 쓴다)', async () => {
+  it('E1과 E3은 프로타주 명암이 달라도 같은 청록 물 계열이다', async () => {
     const e1 = ford('E1');
     const p1 = await pixel(e1.x + 256, e1.y + 80);
     const p3 = await pixel(E3.x + 80, E3.y + 400);
     expect(isWater(p1)).toBe(true);
-    expect(p1).toEqual(p3);
+    expect(isWater(p3)).toBe(true);
+    // (g-r)/(b-r) ignores brightness and chroma magnitude. Blue is 0,
+    // cyan is 1; the shared water must stay toward cyan even where grain varies.
+    const cyanHue = ([r, g, b]: [number, number, number]): number => (g - r) / (b - r);
+    for (const p of [p1, p3]) {
+      expect(cyanHue(p)).toBeGreaterThanOrEqual(0.7);
+      expect(cyanHue(p)).toBeLessThanOrEqual(1.05);
+    }
+    expect(Math.abs(cyanHue(p1) - cyanHue(p3))).toBeLessThan(0.15);
   });
 });

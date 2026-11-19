@@ -63,6 +63,11 @@ export function FestivalCard({ view, controller, onSkip, onAnswer, onStopSongs }
   return (
     <div class="festival-shell" data-festival-shell>
       <section class="festival-card" role="dialog" aria-modal="true" aria-labelledby="festival-title" aria-describedby="festival-text" data-festival={view.phase}>
+        {view.phase === 'playing' && view.musicians.length > 0 ? (
+          <div class="festival-portraits" aria-hidden="true">
+            {view.musicians.map((part) => <img key={part} src={`/assets/remaster/characters/${part}-portrait.webp`} alt="" width="48" height="48" />)}
+          </div>
+        ) : null}
         <h2 id="festival-title" class="festival-title">
           {FESTIVAL_TITLE}
         </h2>

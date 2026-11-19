@@ -294,13 +294,20 @@ describe('실제 저장소의 대장(8-1)', () => {
     expect(validateLedgerDir(root)).toEqual([]);
   });
 
-  it('배포 파일은 모두 대장에 있다. 월드 그림 50장, 화면 그림 1장(첫 안내 카드의 풍경 띠, D-308), 목록 2개, 고지 파일이다', () => {
+  it('기존 월드와 제공된 리마스터 그림이 모두 출처 대장에 있다', () => {
     const pub = facts.publicFiles;
-    expect(pub.filter((f) => f.endsWith('.webp')).length).toBe(50);
-    expect(pub.filter((f) => f.endsWith('.svg'))).toEqual(['public/world/ui-intro-banner.svg']);
-    expect(pub.filter((f) => f.endsWith('.json')).length).toBe(2);
+    const world = pub.filter((f) => f.startsWith('public/world/'));
+    expect(world.filter((f) => f.endsWith('.webp')).length).toBe(50);
+    expect(world.filter((f) => f.endsWith('.svg'))).toEqual(['public/world/ui-intro-banner.svg']);
+    expect(world.filter((f) => f.endsWith('.json')).length).toBe(2);
+    const frottage = pub.filter((f) => f.startsWith('public/assets/remaster/frottage/'));
+    expect(frottage.filter((f) => f.endsWith('.webp'))).toHaveLength(29);
+    expect(frottage.filter((f) => f.endsWith('.svg'))).toHaveLength(8);
+    const characters = pub.filter((f) => f.startsWith('public/assets/remaster/characters/'));
+    expect(characters.filter((f) => f.endsWith('-portrait.webp'))).toHaveLength(8);
+    expect(characters.filter((f) => f.endsWith('-standing.webp'))).toHaveLength(8);
+    expect(characters).toContain('public/assets/remaster/characters/atlas.webp');
     expect(pub).toContain(NOTICES_FILE);
-    expect(pub.length).toBe(54);
     for (const f of pub) expect(ledger.entries.some((e) => entryCovers(e, f)), f).toBe(true);
   });
 
@@ -417,6 +424,30 @@ describe('실제 저장소의 대장(8-1)', () => {
       expect(fontNamesOf(tmp, files).named).toEqual(['Malgun Gothic', 'Noto Music', 'Noto Sans KR']);
       expect(fontNamesOf(tmp, files).stray).toEqual(['src/ui/bad.css: font 12px Arial', 'src/ui/bad.css: font-family Pretendard, sans-serif', 'src/ui/bad.css: font-family X', "src/ui/bad.ts: fontFamily 'Papyrus'"]);
       expect(strayAssetRefsOf(tmp, files, files.filter((f) => f.startsWith('public/')))).toEqual(['index.html: icon.png', 'src/ui/bad.css: x.woff2', 'src/ui/bad.ts: https://cdn.example.com/f.woff2']);
+    } finally {
+      fs.rmSync(tmp, { recursive: true, force: true });
+    }
+  });
+
+  it('제공 에셋은 실제 파일과 출처 항목이 함께 있어야 로컬 참조를 허용한다', () => {
+    const tmp = fs.mkdtempSync(path.join(fs.realpathSync(process.env['TMPDIR'] ?? '/tmp'), 'ledger-art-'));
+    const write = (rel: string, text: string): void => {
+      fs.mkdirSync(path.dirname(path.join(tmp, rel)), { recursive: true });
+      fs.writeFileSync(path.join(tmp, rel), text);
+    };
+    write('index.html', '');
+    write('public/assets/remaster/characters/player-portrait.webp', 'x');
+    write('public/assets/remaster/characters/unreviewed.webp', 'x');
+    write('src/ui/art.ts', "const known = '/assets/remaster/characters/player-portrait.webp';\nconst selected = `/assets/remaster/characters/${part}-portrait.webp`;\nconst missing = '/assets/remaster/characters/missing.webp';\nconst unreviewed = '/assets/remaster/characters/unreviewed.webp';\n");
+    const artLedger: AssetLedger = { schemaVersion: 1, entries: [{ assetId: 'img.remaster', kind: '그림', origin: '자체 제작', rights: 'own', license: '사용자 제공', basis: '추출 시트', checkedOn: '2026-11-19', files: ['public/assets/remaster/characters/*-portrait.webp'], ids: [] }] };
+    try {
+      const files = listRepoFiles(tmp);
+      const pub = files.filter((f) => f.startsWith('public/'));
+      expect(strayAssetRefsOf(tmp, files, pub, artLedger)).toEqual([
+        'src/ui/art.ts: /assets/remaster/characters/missing.webp',
+        'src/ui/art.ts: /assets/remaster/characters/unreviewed.webp',
+      ]);
+      expect(strayAssetRefsOf(tmp, files, pub)).toHaveLength(4);
     } finally {
       fs.rmSync(tmp, { recursive: true, force: true });
     }

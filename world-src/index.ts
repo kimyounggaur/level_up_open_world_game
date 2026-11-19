@@ -8,6 +8,7 @@ import type { NavGrid, Point } from '../src/world/nav';
 import type { WorldObjectData } from '../src/world/objects';
 import { COLOR } from './palette';
 import { grassSvg, roadDecorSvg } from './art/ground';
+import { frottageDefsSvg, frottageGrassSvg, frottageRoadsSvg, frottageWaterSvg } from './art/frottage';
 import { roadsSvg } from './curves';
 import type { RoadSegment } from './curves';
 import { RIVER_HALF_WIDTH, bridgeSvg, bridgeWalkable, fenceSvg, fordColliders, fordSvg, millPondColliders, millPondSvg, outerPatchesSvg, outerRoads, riverCenter, riverSvg } from './outer';
@@ -64,13 +65,16 @@ function layout(): Layout {
 
 function groundBody(regions: readonly RegionDef[], l: Layout, placed: Placed): string {
   return [
+    frottageDefsSvg(),
     outerPatchesSvg(regions),
     villagePatchesSvg(),
+    frottageGrassSvg(),
     // 햇살 과슈 화풍의 풀 결(D-308): 시안의 점 무늬 대신 반투명한 풀 포기와 들꽃. 바닥색과 얼룩 위, 길 아래에 깐다
     grassSvg(WORLD_W, WORLD_H),
     roadsSvg(l.roads),
+    frottageRoadsSvg(l.roads),
     roadDecorSvg(l.roads, COLOR.road, COLOR.roadEdge),
-    villageFrontSvg(),
+    villageFrontSvg('remaster'),
     // 음계 길의 디딤돌(7-2): 길 위, 나무 그림자 아래
     trailStonesSvg(),
     shadowsSvg(placed.shadows),
@@ -78,6 +82,7 @@ function groundBody(regions: readonly RegionDef[], l: Layout, placed: Placed): s
     riverSvg(),
     fordSvg(),
     millPondSvg(),
+    frottageWaterSvg(),
     bridgeSvg(),
     // 건반 늪의 건반 다리 셋(7-3): 늪 웅덩이와 널. 널 위에 이름·표식을 올려 그리는 것은 설치물 층이다
     keyBridgesSvg(),

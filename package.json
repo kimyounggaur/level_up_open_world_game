@@ -36,7 +36,8 @@
     "build:atlas": "vite-node tools/build-atlas.ts",
     "paint:sprites": "vite-node tools/paint-sprites.ts",
     "check:paint": "vite-node tools/paint-sprites.ts -- --check",
-    "seed:world-source": "vite-node tools/seed-world-source.ts"
+    "seed:world-source": "vite-node tools/seed-world-source.ts",
+    "postinstall": "node tools/restore-remaster-assets.mjs"
   },
   "dependencies": {
     "phaser": "4.2.1",

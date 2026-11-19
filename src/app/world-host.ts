@@ -101,6 +101,7 @@ export class WorldHost {
       });
       this.flushWhenLive();
     } catch (err) {
+      if (__RELEASE_CHANNEL__ === 'preview') console.error('World failed to load', err);
       this.handle = null;
       this.bridge.patchStatus({ error: err instanceof Error ? err.message : String(err) });
     } finally {

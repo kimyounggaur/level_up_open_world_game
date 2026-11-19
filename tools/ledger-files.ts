@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { NATURE_TIMBRES, TIMBRES } from '../src/audio/instruments';
 import type { ContentIssue } from '../src/domain/content';
-import { parseLedger, validateLedger } from '../src/domain/ledger';
+import { entryCovers, parseLedger, validateLedger } from '../src/domain/ledger';
 import type { AssetLedger, EmbeddedFont, LedgerEntry, LedgerFacts } from '../src/domain/ledger';
 
 export const LEDGER_FILE = 'content/sources/asset-ledger.json';
@@ -112,10 +112,18 @@ export function fontNamesOf(root: string, files: string[]): { named: string[]; s
   return { named: [...named].sort(), stray: stray.sort() };
 }
 
-/** 소스·CSS·HTML이 가리키는 그림·소리·글꼴 파일 가운데 배포물의 world/ 밖을 가리키는 것 */
-export function strayAssetRefsOf(root: string, files: string[], publicFiles: string[]): string[] {
+/** Local runtime images must exist and be covered by the provenance ledger.
+ * Legacy world/ references retain their existing rules. External URLs and
+ * missing literal remaster filenames remain errors. */
+export function strayAssetRefsOf(root: string, files: string[], publicFiles: string[], ledger?: AssetLedger): string[] {
   const re = /['"`(]([^'"`()\s]*\.(?:png|jpe?g|gif|webp|avif|svg|ico|mp3|ogg|oga|wav|m4a|aac|flac|mp4|webm|woff2?|ttf|otf))['"`)?#]/g;
   const inWorld = new Set(publicFiles.filter((f) => f.startsWith('public/world/')).map((f) => f.slice('public/'.length)));
+  const remasterFiles = publicFiles.filter((f) => f.startsWith('public/assets/remaster/') && ledger?.entries.some((e) => e.rights === 'own' && entryCovers(e, f))).map((f) => f.slice('public/'.length));
+  const remasterRefExists = (ref: string): boolean => {
+    if (!ref.startsWith('assets/remaster/')) return false;
+    const expression = ref.split(/\$\{[^}]+\}/).map((part) => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('[^/]+');
+    return remasterFiles.some((f) => new RegExp(`^${expression}$`).test(f));
+  };
   const out: string[] = [];
   for (const f of [...sourceFiles(files), 'index.html']) {
     const text = readText(root, f);
@@ -124,6 +132,7 @@ export function strayAssetRefsOf(root: string, files: string[], publicFiles: str
       if (ref.startsWith('data:')) continue;
       if (ref.startsWith('world/') && (ref.includes('${') || inWorld.has(ref))) continue;
       if (inWorld.has(`world/${ref}`)) continue;
+      if (remasterRefExists(ref)) continue;
       out.push(`${f}: ${m[1]}`);
     }
   }
@@ -154,7 +163,7 @@ export function collectFacts(root: string, ledgerRaw: unknown): LedgerFacts {
     fontFaceCount,
     timbreIds: [...Object.keys(TIMBRES), ...Object.keys(NATURE_TIMBRES)].sort(),
     fileHashes,
-    strayAssetRefs: strayAssetRefsOf(root, allFiles, publicFiles),
+    strayAssetRefs: strayAssetRefsOf(root, allFiles, publicFiles, parsed ?? undefined),
   };
 }
 

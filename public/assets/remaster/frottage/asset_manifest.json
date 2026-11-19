@@ -1,0 +1,2004 @@
+{
+  "title_ko": "레벨업 음악이론 오픈월드 — 프로타주 리마스터 에셋 v1",
+  "version": "1.0",
+  "date_kst": "2026-11-18",
+  "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+  "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+  "integrationstatus": "asset proposal, not integrated",
+  "style": "luminous open-world adventure atmosphere; limestone, brass and jade; frottage surface texture",
+  "counts": {
+    "unique_assets": 37,
+    "webp": 29,
+    "native_svg": 8,
+    "png": 0
+  },
+  "original_png_hashes_verified_unchanged": true,
+  "background_warning": "Six intro/loading/menu plates, not existing world map chunks.",
+  "material_warning": "Approximate material tiling; seamless repetition has not been verified.",
+  "variant": "compact-runtime-assets",
+  "assets": [
+    {
+      "id": "world-art-direction",
+      "name_ko": "월드 아트 디렉션",
+      "category": "concepts",
+      "category_ko": "월드 콘셉트",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": false,
+        "minimum": 255,
+        "maximum": 255,
+        "transparent_fraction": 0.0,
+        "partial_alpha_fraction": 0.0,
+        "opaque_fraction": 1.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1536,
+          1024
+        ],
+        "corner_alpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "usage": {
+        "purpose": "art direction concept; not gameplay screenshot",
+        "integration_notes": "화풍·재료·빛 방향을 위한 콘셉트 이미지."
+      },
+      "webp": {
+        "path": "concepts/webp/world-art-direction.webp",
+        "size": [
+          1536,
+          1024
+        ],
+        "bytes": 768690,
+        "sha256": "ce41545dfe59199188bea8cf752c161f38252453a0f4350c16d6d3c37b0bca25",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "bg-village",
+      "name_ko": "음악 마을 배경",
+      "category": "backgrounds",
+      "category_ko": "지역 배경",
+      "region": "village",
+      "region_ko": "음악 마을",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": false,
+        "minimum": 255,
+        "maximum": 255,
+        "transparent_fraction": 0.0,
+        "partial_alpha_fraction": 0.0,
+        "opaque_fraction": 1.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1536,
+          1024
+        ],
+        "corner_alpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "usage": {
+        "purpose": "intro/loading/menu background plate; not a map chunk",
+        "map_chunk": false,
+        "tileable": false,
+        "integration_notes": "지역 소개·로딩·메뉴 배경판. 기존 직교 월드 바닥이나 충돌 격자를 직접 대체하지 않음."
+      },
+      "webp": {
+        "path": "backgrounds/webp/bg-village.webp",
+        "size": [
+          1536,
+          1024
+        ],
+        "bytes": 781986,
+        "sha256": "8a3c8e8cbce6670318cb597614415b4bb198b938d8d67713acad2afc802ce8eb",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "bg-staff-hill",
+      "name_ko": "오선 언덕 배경",
+      "category": "backgrounds",
+      "category_ko": "지역 배경",
+      "region": "staff-hill",
+      "region_ko": "오선 언덕",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": false,
+        "minimum": 255,
+        "maximum": 255,
+        "transparent_fraction": 0.0,
+        "partial_alpha_fraction": 0.0,
+        "opaque_fraction": 1.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1536,
+          1024
+        ],
+        "corner_alpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "usage": {
+        "purpose": "intro/loading/menu background plate; not a map chunk",
+        "map_chunk": false,
+        "tileable": false,
+        "integration_notes": "지역 소개·로딩·메뉴 배경판. 기존 직교 월드 바닥이나 충돌 격자를 직접 대체하지 않음."
+      },
+      "webp": {
+        "path": "backgrounds/webp/bg-staff-hill.webp",
+        "size": [
+          1536,
+          1024
+        ],
+        "bytes": 758752,
+        "sha256": "1d4073df28bfc655b7ca140660fe39d99adbb3494083dc5e1f1ac1ee1c42a833",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "bg-beat-river",
+      "name_ko": "박자 강가 배경",
+      "category": "backgrounds",
+      "category_ko": "지역 배경",
+      "region": "beat-river",
+      "region_ko": "박자 강가",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": false,
+        "minimum": 255,
+        "maximum": 255,
+        "transparent_fraction": 0.0,
+        "partial_alpha_fraction": 0.0,
+        "opaque_fraction": 1.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1536,
+          1024
+        ],
+        "corner_alpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "usage": {
+        "purpose": "intro/loading/menu background plate; not a map chunk",
+        "map_chunk": false,
+        "tileable": false,
+        "integration_notes": "지역 소개·로딩·메뉴 배경판. 기존 직교 월드 바닥이나 충돌 격자를 직접 대체하지 않음."
+      },
+      "webp": {
+        "path": "backgrounds/webp/bg-beat-river.webp",
+        "size": [
+          1536,
+          1024
+        ],
+        "bytes": 789194,
+        "sha256": "1ad0c855399acdb98de8e0ff45981d7b6c78a92a15512e8c44a07084bbafa2ad",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "bg-bell-grove",
+      "name_ko": "종나무 숲 배경",
+      "category": "backgrounds",
+      "category_ko": "지역 배경",
+      "region": "bell-grove",
+      "region_ko": "종나무 숲",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": false,
+        "minimum": 255,
+        "maximum": 255,
+        "transparent_fraction": 0.0,
+        "partial_alpha_fraction": 0.0,
+        "opaque_fraction": 1.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1536,
+          1024
+        ],
+        "corner_alpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "usage": {
+        "purpose": "intro/loading/menu background plate; not a map chunk",
+        "map_chunk": false,
+        "tileable": false,
+        "integration_notes": "지역 소개·로딩·메뉴 배경판. 기존 직교 월드 바닥이나 충돌 격자를 직접 대체하지 않음."
+      },
+      "webp": {
+        "path": "backgrounds/webp/bg-bell-grove.webp",
+        "size": [
+          1536,
+          1024
+        ],
+        "bytes": 790532,
+        "sha256": "75d859e9234846b3d2f73e98f37495695fc9fa8c409f963a17f003843361bc63",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "bg-scale-trail",
+      "name_ko": "음계 길 배경",
+      "category": "backgrounds",
+      "category_ko": "지역 배경",
+      "region": "scale-trail",
+      "region_ko": "음계 길",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": false,
+        "minimum": 255,
+        "maximum": 255,
+        "transparent_fraction": 0.0,
+        "partial_alpha_fraction": 0.0,
+        "opaque_fraction": 1.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1536,
+          1024
+        ],
+        "corner_alpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "usage": {
+        "purpose": "intro/loading/menu background plate; not a map chunk",
+        "map_chunk": false,
+        "tileable": false,
+        "integration_notes": "지역 소개·로딩·메뉴 배경판. 기존 직교 월드 바닥이나 충돌 격자를 직접 대체하지 않음."
+      },
+      "webp": {
+        "path": "backgrounds/webp/bg-scale-trail.webp",
+        "size": [
+          1536,
+          1024
+        ],
+        "bytes": 800806,
+        "sha256": "835785882d63580acd5e17a20b1db6b19f8b08f75bedeaa530a4c9c7e3d12878",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "bg-key-marsh",
+      "name_ko": "건반 늪 배경",
+      "category": "backgrounds",
+      "category_ko": "지역 배경",
+      "region": "key-marsh",
+      "region_ko": "건반 늪",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": false,
+        "minimum": 255,
+        "maximum": 255,
+        "transparent_fraction": 0.0,
+        "partial_alpha_fraction": 0.0,
+        "opaque_fraction": 1.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1536,
+          1024
+        ],
+        "corner_alpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "usage": {
+        "purpose": "intro/loading/menu background plate; not a map chunk",
+        "map_chunk": false,
+        "tileable": false,
+        "integration_notes": "지역 소개·로딩·메뉴 배경판. 기존 직교 월드 바닥이나 충돌 격자를 직접 대체하지 않음."
+      },
+      "webp": {
+        "path": "backgrounds/webp/bg-key-marsh.webp",
+        "size": [
+          1536,
+          1024
+        ],
+        "bytes": 776168,
+        "sha256": "219552946d37437446d2b79bbaf52f25aaea5e180545766776fbb15ad0dfeb0c",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "bld-h1-pitch-workshop",
+      "name_ko": "음자리 공방",
+      "category": "buildings",
+      "category_ko": "건물",
+      "region": "village",
+      "region_ko": "음악 마을",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_fraction": 0.586878,
+        "partial_alpha_fraction": 0.413122,
+        "opaque_fraction": 0.0,
+        "nontransparent_bbox": [
+          25,
+          8,
+          1520,
+          1024
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "isolated environment asset proposal",
+        "integration_notes": "앵커·충돌·실제 표시 크기는 연결 단계에서 기존 월드 데이터에 맞춰야 함."
+      },
+      "webp": {
+        "path": "buildings/webp/bld-h1-pitch-workshop.webp",
+        "size": [
+          1024,
+          683
+        ],
+        "bytes": 156494,
+        "sha256": "3d3df16d64eb54eda5760786549d2b838c8de53c6892101b4f837b5afe54a73c",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "bld-h2-rhythm-workshop",
+      "name_ko": "리듬 공방",
+      "category": "buildings",
+      "category_ko": "건물",
+      "region": "village",
+      "region_ko": "음악 마을",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_fraction": 0.522552,
+        "partial_alpha_fraction": 0.477448,
+        "opaque_fraction": 0.0,
+        "nontransparent_bbox": [
+          0,
+          16,
+          1516,
+          1024
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "isolated environment asset proposal",
+        "integration_notes": "앵커·충돌·실제 표시 크기는 연결 단계에서 기존 월드 데이터에 맞춰야 함."
+      },
+      "webp": {
+        "path": "buildings/webp/bld-h2-rhythm-workshop.webp",
+        "size": [
+          1024,
+          683
+        ],
+        "bytes": 183652,
+        "sha256": "d93aa5dff3cd20ac757ac2b091331608a452fbdf19b6ec86e92c0bfe58b7b221",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "bld-h3-harmony-workshop",
+      "name_ko": "화음 공방",
+      "category": "buildings",
+      "category_ko": "건물",
+      "region": "village",
+      "region_ko": "음악 마을",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_fraction": 0.501582,
+        "partial_alpha_fraction": 0.498418,
+        "opaque_fraction": 0.0,
+        "nontransparent_bbox": [
+          0,
+          21,
+          1522,
+          1000
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "isolated environment asset proposal",
+        "integration_notes": "앵커·충돌·실제 표시 크기는 연결 단계에서 기존 월드 데이터에 맞춰야 함."
+      },
+      "webp": {
+        "path": "buildings/webp/bld-h3-harmony-workshop.webp",
+        "size": [
+          1024,
+          683
+        ],
+        "bytes": 167162,
+        "sha256": "3d6f1a241d34d52fbb6d76283fd0d6b8f75d265ab4f7bd8d05e47ed598856534",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "bld-ensemble-stage",
+      "name_ko": "합주 무대",
+      "category": "buildings",
+      "category_ko": "건물",
+      "region": "village",
+      "region_ko": "음악 마을",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_fraction": 0.463019,
+        "partial_alpha_fraction": 0.536981,
+        "opaque_fraction": 0.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1504,
+          1024
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "isolated environment asset proposal",
+        "integration_notes": "앵커·충돌·실제 표시 크기는 연결 단계에서 기존 월드 데이터에 맞춰야 함."
+      },
+      "webp": {
+        "path": "buildings/webp/bld-ensemble-stage.webp",
+        "size": [
+          1024,
+          683
+        ],
+        "bytes": 202034,
+        "sha256": "4cde8d42d316d887f1091bc08f91f6a59ccaa5cbc42ae54dd8a5234d90642823",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "lm-scale-trail-gazebo",
+      "name_ko": "음계 길 정자",
+      "category": "buildings",
+      "category_ko": "건물",
+      "region": "scale-trail",
+      "region_ko": "음계 길",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_fraction": 0.63086,
+        "partial_alpha_fraction": 0.36914,
+        "opaque_fraction": 0.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1520,
+          1024
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "isolated environment asset proposal",
+        "integration_notes": "앵커·충돌·실제 표시 크기는 연결 단계에서 기존 월드 데이터에 맞춰야 함."
+      },
+      "webp": {
+        "path": "buildings/webp/lm-scale-trail-gazebo.webp",
+        "size": [
+          1024,
+          683
+        ],
+        "bytes": 146124,
+        "sha256": "762f14ed67feed4a2df0b4d7d1e4038ba783bb6df22f1077b2a3a93e3a61a4c4",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "lm-staff-hill-windvane",
+      "name_ko": "오선 언덕 풍향계",
+      "category": "landmarks",
+      "category_ko": "랜드마크",
+      "region": "staff-hill",
+      "region_ko": "오선 언덕",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_fraction": 0.656122,
+        "partial_alpha_fraction": 0.343878,
+        "opaque_fraction": 0.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1021,
+          1536
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "landmark artwork",
+        "runtime_overlay_required": true,
+        "integration_notes": "학습용 음자리표·기준음 이름·기호는 정확한 SVG/텍스트 층으로 별도 표시."
+      },
+      "webp": {
+        "path": "landmarks/webp/lm-staff-hill-windvane.webp",
+        "size": [
+          683,
+          1024
+        ],
+        "bytes": 144528,
+        "sha256": "8037d4d2b2b8437e2b9c0966c92e7e0ec827b270f60343c633712caa99fe3c00",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "lm-key-marsh-tuning-tower",
+      "name_ko": "건반 늪 기준음 탑",
+      "category": "landmarks",
+      "category_ko": "랜드마크",
+      "region": "key-marsh",
+      "region_ko": "건반 늪",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_fraction": 0.871918,
+        "partial_alpha_fraction": 0.128082,
+        "opaque_fraction": 0.0,
+        "nontransparent_bbox": [
+          61,
+          0,
+          1514,
+          1005
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "landmark artwork",
+        "runtime_overlay_required": true,
+        "integration_notes": "학습용 음자리표·기준음 이름·기호는 정확한 SVG/텍스트 층으로 별도 표시."
+      },
+      "webp": {
+        "path": "landmarks/webp/lm-key-marsh-tuning-tower.webp",
+        "size": [
+          1024,
+          683
+        ],
+        "bytes": 62568,
+        "sha256": "d2d12fc768326e0d6ad0c549ac399c41dc0b359f7a70dc2bfb7d600ca1d5ee37",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "lm-bell-grove-echo-wall",
+      "name_ko": "종나무 숲 메아리 벽",
+      "category": "landmarks",
+      "category_ko": "랜드마크",
+      "region": "bell-grove",
+      "region_ko": "종나무 숲",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_fraction": 0.433687,
+        "partial_alpha_fraction": 0.566045,
+        "opaque_fraction": 0.000268,
+        "nontransparent_bbox": [
+          0,
+          0,
+          2171,
+          724
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "isolated environment asset proposal",
+        "integration_notes": "앵커·충돌·실제 표시 크기는 연결 단계에서 기존 월드 데이터에 맞춰야 함."
+      },
+      "webp": {
+        "path": "landmarks/webp/lm-bell-grove-echo-wall.webp",
+        "size": [
+          1024,
+          341
+        ],
+        "bytes": 128078,
+        "sha256": "1bf2b1ae39e96f106ebcfabd57669d577676a8f85b23dca510fbe3a47cea210b",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "lm-beat-river-waterwheel-shell",
+      "name_ko": "박자 강가 물레방아 외관",
+      "category": "landmarks",
+      "category_ko": "랜드마크",
+      "region": "beat-river",
+      "region_ko": "박자 강가",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_fraction": 0.530478,
+        "partial_alpha_fraction": 0.469522,
+        "opaque_fraction": 0.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1520,
+          1024
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "decorative landmark shell",
+        "runtime_overlay_required": true,
+        "integration_notes": "장식 외관. 박·슬롯·회전·종 배치·판정은 기존 런타임 층을 유지해야 함."
+      },
+      "webp": {
+        "path": "landmarks/webp/lm-beat-river-waterwheel-shell.webp",
+        "size": [
+          1024,
+          683
+        ],
+        "bytes": 215918,
+        "sha256": "cb9707db7793a42c2d9eff7a0fed65e3865b7e9ba1fb3698eeaab25db7b3262f",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "lm-bell-grove-bell-tower-shell",
+      "name_ko": "종나무 숲 종탑 외관",
+      "category": "landmarks",
+      "category_ko": "랜드마크",
+      "region": "bell-grove",
+      "region_ko": "종나무 숲",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_fraction": 0.625932,
+        "partial_alpha_fraction": 0.374068,
+        "opaque_fraction": 0.0,
+        "nontransparent_bbox": [
+          0,
+          22,
+          1004,
+          1536
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "decorative landmark shell",
+        "runtime_overlay_required": true,
+        "integration_notes": "장식 외관. 박·슬롯·회전·종 배치·판정은 기존 런타임 층을 유지해야 함."
+      },
+      "webp": {
+        "path": "landmarks/webp/lm-bell-grove-bell-tower-shell.webp",
+        "size": [
+          683,
+          1024
+        ],
+        "bytes": 183812,
+        "sha256": "ccbeca44a0ef143b57defbcabf9e1f706ad638a2c5a349707a61392e596b9045",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "prop-village-tree",
+      "name_ko": "음악 마을 나무",
+      "category": "props",
+      "category_ko": "환경 소품",
+      "region": "village",
+      "region_ko": "음악 마을",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_fraction": 0.688519,
+        "partial_alpha_fraction": 0.311481,
+        "opaque_fraction": 0.0,
+        "nontransparent_bbox": [
+          95,
+          14,
+          1488,
+          961
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "isolated environment asset proposal",
+        "integration_notes": "앵커·충돌·실제 표시 크기는 연결 단계에서 기존 월드 데이터에 맞춰야 함."
+      },
+      "webp": {
+        "path": "props/webp/prop-village-tree.webp",
+        "size": [
+          1024,
+          683
+        ],
+        "bytes": 128232,
+        "sha256": "de2afb25bde4596ceb9884eca3de61fb3b4bc4684956a285db2c2bbfe5200866",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "prop-bell-grove-tree",
+      "name_ko": "종나무 숲 나무",
+      "category": "props",
+      "category_ko": "환경 소품",
+      "region": "bell-grove",
+      "region_ko": "종나무 숲",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_fraction": 0.604497,
+        "partial_alpha_fraction": 0.395503,
+        "opaque_fraction": 0.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1502,
+          1009
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "isolated environment asset proposal",
+        "integration_notes": "앵커·충돌·실제 표시 크기는 연결 단계에서 기존 월드 데이터에 맞춰야 함."
+      },
+      "webp": {
+        "path": "props/webp/prop-bell-grove-tree.webp",
+        "size": [
+          1024,
+          683
+        ],
+        "bytes": 189030,
+        "sha256": "5e5e34f20525c98ab30ab6fe0d0fc530bc028467fa068e6081aa934781d96025",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "prop-limestone-rock",
+      "name_ko": "석회암 바위",
+      "category": "props",
+      "category_ko": "환경 소품",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_fraction": 0.672805,
+        "partial_alpha_fraction": 0.327195,
+        "opaque_fraction": 0.0,
+        "nontransparent_bbox": [
+          0,
+          28,
+          1486,
+          1024
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "isolated environment asset proposal",
+        "integration_notes": "앵커·충돌·실제 표시 크기는 연결 단계에서 기존 월드 데이터에 맞춰야 함."
+      },
+      "webp": {
+        "path": "props/webp/prop-limestone-rock.webp",
+        "size": [
+          1024,
+          683
+        ],
+        "bytes": 113430,
+        "sha256": "13d319c4015eb8e1353d7412bf737f85ab00f688eb1beb0595c757a0b89d4c27",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "prop-wayfinding-sign",
+      "name_ko": "길 안내 표지판",
+      "category": "props",
+      "category_ko": "환경 소품",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_fraction": 0.604903,
+        "partial_alpha_fraction": 0.395097,
+        "opaque_fraction": 0.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1535,
+          1024
+        ],
+        "corner_alpha": [
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "isolated environment asset proposal",
+        "integration_notes": "앵커·충돌·실제 표시 크기는 연결 단계에서 기존 월드 데이터에 맞춰야 함."
+      },
+      "webp": {
+        "path": "props/webp/prop-wayfinding-sign.webp",
+        "size": [
+          1024,
+          683
+        ],
+        "bytes": 118836,
+        "sha256": "7fe1006af1b89678304ca1564cbf1a6c042ebe1c4b45e3b8c4fe3108805f2d21",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "prop-stone-footbridge",
+      "name_ko": "돌 보행교",
+      "category": "props",
+      "category_ko": "환경 소품",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_fraction": 0.53125,
+        "partial_alpha_fraction": 0.46861,
+        "opaque_fraction": 0.00014,
+        "nontransparent_bbox": [
+          0,
+          21,
+          1185,
+          1312
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "isolated environment asset proposal",
+        "integration_notes": "앵커·충돌·실제 표시 크기는 연결 단계에서 기존 월드 데이터에 맞춰야 함."
+      },
+      "webp": {
+        "path": "props/webp/prop-stone-footbridge.webp",
+        "size": [
+          936,
+          1024
+        ],
+        "bytes": 225970,
+        "sha256": "dc0bac182a189ba439137efe8475d81e615abd7da00d300fbcdd245cdb1a4697",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "prop-brass-lantern",
+      "name_ko": "놋쇠 등불",
+      "category": "props",
+      "category_ko": "환경 소품",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_fraction": 0.716502,
+        "partial_alpha_fraction": 0.283498,
+        "opaque_fraction": 0.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1006,
+          1536
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "isolated environment asset proposal",
+        "integration_notes": "앵커·충돌·실제 표시 크기는 연결 단계에서 기존 월드 데이터에 맞춰야 함."
+      },
+      "webp": {
+        "path": "props/webp/prop-brass-lantern.webp",
+        "size": [
+          683,
+          1024
+        ],
+        "bytes": 95696,
+        "sha256": "cf08f1882cd0d5fda615c971d80b92db2498866b61481f1423e02f1bf5798bb7",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "tex-sage-grass",
+      "name_ko": "세이지 풀밭 재질",
+      "category": "materials",
+      "category_ko": "프로타주 재질",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": false,
+        "minimum": 255,
+        "maximum": 255,
+        "transparent_fraction": 0.0,
+        "partial_alpha_fraction": 0.0,
+        "opaque_fraction": 1.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "corner_alpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "usage": {
+        "purpose": "frottage material study / texture",
+        "tileability": "approximate; seamless tiling not verified",
+        "integration_notes": "반복 연결은 별도 확인 필요. 검증된 무봉제 타일로 표시하지 않음."
+      },
+      "webp": {
+        "path": "materials/webp/tex-sage-grass.webp",
+        "size": [
+          1254,
+          1254
+        ],
+        "bytes": 568014,
+        "sha256": "9971a69a61385c7c09559bff918fbe1c9d134ea48d7e7d5a3705eea8e799164a",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "tex-sandy-path",
+      "name_ko": "모래길 재질",
+      "category": "materials",
+      "category_ko": "프로타주 재질",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": false,
+        "minimum": 255,
+        "maximum": 255,
+        "transparent_fraction": 0.0,
+        "partial_alpha_fraction": 0.0,
+        "opaque_fraction": 1.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "corner_alpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "usage": {
+        "purpose": "frottage material study / texture",
+        "tileability": "approximate; seamless tiling not verified",
+        "integration_notes": "반복 연결은 별도 확인 필요. 검증된 무봉제 타일로 표시하지 않음."
+      },
+      "webp": {
+        "path": "materials/webp/tex-sandy-path.webp",
+        "size": [
+          1254,
+          1254
+        ],
+        "bytes": 504500,
+        "sha256": "972c1f3cc39d41e4bb8c043403697bbedeb0cd2fb61dce5530576fd93cdfd634",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "tex-limestone",
+      "name_ko": "석회암 재질",
+      "category": "materials",
+      "category_ko": "프로타주 재질",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": false,
+        "minimum": 255,
+        "maximum": 255,
+        "transparent_fraction": 0.0,
+        "partial_alpha_fraction": 0.0,
+        "opaque_fraction": 1.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "corner_alpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "usage": {
+        "purpose": "frottage material study / texture",
+        "tileability": "approximate; seamless tiling not verified",
+        "integration_notes": "반복 연결은 별도 확인 필요. 검증된 무봉제 타일로 표시하지 않음."
+      },
+      "webp": {
+        "path": "materials/webp/tex-limestone.webp",
+        "size": [
+          1254,
+          1254
+        ],
+        "bytes": 516932,
+        "sha256": "4fc9987870591d2df34c8a9ac7e9a4bad25383552d68eb87dbfc8037f84a7f01",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "tex-aged-spruce",
+      "name_ko": "오래된 가문비나무 재질",
+      "category": "materials",
+      "category_ko": "프로타주 재질",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": false,
+        "minimum": 255,
+        "maximum": 255,
+        "transparent_fraction": 0.0,
+        "partial_alpha_fraction": 0.0,
+        "opaque_fraction": 1.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "corner_alpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "usage": {
+        "purpose": "frottage material study / texture",
+        "tileability": "approximate; seamless tiling not verified",
+        "integration_notes": "반복 연결은 별도 확인 필요. 검증된 무봉제 타일로 표시하지 않음."
+      },
+      "webp": {
+        "path": "materials/webp/tex-aged-spruce.webp",
+        "size": [
+          1254,
+          1254
+        ],
+        "bytes": 541820,
+        "sha256": "aeb6bb107d9af32d95139c44683ce1600fd799ddaba790af9758f27ad1892caf",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "tex-jade-water",
+      "name_ko": "비취색 물 재질",
+      "category": "materials",
+      "category_ko": "프로타주 재질",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": false,
+        "minimum": 255,
+        "maximum": 255,
+        "transparent_fraction": 0.0,
+        "partial_alpha_fraction": 0.0,
+        "opaque_fraction": 1.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "corner_alpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "usage": {
+        "purpose": "frottage material study / texture",
+        "tileability": "approximate; seamless tiling not verified",
+        "integration_notes": "반복 연결은 별도 확인 필요. 검증된 무봉제 타일로 표시하지 않음."
+      },
+      "webp": {
+        "path": "materials/webp/tex-jade-water.webp",
+        "size": [
+          1254,
+          1254
+        ],
+        "bytes": 406014,
+        "sha256": "acbb2806712f9377485e99d8bf6c354aa6b8eb7f8f78fc1e6b1c287c16b2b178",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "tex-fiber-paper",
+      "name_ko": "섬유 종이 재질",
+      "category": "materials",
+      "category_ko": "프로타주 재질",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "image-generation",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": false,
+        "minimum": 255,
+        "maximum": 255,
+        "transparent_fraction": 0.0,
+        "partial_alpha_fraction": 0.0,
+        "opaque_fraction": 1.0,
+        "nontransparent_bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "corner_alpha": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "usage": {
+        "purpose": "frottage material study / texture",
+        "tileability": "approximate; seamless tiling not verified",
+        "integration_notes": "반복 연결은 별도 확인 필요. 검증된 무봉제 타일로 표시하지 않음."
+      },
+      "webp": {
+        "path": "materials/webp/tex-fiber-paper.webp",
+        "size": [
+          1254,
+          1254
+        ],
+        "bytes": 343534,
+        "sha256": "1827eb27239f4b29523fe160176e45bef4257236ecd7c3aa1d13eef95f825eb2",
+        "quality": 92,
+        "alpha_quality": 100,
+        "exact": true
+      }
+    },
+    {
+      "id": "ui-region-nameplate",
+      "name_ko": "지역 이름패",
+      "category": "ui",
+      "category_ko": "UI 컴포넌트",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "native-vector",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_fraction": 0.10599,
+        "partial_alpha_fraction": 0.045898,
+        "opaque_fraction": 0.848112,
+        "nontransparent_bbox": [
+          8,
+          6,
+          1115,
+          184
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "localization-ready blank native-vector UI component",
+        "integration_notes": "문자와 조작 아이콘은 앱에서 동적으로 표시. 지도·상호작용 링 중앙은 투명."
+      },
+      "ui": {
+        "logicalsize": [
+          560,
+          96
+        ],
+        "safe_text_rect": [
+          110,
+          27,
+          414,
+          38
+        ],
+        "nine_slice_margins": [
+          108,
+          24,
+          32,
+          24
+        ],
+        "emblem_rect": [
+          28,
+          20,
+          54,
+          54
+        ],
+        "nine_slice_order": "left, top, right, bottom"
+      },
+      "svg": {
+        "path": "ui/ui-region-nameplate.svg",
+        "bytes": 17056,
+        "sha256": "1ef4a82a4ff010814351af5a8932625c7ae14335db29cf10f2d0d5718253f6f7",
+        "embedded_raster": false,
+        "external_references": false
+      }
+    },
+    {
+      "id": "ui-quest-card",
+      "name_ko": "도전 카드",
+      "category": "ui",
+      "category_ko": "UI 컴포넌트",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "native-vector",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_fraction": 0.032401,
+        "partial_alpha_fraction": 0.010388,
+        "opaque_fraction": 0.957211,
+        "nontransparent_bbox": [
+          8,
+          6,
+          1273,
+          952
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "localization-ready blank native-vector UI component",
+        "integration_notes": "문자와 조작 아이콘은 앱에서 동적으로 표시. 지도·상호작용 링 중앙은 투명."
+      },
+      "ui": {
+        "logicalsize": [
+          640,
+          480
+        ],
+        "safe_text_rect": [
+          48,
+          92,
+          544,
+          284
+        ],
+        "nine_slice_margins": [
+          40,
+          86,
+          40,
+          84
+        ],
+        "title_rect": [
+          90,
+          36,
+          480,
+          31
+        ],
+        "footer_rect": [
+          48,
+          404,
+          544,
+          34
+        ],
+        "nine_slice_order": "left, top, right, bottom"
+      },
+      "svg": {
+        "path": "ui/ui-quest-card.svg",
+        "bytes": 28405,
+        "sha256": "f5fdfe17519d0482ca993735980d81abc37bbf805aa3028cd36455926223d0b9",
+        "embedded_raster": false,
+        "external_references": false
+      }
+    },
+    {
+      "id": "ui-dialogue-frame",
+      "name_ko": "대화 프레임",
+      "category": "ui",
+      "category_ko": "UI 컴포넌트",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "native-vector",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_fraction": 0.044448,
+        "partial_alpha_fraction": 0.018953,
+        "opaque_fraction": 0.936599,
+        "nontransparent_bbox": [
+          8,
+          6,
+          1916,
+          472
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "localization-ready blank native-vector UI component",
+        "integration_notes": "문자와 조작 아이콘은 앱에서 동적으로 표시. 지도·상호작용 링 중앙은 투명."
+      },
+      "ui": {
+        "logicalsize": [
+          960,
+          240
+        ],
+        "safe_text_rect": [
+          218,
+          54,
+          682,
+          130
+        ],
+        "nine_slice_margins": [
+          208,
+          32,
+          52,
+          40
+        ],
+        "portrait_rect": [
+          47,
+          54,
+          118,
+          118
+        ],
+        "nine_slice_order": "left, top, right, bottom"
+      },
+      "svg": {
+        "path": "ui/ui-dialogue-frame.svg",
+        "bytes": 28609,
+        "sha256": "2e405b4eb1929f98f923c7dcc9878fd0431dced3cfb7c801a8c437f6f26201aa",
+        "embedded_raster": false,
+        "external_references": false
+      }
+    },
+    {
+      "id": "ui-map-frame",
+      "name_ko": "지도 프레임",
+      "category": "ui",
+      "category_ko": "UI 컴포넌트",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "native-vector",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_fraction": 0.772075,
+        "partial_alpha_fraction": 0.0023,
+        "opaque_fraction": 0.225625,
+        "nontransparent_bbox": [
+          11,
+          11,
+          1909,
+          1421
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "localization-ready blank native-vector UI component",
+        "integration_notes": "문자와 조작 아이콘은 앱에서 동적으로 표시. 지도·상호작용 링 중앙은 투명."
+      },
+      "ui": {
+        "logicalsize": [
+          960,
+          720
+        ],
+        "safe_text_rect": [
+          100,
+          17,
+          740,
+          30
+        ],
+        "nine_slice_margins": [
+          52,
+          64,
+          52,
+          64
+        ],
+        "transparent_map_rect": [
+          48,
+          64,
+          864,
+          592
+        ],
+        "nine_slice_order": "left, top, right, bottom"
+      },
+      "svg": {
+        "path": "ui/ui-map-frame.svg",
+        "bytes": 41581,
+        "sha256": "6b6124f749965025efab279a51ec7f1686cce7f73b9c86185e23db2a6fa942f1",
+        "embedded_raster": false,
+        "external_references": false
+      }
+    },
+    {
+      "id": "ui-button-primary",
+      "name_ko": "주요 버튼",
+      "category": "ui",
+      "category_ko": "UI 컴포넌트",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "native-vector",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_fraction": 0.131809,
+        "partial_alpha_fraction": 0.049805,
+        "opaque_fraction": 0.818386,
+        "nontransparent_bbox": [
+          8,
+          6,
+          633,
+          168
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "localization-ready blank native-vector UI component",
+        "integration_notes": "문자와 조작 아이콘은 앱에서 동적으로 표시. 지도·상호작용 링 중앙은 투명."
+      },
+      "ui": {
+        "logicalsize": [
+          320,
+          88
+        ],
+        "safe_text_rect": [
+          48,
+          27,
+          224,
+          30
+        ],
+        "nine_slice_margins": [
+          36,
+          24,
+          36,
+          24
+        ],
+        "recommended_text_color": "#FFF7DF",
+        "nine_slice_order": "left, top, right, bottom"
+      },
+      "svg": {
+        "path": "ui/ui-button-primary.svg",
+        "bytes": 10861,
+        "sha256": "4a4becb8a6ca0c15349f9a3a089ab158cfa5c9302d2a27fb479c9c101ba91f1b",
+        "embedded_raster": false,
+        "external_references": false
+      }
+    },
+    {
+      "id": "ui-button-secondary",
+      "name_ko": "보조 버튼",
+      "category": "ui",
+      "category_ko": "UI 컴포넌트",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "native-vector",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_fraction": 0.131809,
+        "partial_alpha_fraction": 0.049805,
+        "opaque_fraction": 0.818386,
+        "nontransparent_bbox": [
+          8,
+          6,
+          633,
+          168
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "localization-ready blank native-vector UI component",
+        "integration_notes": "문자와 조작 아이콘은 앱에서 동적으로 표시. 지도·상호작용 링 중앙은 투명."
+      },
+      "ui": {
+        "logicalsize": [
+          320,
+          88
+        ],
+        "safe_text_rect": [
+          48,
+          27,
+          224,
+          30
+        ],
+        "nine_slice_margins": [
+          36,
+          24,
+          36,
+          24
+        ],
+        "recommended_text_color": "#234D49",
+        "nine_slice_order": "left, top, right, bottom"
+      },
+      "svg": {
+        "path": "ui/ui-button-secondary.svg",
+        "bytes": 10864,
+        "sha256": "88ad937af85e478337f525d6fe83cc6155e33d9e5ff8d0cb9fb3c4cf05f0c341",
+        "embedded_raster": false,
+        "external_references": false
+      }
+    },
+    {
+      "id": "ui-interaction-ring",
+      "name_ko": "상호작용 링",
+      "category": "ui",
+      "category_ko": "UI 컴포넌트",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "native-vector",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_fraction": 0.734024,
+        "partial_alpha_fraction": 0.091904,
+        "opaque_fraction": 0.174072,
+        "nontransparent_bbox": [
+          4,
+          4,
+          252,
+          252
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "localization-ready blank native-vector UI component",
+        "integration_notes": "문자와 조작 아이콘은 앱에서 동적으로 표시. 지도·상호작용 링 중앙은 투명."
+      },
+      "ui": {
+        "logicalsize": [
+          128,
+          128
+        ],
+        "safe_text_rect": [
+          32,
+          32,
+          64,
+          64
+        ],
+        "nine_slice_margins": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "transparent_center_radius": 37,
+        "recommended_scale_mode": "uniform",
+        "nine_slice_order": "left, top, right, bottom"
+      },
+      "svg": {
+        "path": "ui/ui-interaction-ring.svg",
+        "bytes": 2556,
+        "sha256": "443191737fd64cccc3bdecb3931a177e917bb3e2086e5a95b2e77ed09474655d",
+        "embedded_raster": false,
+        "external_references": false
+      }
+    },
+    {
+      "id": "ui-toolbar-panel",
+      "name_ko": "도구 모음 패널",
+      "category": "ui",
+      "category_ko": "UI 컴포넌트",
+      "region": "all",
+      "region_ko": "공통",
+      "sourcekind": "native-vector",
+      "integrationstatus": "asset proposal, not integrated",
+      "sourcecommit": "b20fc29372b1f5556c8ff551f3c0198f28f5e7cb",
+      "source_repository": "https://github.com/kimyounggaur/level_up_open_world_game",
+      "alpha": {
+        "has_alpha_channel": true,
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_fraction": 0.100915,
+        "partial_alpha_fraction": 0.045841,
+        "opaque_fraction": 0.853244,
+        "nontransparent_bbox": [
+          8,
+          6,
+          1435,
+          184
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "usage": {
+        "purpose": "localization-ready blank native-vector UI component",
+        "integration_notes": "문자와 조작 아이콘은 앱에서 동적으로 표시. 지도·상호작용 링 중앙은 투명."
+      },
+      "ui": {
+        "logicalsize": [
+          720,
+          96
+        ],
+        "safe_text_rect": [
+          35,
+          27,
+          648,
+          38
+        ],
+        "nine_slice_margins": [
+          32,
+          24,
+          32,
+          24
+        ],
+        "slot_rects": [
+          [
+            35,
+            27,
+            108,
+            38
+          ],
+          [
+            143,
+            27,
+            108,
+            38
+          ],
+          [
+            251,
+            27,
+            108,
+            38
+          ],
+          [
+            359,
+            27,
+            108,
+            38
+          ],
+          [
+            467,
+            27,
+            108,
+            38
+          ],
+          [
+            575,
+            27,
+            108,
+            38
+          ]
+        ],
+        "nine_slice_order": "left, top, right, bottom"
+      },
+      "svg": {
+        "path": "ui/ui-toolbar-panel.svg",
+        "bytes": 20395,
+        "sha256": "db209c5f286bec358052623274e14cbcc400db136426e5e2c173549f46257b78",
+        "embedded_raster": false,
+        "external_references": false
+      }
+    }
+  ],
+  "note_ko": "용량을 줄인 WebP·SVG 묶음입니다. PNG 마스터와 갤러리는 전체 ZIP에 있습니다. 게임에 자동 연결되는 패키지는 아닙니다."
+}
